@@ -1076,7 +1076,7 @@
 				<bottom>10</bottom>
 				<left>10</left>
 				<right>10</right>
-				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<imagepath diffuse="$PARAM[diffuse]" colordiffuse="$VAR[MainMenuWidgetColorVar]">$INFO[ListItem.Property(fanart)]</imagepath>
 				<timeperimage>3600000</timeperimage>
 				<fadetime>1</fadetime>
@@ -1130,7 +1130,7 @@
 					<bottom>10</bottom>
 					<left>10</left>
 					<right>10</right>
-					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<imagepath diffuse="$PARAM[diffuse]">$INFO[ListItem.Property(fanart)]</imagepath>
 					<timeperimage>3600000</timeperimage>
 					<fadetime>1</fadetime>
@@ -1196,7 +1196,6 @@
 				<bottom>350</bottom>
 				<width>910</width>
 				<height>400</height>
-				<align>bottom</align>
 				<itemgap>10</itemgap>
 				<usecontrolcoords>true</usecontrolcoords>
 				<control type="label">
@@ -1295,7 +1294,6 @@
 				<control type="textbox" id="5306">
 					<visible>Skin.HasSetting(WidgetPlot) + [!String.IsEmpty(ListItem.PlotOutline) | !String.IsEmpty(ListItem.Property(Album_Description)) | !String.IsEmpty(ListItem.Property(Artist_Description)) | !String.IsEmpty(ListItem.AddonDescription) | !String.IsEmpty(ListItem.ContributorAndRole) | !String.IsEmpty(ListItem.Plot)]</visible>
 					<height>85</height>
-					<scroll>true</scroll>
 					<font>Font28_Reg_106</font>
 					<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 					<label>$VAR[ViewPlotVar]</label>
@@ -1747,6 +1745,12 @@
 		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),weather)">$LOCALIZE[8]</value>
 		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),disc)">$LOCALIZE[427]</value>
 		<value condition="String.IsEqual(Container(211).ListItem.Property(InfoLine),systeminfo)">$LOCALIZE[130]</value>
+		<value>$LOCALIZE[231]</value>
+	</variable>
+	<variable name="PVRWidgetLabelVar">
+		<value condition="String.IsEqual(Container(211).ListItem.Property(pvrWidget),pvr)">PVR</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(pvrWidget),tv)">$LOCALIZE[19020]</value>
+		<value condition="String.IsEqual(Container(211).ListItem.Property(pvrWidget),radio)">$LOCALIZE[19021]</value>
 		<value>$LOCALIZE[231]</value>
 	</variable>
 	<variable name="WidgetTitleVar">

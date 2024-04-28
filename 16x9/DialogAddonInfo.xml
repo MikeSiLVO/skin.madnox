@@ -49,48 +49,66 @@
 				<onup condition="Container(9000).Hasfocus(105)">SetFocus(50)</onup>
 				<include>InfoDialogButtons</include>
 				<content>
-					<item id="101">
+					<item>
+						<visible>!Skin.HasSetting(KioskDisableInfoAddonSettings)</visible>
 						<description>Install</description>
 						<visible>Control.IsEnabled(6) + String.IsEqual(Control.GetLabel(6),$LOCALIZE[24038])</visible>
 						<label></label>
 						<label2>$LOCALIZE[24038]</label2>
 						<onclick>SendClick(6)</onclick>
 					</item>
-					<item id="102">
+					<item>
 						<description>Open</description>
 						<visible>Control.IsEnabled(12)</visible>
 						<label></label>
 						<label2>$INFO[Control.GetLabel(12)]</label2>
 						<onclick>SendClick(12)</onclick>
 					</item>
-					<item id="103">
+					<item>
+						<visible>!Skin.HasSetting(KioskDisableInfoAddonSettings)</visible>
 						<description>Settings</description>
 						<visible>Control.IsEnabled(9)</visible>
 						<label></label>
 						<label2>$LOCALIZE[1390]</label2>
 						<onclick>SendClick(9)</onclick>
 					</item>
-					<item id="105">
+					<item>
+						<description>Update</description>
+						<visible>Control.IsVisible(8)</visible>
+						<label></label>
+						<label2>$LOCALIZE[24138]</label2>
+						<onclick>SendClick(8)</onclick>
+					</item>
+					<item>
+						<description>Versions</description>
+						<visible>Control.IsVisible(14)</visible>
+						<label></label>
+						<label2>$LOCALIZE[24069]</label2>
+						<onclick>SendClick(14)</onclick>
+					</item>
+					<item>
 						<description>Screenshots</description>
 						<visible>!String.IsEmpty(Container(50).ListItem.Icon)</visible>
 						<label></label>
 						<label2>$LOCALIZE[20008]</label2>
 					</item>
-					<item id="106">
+					<item>
 						<description>Dependencies</description>
 						<visible>Control.IsEnabled(10)</visible>
 						<label></label>
 						<label2>$LOCALIZE[39024]</label2>
 						<onclick>SendClick(10)</onclick>
 					</item>
-					<item id="107">
+					<item>
+						<visible>!Skin.HasSetting(KioskDisableInfoAddonSettings)</visible>
 						<description>Enable/Disable</description>
 						<visible>Control.IsEnabled(7)</visible>
 						<label>$VAR[AddonInfoEnableIconVar]</label>
 						<label2>$INFO[Control.GetLabel(7)]</label2>
 						<onclick>SendClick(7)</onclick>
 					</item>
-					<item id="108">
+					<item>
+						<visible>!Skin.HasSetting(KioskDisableInfoAddonSettings)</visible>
 						<description>Auto update</description>
 						<visible>Control.IsEnabled(13)</visible>
 						<label>$VAR[AddonInfoAutoUpdateIconVar]</label>
@@ -99,21 +117,8 @@
 						<onclick>Action(Select)</onclick>
 						<onclick>SetFocus(9000)</onclick>
 					</item>
-					<item id="109">
-						<description>Versions</description>
-						<visible>Control.IsVisible(14)</visible>
-						<label></label>
-						<label2>$LOCALIZE[24069]</label2>
-						<onclick>SendClick(14)</onclick>
-					</item>
-					<item id="104">
-						<description>Update</description>
-						<visible>Control.IsVisible(8)</visible>
-						<label></label>
-						<label2>$LOCALIZE[24138]</label2>
-						<onclick>SendClick(8)</onclick>
-					</item>
-					<item id="110">
+					<item>
+						<visible>!Skin.HasSetting(KioskDisableInfoAddonSettings)</visible>
 						<description>Uninstall</description>
 						<visible>Control.IsEnabled(6) + String.IsEqual(Control.GetLabel(6),$LOCALIZE[24037])</visible>
 						<label></label>
