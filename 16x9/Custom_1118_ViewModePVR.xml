@@ -30,7 +30,7 @@
 					<include>MediaMenuButtonViewType</include>
 				</control>
 				<control type="button" id="151">
-					<label>$LOCALIZE[535]</label>
+					<label>$LOCALIZE[31215]</label>
 					<onclick>Container.SetViewMode(51)</onclick>
 					<include>MediaMenuButtonViewType</include>
 				</control>

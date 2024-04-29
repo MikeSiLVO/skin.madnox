@@ -28,7 +28,7 @@
 			<!-- Left menu -->
 			<control type="label">
 				<visible>!Window.IsActive(script-skinshortcuts.xml)</visible>
-				<label>$LOCALIZE[20077]</label>
+				<label>$LOCALIZE[31300]</label>
 				<include>SettingsLeftLabel</include>
 				<textcolor>$VAR[PanelTextColorVar]</textcolor>
 			</control>
@@ -75,7 +75,7 @@
 					</item>
 					<item id="4">
 						<description>Backgrounds</description>
-						<label>$LOCALIZE[33069]</label>
+						<label>$LOCALIZE[33068]</label>
 					</item>
 					<item id="5">
 						<description>Furniture</description>
@@ -171,6 +171,11 @@
 							<onclick>SetProperty(CustomSelectGroup,$LOCALIZE[31098],home)</onclick>
 							<onclick>ActivateWindow(1111)</onclick>
 							<include>SettingsButton</include>
+						</control>
+						<control type="button" id="111">
+							<include>SettingsButton</include>
+							<label>$LOCALIZE[31973]</label>
+							<onclick>Skin.ToggleDebug</onclick>
 						</control>
 					</control>
 					<!-- General description -->
@@ -817,50 +822,58 @@
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="623">
-							<label>White studio icons</label>
+							<label>$LOCALIZE[31977]</label>
 							<label2>$VAR[AddonWhiteStudiosVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=Studio Icons - White&amp;type=resource.images.studios.white)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.studios.white)">InstallAddon(resource.images.studios.white)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="624">
-							<label>Coloured studio icons</label>
+							<label>$LOCALIZE[31978]</label>
 							<label2>$VAR[AddonColouredStudiosVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=StudiosColoured&amp;type=resource.images.studios.coloured)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.studios.coloured)">InstallAddon(resource.images.studios.coloured)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="625">
-							<label>White record label icons</label>
+							<label>$LOCALIZE[31979]</label>
 							<label2>$VAR[AddonRecordLabelsVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.recordlabels.white)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.recordlabels.white)">InstallAddon(resource.images.recordlabels.white)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="626">
 							<label>Language flags</label>
 							<label2>$VAR[AddonLanguageFlagsVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.languageflags.rounded)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.languageflags.rounded)">InstallAddon(resource.images.languageflags.rounded)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="627">
 							<label>Music genre icons</label>
 							<label2>$VAR[AdoonMusicGenreIconsVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.musicgenreicons.text)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.musicgenreicons.text)">InstallAddon(resource.images.musicgenreicons.text)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="628">
 							<label>Coloured movie genre icons</label>
 							<label2>$VAR[AdoonMovieGenreIconsVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.moviegenreicons.filmstrip-hd.colour)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.colour)">InstallAddon(resource.images.moviegenreicons.filmstrip-hd.colour)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="629">
 							<label>BW movie genre icons</label>
 							<label2>$VAR[AdoonMovieGenreIconsBWVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.moviegenreicons.filmstrip-hd.bw)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.bw)">InstallAddon(resource.images.moviegenreicons.filmstrip-hd.bw)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="630">
 							<label>Movie country icons</label>
 							<label2>$VAR[AddonCountryIconsVar]</label2>
+							<onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.moviecountryicons.flags)</onclick>
 							<onclick condition="!System.HasAddon(resource.images.moviecountryicons.flags)">InstallAddon(resource.images.moviecountryicons.flags)</onclick>
 							<include>SettingsRadioButton</include>
 						</control>
@@ -948,8 +961,7 @@
 							<include>SettingsLabel</include>
 						</control>
 						<control type="button" id="721">
-							<label>Trakt</label>
-							<label2>$VAR[AddonTraktVar]</label2>
+						    <label>Trakt.TV</label>
 							<onclick condition="!System.HasAddon(script.trakt)">InstallAddon(script.trakt)</onclick>
 							<onclick condition="!System.AddonIsEnabled(script.trakt)">EnableAddon(script.trakt)</onclick>
 							<onclick condition="System.HasAddon(script.trakt)">Addon.OpenSettings(script.trakt)</onclick>

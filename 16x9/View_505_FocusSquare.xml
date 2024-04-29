@@ -151,8 +151,7 @@
 							</include>
 						</control>
 					</itemlayout>
-					<focusedlayout width="430" height="630" condition="Skin.HasSetting(View505AlbumCase) + Container.Content(albums)">
-						<control type="group">
+					<focusedlayout width="430" height="630" condition="Skin.HasSetting(View505AlbumCase) + Container.Content(albums)">						<control type="group">
 							<top>229</top>
 							<height>401</height>
 							<animation effect="zoom" start="100" end="117.7" center="auto" time="240">focus</animation>

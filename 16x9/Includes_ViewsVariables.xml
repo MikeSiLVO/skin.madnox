@@ -75,6 +75,7 @@
 	</variable>
 	<variable name="ListViewInfo2Var">
 		<value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.StartTime, , - ]$INFO[ListItem.EndTime,,  ]</value>
+		<value condition="Container.Content(albums)"/>
 		<value condition="!String.IsEmpty(ListItem.Duration) + !Integer.IsGreater(ListItem.Duration(h),0)">$INFO[ListItem.Duration(mm), ,m]$INFO[ListItem.Duration(ss),,s  ]</value>
 		<value condition="!String.IsEmpty(ListItem.Duration)">$INFO[ListItem.Duration(hh), ,h]$INFO[ListItem.Duration(mm),,m  ]</value>
 		<value condition="!String.IsEmpty(ListItem.AddonVersion)">$INFO[ListItem.AddonVersion, v,  ]</value>
@@ -482,11 +483,14 @@
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="GenreIconVar">
+		<value condition="!Skin.HasSetting(BWGenreIcons) + System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.colour)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip-hd.colour/,.jpg]</value>
+		<value condition="System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.bw)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip-hd.bw/,.jpg]</value>
 		<value condition="!Skin.HasSetting(BWGenreIcons) + System.AddonIsEnabled(resource.images.moviegenreicons.filmstrip-hd.colour)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip-hd.colour/,.jpg]</value>
 		<value condition="System.AddonIsEnabled(resource.images.moviegenreicons.filmstrip-hd.bw)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip-hd.bw/,.jpg]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="CountryIconVar">
+		<value condition="System.HasAddon(resource.images.moviecountryicons.flags)">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.flags/,.png]</value>
 		<value condition="System.AddonIsEnabled(resource.images.moviecountryicons.flags)">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.flags/,.png]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
@@ -503,6 +507,9 @@
 		<value>thumbs/case/portrait/back/1080p.png</value>
 	</variable>
 	<variable name="ShowcaseItem-1Var">
+		<value condition="!ListItem(-1).IsParentFolder + Container.Content(genres) + ![String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + System.HasAddon(resource.images.musicgenreicons.text)">$INFO[ListItem(-1).Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>
+		<value condition="!ListItem(-1).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + !Skin.HasSetting(BWGenreIcons) + System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.colour)">$INFO[ListItem(-1).Label,resource://resource.images.moviegenreicons.filmstrip-hd.colour/,.jpg]</value>
+		<value condition="!ListItem(-1).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + Skin.HasSetting(BWGenreIcons) + System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.bw)">$INFO[ListItem(-1).Label,resource://resource.images.moviegenreicons.filmstrip-hd.bw/,.jpg]</value>
 		<value condition="!ListItem(-1).IsParentFolder + Container.Content(genres) + ![String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + System.AddonIsEnabled(resource.images.musicgenreicons.text)">$INFO[ListItem(-1).Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>
 		<value condition="!ListItem(-1).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + !Skin.HasSetting(BWGenreIcons) + System.AddonIsEnabled(resource.images.moviegenreicons.filmstrip-hd.colour)">$INFO[ListItem(-1).Label,resource://resource.images.moviegenreicons.filmstrip-hd.colour/,.jpg]</value>
 		<value condition="!ListItem(-1).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + Skin.HasSetting(BWGenreIcons) + System.AddonIsEnabled(resource.images.moviegenreicons.filmstrip-hd.bw)">$INFO[ListItem(-1).Label,resource://resource.images.moviegenreicons.filmstrip-hd.bw/,.jpg]</value>
@@ -554,6 +561,14 @@
 		<value condition="!ListItem(-7).IsParentFolder + Container.Content(genres) + ![String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + System.AddonIsEnabled(resource.images.musicgenreicons.text)">$INFO[ListItem(-7).Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>
 		<value condition="!ListItem(-7).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + !Skin.HasSetting(BWGenreIcons) + System.AddonIsEnabled(resource.images.moviegenreicons.filmstrip-hd.colour)">$INFO[ListItem(-7).Label,resource://resource.images.moviegenreicons.filmstrip-hd.colour/,.jpg]</value>
 		<value condition="!ListItem(-7).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + Skin.HasSetting(BWGenreIcons) + System.AddonIsEnabled(resource.images.moviegenreicons.filmstrip-hd.bw)">$INFO[ListItem(-7).Label,resource://resource.images.moviegenreicons.filmstrip-hd.bw/,.jpg]</value>
+		<value condition="!String.IsEmpty(ListItem(-7).Art(poster))">$INFO[ListItem(-7).Art(poster)]</value>
+		<value condition="!String.IsEmpty(ListItem(-7).Thumb)">$INFO[ListItem(-7).Thumb]</value>
+		<value>$INFO[ListItem(-7).Icon]</value>
+	</variable>
+	<variable name="ShowcaseItem-7Var">
+		<value condition="!ListItem(-7).IsParentFolder + Container.Content(genres) + ![String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + System.HasAddon(resource.images.musicgenreicons.text)">$INFO[ListItem(-7).Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>
+		<value condition="!ListItem(-7).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + !Skin.HasSetting(BWGenreIcons) + System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.colour)">$INFO[ListItem(-7).Label,resource://resource.images.moviegenreicons.filmstrip-hd.colour/,.jpg]</value>
+		<value condition="!ListItem(-7).IsParentFolder + Container.Content(genres) + [String.Contains(ListItem.FolderPath,movies) | String.Contains(ListItem.FolderPath,tvshows)] + Skin.HasSetting(BWGenreIcons) + System.HasAddon(resource.images.moviegenreicons.filmstrip-hd.bw)">$INFO[ListItem(-7).Label,resource://resource.images.moviegenreicons.filmstrip-hd.bw/,.jpg]</value>
 		<value condition="!String.IsEmpty(ListItem(-7).Art(poster))">$INFO[ListItem(-7).Art(poster)]</value>
 		<value condition="!String.IsEmpty(ListItem(-7).Thumb)">$INFO[ListItem(-7).Thumb]</value>
 		<value>$INFO[ListItem(-7).Icon]</value>
