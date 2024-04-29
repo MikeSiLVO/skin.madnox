@@ -234,6 +234,16 @@
 				<height>234</height>
 				<fadetime>TextureFadeTime</fadetime>
 				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture background="true">$VAR[ClearArtVar]</texture>
+			</control>
+			<control type="image">
+				<visible>Skin.HasSetting(View57HideLogo)</visible>
+				<top>214</top>
+				<right>125</right>
+				<width>416</width>
+				<height>234</height>
+				<fadetime>TextureFadeTime</fadetime>
+				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture background="true">$VAR[ClearLogoVar]</texture>
 			</control>
 		</control>
@@ -264,7 +274,7 @@
 				<onleft>9050</onleft>
 				<onright>6057</onright>
 				<pagecontrol>6057</pagecontrol>
-				<viewtype label="$LOCALIZE[31233]">list</viewtype>
+				<viewtype label="$LOCALIZE[31225]">list</viewtype>
 				<include>ContainerScrollTime</include>
 				<include content="ViewContainerList">
 					<param name="id">57</param>

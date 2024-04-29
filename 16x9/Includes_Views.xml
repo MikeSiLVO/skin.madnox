@@ -768,7 +768,7 @@
 			<include content="ViewWatchedStatus">
 				<param name="visible">$PARAM[watchedstatusvisible]</param>
 			</include>
-			<control type="group">
+				<control type="group">
 				<visible>!ListItem.IsParentFolder + $PARAM[labelvisible]</visible>
 				<bottom>10</bottom>
 				<height>62</height>
@@ -2233,7 +2233,7 @@
 			</control>
 		</definition>
 	</include>
-	<include name="CascadeItemPortrait">
+<include name="CascadeItemPortrait">
 		<param name="item"/>
 		<param name="reflecttop"/>
 		<param name="logoheight"/>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">3</defaultcontrol>
+	<onload condition="!Skin.HasSetting(WarnedOnFileManager) + !String.IsEmpty(Window(Home).Property(NotifyFilemanager))">ActivateWindow(1126)</onload>
 	<include condition="![Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)]">AnimationDialogPopupWindow</include>
 	<controls>
 		<include condition="![Window.IsActive(gamestretchmode) | Window.IsActive(gamevideofilter) | Window.IsActive(gamevideorotation)]">DialogSelect</include>

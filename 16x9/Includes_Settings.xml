@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<!-- Settings includes -->
+	<include name="HiddenObject">
+		<left>-300</left>
+		<top>-300</top>
+		<width>1</width>
+		<height>1</height>
+		<texturefocus />
+		<texturenofocus />
+		<label />
+		<font />
+	</include>
 	<include name="SettingsLabel">
 		<width>1395</width>
 		<height>67</height>
@@ -176,7 +186,7 @@
 				</control>
 				<control type="radiobutton" id="80$PARAM[id]6">
 					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.$PARAM[id])) + !String.IsEqual(Container(211).ListItem.Property(widget.$PARAM[id]),info)</visible>
-					<label>$LOCALIZE[21899]</label>
+					<label>$LOCALIZE[31981]</label>
 					<onclick condition="!String.IsEmpty(Container(211).ListItem.Property(widgetLabel.$PARAM[id]))">SetProperty(customProperty,widgetLabel.$PARAM[id])</onclick>
 					<onclick condition="String.IsEmpty(Container(211).ListItem.Property(widgetLabel.$PARAM[id]))">SetProperty(customProperty,widgetLabel.$PARAM[id])</onclick>
 					<onclick condition="String.IsEmpty(Container(211).ListItem.Property(widgetLabel.$PARAM[id]))">SetProperty(customValue,true)</onclick>
@@ -430,7 +440,7 @@
 		<value condition="!System.AddonIsEnabled(resource.images.moviecountryicons.flags)">$LOCALIZE[1223]  [COLOR orange]✕[/COLOR]</value>
 		<value>$INFO[System.AddonVersion(resource.images.moviecountryicons.flags),v, ][COLOR green]✓[/COLOR]</value>
 	</variable>
-	<!-- Widgets -->
+		<!-- Widgets -->
 	<variable name="Widget1StyleLabelVar">
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetStyle.1),big)">$LOCALIZE[31210]</value>
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetStyle.1),medium)">$LOCALIZE[601]</value>

@@ -166,7 +166,7 @@
 					<onright>6056</onright>
 					<pagecontrol>6056</pagecontrol>
 					<include>ContainerScrollTime</include>
-					<viewtype label="$LOCALIZE[31225]">list</viewtype>
+					<viewtype label="$LOCALIZE[31233]">list</viewtype>
 					<include content="$PARAM[content]">
 						<param name="id">56</param>
 						<param name="biglistvisible">Skin.HasSetting(View56BigList)</param>

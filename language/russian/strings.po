@@ -1,0 +1,2341 @@
+# Kodi Media Center language file
+# Addon Name: Madnox
+# Addon id: skin.madnox
+# Addon Provider: Team Madnox
+msgid ""
+msgstr ""
+
+#: /16x9/DialogAddonSettings.xml /16x9/Variables.xml /16x9/DialogTextViewer.xml /16x9/Custom_1100_TextViewer.xml /16x9/script-skin_helper_service-ColorPicker.xml
+msgctxt "#31000"
+msgid "Page"
+msgstr "Страница"
+
+#: /16x9/DialogAddonSettings.xml /16x9/DialogMediaSource.xml /16x9/Includes_CommonObjects.xml /16x9/Variables.xml /16x9/DialogFavourites.xml /16x9/Includes_Dialogs.xml /16x9/Custom_1110_CustomSelectConatainer.xml /16x9/DialogSettings.xml /16x9/DialogSubtitles.xml
+msgctxt "#31001"
+msgid "Items"
+msgstr "элемент(ов)"
+
+#: /16x9/Home.xml /16x9/Variables.xml /16x9/Custom_1111_Topbar.xml
+msgctxt "#31002"
+msgid "Now playing"
+msgstr "Сейчас проигрывается"
+
+#: /16x9/SmartPlaylistEditor.xml
+msgctxt "#31003"
+msgid "Order"
+msgstr "Сортировка"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31004"
+msgid "Weather background"
+msgstr "Фон погоды"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31005"
+msgid "shadow"
+msgstr "тень"
+
+#: /16x9/Variables_Themes.xml
+msgctxt "#31006"
+msgid "Flat"
+msgstr "Плоский"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31007"
+msgid "Single image"
+msgstr "Одно изображение"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31008"
+msgid "Multi image"
+msgstr "Множество изображений"
+
+#: /16x9/Includes_MediaMenu.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31009"
+msgid "Music discart fallback"
+msgstr "Тип диска "МУЗЫКА""
+
+#: /16x9/SmartPlaylistEditor.xml
+msgctxt "#31010"
+msgid "Set the type and add rules to create a smart playlist. These playlists are dynamic and include all media items from your database which apply to your chosen rules."
+msgstr "Задайте тип и добавьте правила для создания умного списка воспроизведения. Эти списки воспроизведения являются динамическими и включают все элементы мультимедиа из вашей базы данных, которые применяются к выбранным вами правилам."
+
+#: /16x9/Variables.xml
+msgctxt "#31011"
+msgid "Returning"
+msgstr "Возобновлен"
+
+#: /16x9/Variables.xml
+msgctxt "#31012"
+msgid "Ended"
+msgstr "Окончен"
+
+#: /16x9/Variables.xml
+msgctxt "#31013"
+msgid "TBD"
+msgstr "TBD"
+
+#: /16x9/Variables.xml
+msgctxt "#31014"
+msgid "New series"
+msgstr "Новые серии"
+
+#: /16x9/Variables.xml
+msgctxt "#31015"
+msgid "Finale"
+msgstr "Окончен"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31016"
+msgid "Smaller pop-up notifications"
+msgstr "Уменьшенные уведомления"
+
+#: /16x9/Home.xml /16x9/SkinSettings.xml
+msgctxt "#31017"
+msgid "Edit main menu"
+msgstr "Главное меню"
+
+#: /16x9/Home.xml /16x9/SkinSettings.xml
+msgctxt "#31018"
+msgid "Reset main menu"
+msgstr "Сбросить настройки меню"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31019"
+msgid "Show scroll letter"
+msgstr "Показать алфавит при прокрутки"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31020"
+msgid "Dim screen on dialog popup"
+msgstr "Затемнение всплывающего диалога"
+
+#: /16x9/Home.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31021"
+msgid "Area"
+msgstr "Экран"
+
+#: /16x9/SettingsSystemInfo.xml
+msgctxt "#31022"
+msgid "CPU"
+msgstr "Процессор"
+
+#: /16x9/SettingsSystemInfo.xml
+msgctxt "#31023"
+msgid "Memory"
+msgstr "Память"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31024"
+msgid "Customise shortcut menu"
+msgstr "Настройки контекстного меню"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31025"
+msgid "View options"
+msgstr "Опции просмотра"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31026"
+msgid "Predictive text for virtual keyboard"
+msgstr "Интеллектуальный текст виртуальной клавиатуры"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31027"
+msgid "Global override"
+msgstr "Глобальная отмена"
+
+#: /16x9/SkinSettings.xml /16x9/Custom_1110_Colors.xml
+msgctxt "#31028"
+msgid "Manage"
+msgstr "Управление"
+
+#: /16x9/Custom_1110_CustomSelectContainer.xml /16x9/Includes_MediaMenu.xml /16x9/SkinSettings.xml
+msgctxt "#31029"
+msgid "Video now playing background"
+msgstr "Водео на заднем плане"
+
+#: /16x9/Custom_1110_CustomSelectContainer.xml /16x9/Includes_MediaMenu.xml /16x9/SkinSettings.xml
+msgctxt "#31030"
+msgid "Music now playing background"
+msgstr "Музыка на заднем плане"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31031"
+msgid "Enable day and night colour themes"
+msgstr "Включить светлые и тёмные темы"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31032"
+msgid "Theme for day time"
+msgstr "Светлая тема"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31033"
+msgid "Theme for night time"
+msgstr "Тёмная тема"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31034"
+msgid "Weather icons"
+msgstr "Значки погоды"
+
+#: /16x9/Variables.xml
+msgctxt "#31035"
+msgid "Extra fanart"
+msgstr "Дополнительный фанарт"
+
+#: /16x9/Variables.xml /16x9/SkinSettings.xml
+msgctxt "#31036"
+msgid "Fallback"
+msgstr "Дополнительно"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31037"
+msgid "Animated posters"
+msgstr "Анимированные постеры"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31038"
+msgid "Animated background"
+msgstr "Анимированный фон"
+
+#: /16x9/Home.xml /16x9/script-skinshortcuts.xml /16x9/SkinSettings.xml
+msgctxt "#31039"
+msgid "Widgets"
+msgstr "Виджеты"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31040"
+msgid "Settings menu"
+msgstr "Меню настроек"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31041"
+msgid "Main menu"
+msgstr "Главное меню"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml /16x9/Custom_1110_Colors.xml
+msgctxt "#31042"
+msgid "Top bar"
+msgstr "Верхняя панель"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31043"
+msgid "Fixed list"
+msgstr "Фиксированный список"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31044"
+msgid "Artwork"
+msgstr "Изображения"
+
+#: /16x9/Custom_1110_Colors.xml /16x9/SkinSettings.xml /16x9/Variables_Colors.xml
+msgctxt "#31045"
+msgid "Global default"
+msgstr "По умолчанию"
+
+#: /16x9/Custom_1111_Topbar.xml
+msgctxt "#31046"
+msgid "Item Count"
+msgstr "Всего элементов"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml /16x9/Custom_1110_Colors.xml
+msgctxt "#31047"
+msgid "Floor"
+msgstr "Подложка"
+
+#: /16x9/SkinSettings.xml /16x9/Variables_Themes.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31048"
+msgid "Shadow"
+msgstr "Тень"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31049"
+msgid "Highlight"
+msgstr "Блики"
+
+#: /16x9/script-skinshortcuts.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31050"
+msgid "Info line"
+msgstr "Строка информации"
+
+#: /16x9/Includes_MediaMenu.xml /16x9/SkinSettings.xml
+msgctxt "#31051"
+msgid "Texture"
+msgstr "Текстура"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31052"
+msgid "Coloured"
+msgstr "Цветные"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31053"
+msgid "Country icons"
+msgstr "Иконки стран"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31054"
+msgid "Default backgrounds"
+msgstr "Фон по умолчанию"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31055"
+msgid "Weather fanart"
+msgstr "Фанарт погоды"
+
+#: /16x9/Variables.xml /16x9/SkinSettings.xml
+msgctxt "#31056"
+msgid "Panel"
+msgstr "Панель"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31057"
+msgid "Installed"
+msgstr "Установленно"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31058"
+msgid "Not installed"
+msgstr "Не установленно"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31059"
+msgid "Layout"
+msgstr "Макет"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31060"
+msgid "Language flags"
+msgstr "Значки языка"
+
+#: /16x9/Variables.xml /16x9/SkinSettings.xml /16x9/script-skinshortcuts.xml
+msgctxt "#31061"
+msgid "Icon"
+msgstr "Значки"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31062"
+msgid "Coloured icons"
+msgstr "Цветные значки для верхней панели"
+
+#: /16x9/Includes_MediaFlags.xml
+msgctxt "#31063"
+msgid "On air"
+msgstr "В эфире"
+
+#: /16x9/Includes_MediaFlags.xml
+msgctxt "#31064"
+msgid "Last aired"
+msgstr "Последний эфир"
+
+#: /16x9/Custom_1117_MusicVisSettings.xml
+msgctxt "#31065"
+msgid "Visualisation settings"
+msgstr "Настройка визуализации"
+
+#: /16x9/Custom_1117_MusicVisSettings.xml
+msgctxt "#31066"
+msgid "Choose presets"
+msgstr "Выбор пресетов"
+
+#: /16x9/DialogSubtitles.xml
+msgctxt "#31067"
+msgid "Local subtitle available"
+msgstr "Доступны локальные субтитры"
+
+#: /16x9/Custom_1117_MusicVisSettings.xml
+msgctxt "#31068"
+msgid "Lyrics add-on"
+msgstr "Дополнение текста песен"
+
+#: /16x9/Custom_1117_MusicVisSettings.xml
+msgctxt "#31069"
+msgid "Lyrics add-on settings"
+msgstr "Настройки дополнение текста песен"
+
+#: /16x9/View_507_FanartList.xml
+msgctxt "#31070"
+msgid "Fanart list"
+msgstr "Список фанартов"
+
+#: /16x9/View_700_RightList.xml
+msgctxt "#31071"
+msgid "Right list"
+msgstr "Список справа"
+
+#: /16x9/DialogFullScreenInfo.xml
+msgctxt "#31072"
+msgid "Premiered"
+msgstr "Премьера"
+
+#: /16x9/DialogPlayerProcessInfo.xml
+msgctxt "#31073"
+msgid "Video decoder"
+msgstr "Декодер видео"
+
+#: /16x9/DialogPlayerProcessInfo.xml
+msgctxt "#31074"
+msgid "Pixel format"
+msgstr "Формат изображения"
+
+#: /16x9/DialogPlayerProcessInfo.xml
+msgctxt "#31075"
+msgid "Decoding"
+msgstr "Декодер"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31076"
+msgid "Movie set cover background"
+msgstr "Обложки DVD/Blu-ray на фоне"
+
+#: /16x9/DialogPlayerProcessInfo.xml
+msgctxt "#31077"
+msgid "Signal"
+msgstr "Сигнал"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31078"
+msgid "Furniture"
+msgstr "Фурнитура"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31079"
+msgid "Prefer plot outline"
+msgstr "Предпочьтительная схема сюжета"
+
+#: /16x9/MyVideoNav.xml
+msgctxt "#31080"
+msgid "Edit Nodes"
+msgstr "Округлые панели"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31081"
+msgid "Media menu buttons"
+msgstr "Кнопки меню мультимедиа"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31082"
+msgid "Info dialogs"
+msgstr "Информационное сообщение"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31083"
+msgid "Favourites script"
+msgstr "Скрипт избранного"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31084"
+msgid "Case"
+msgstr "Обложка диска"
+
+#: /16x9/Custom_1127_BackgroundCustomizer.xml
+msgctxt "#31085"
+msgid "Overlay"
+msgstr "Перекрытие"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31086"
+msgid "Video playlist"
+msgstr "Плейлист видео"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31087"
+msgid "Embuary info"
+msgstr "Embuary info"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31088"
+msgid "Trakt"
+msgstr "Trakt"
+
+#: /16x9/MyVideoNav.xml
+msgctxt "#31089"
+msgid "Add node"
+msgstr "Новый пункт"
+
+#: /16x9/MyWeather.xml
+msgctxt "#31090"
+msgid "Daily"
+msgstr "Неделя"
+
+#: /16x9/MyWeather.xml
+msgctxt "#31091"
+msgid "Map"
+msgstr "Карта"
+
+#: /16x9/MyWeather.xml
+msgctxt "#31092"
+msgid "Overview"
+msgstr "Предпросмотр"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31093"
+msgid "Backup"
+msgstr "Сохранить"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31094"
+msgid "Restore"
+msgstr "Востановить"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31095"
+msgid "Hide view options"
+msgstr "Скрыть параметры просмотра"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31096"
+msgid "Hide view options & types"
+msgstr "Скрыть параметры и типы просмотра"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31097"
+msgid "Hide menus"
+msgstr "Скрыть меню"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31098"
+msgid "Kiosk mode"
+msgstr "Режим Киоска"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31099"
+msgid "Dark"
+msgstr "Тёмный"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31100"
+msgid "Light"
+msgstr "Светлый"
+
+#: /16x9/script-skinshortcuts.xml /16x9/SkinSettings.xml
+msgctxt "#31101"
+msgid "Submenu"
+msgstr "Подменю"
+
+#: /16x9/script-skinshortcuts.xml /16x9/variables.xml
+msgctxt "#31102"
+msgid "Select live background"
+msgstr "Выбор сменяемого фона"
+
+#: /16x9/script-skinshortcuts.xml /16x9/SkinSettings.xml /16x9/variables.xml
+msgctxt "#31103"
+msgid "Live background"
+msgstr "Сменяемый фон"
+
+#: /16x9/DialogSubtitles.xml
+msgctxt "#31104"
+msgid "Local subtitles available"
+msgstr "Локальные субтитры"
+
+#: /16x9/Custom_1110_CustomSelectContainer.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31105"
+msgid "colour"
+msgstr "цвет"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31106"
+msgid "Global"
+msgstr "Общий"
+
+#: /16x9/Custom_1110_CustomSelectContainer.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31107"
+msgid "background"
+msgstr "- (ИЗОБРАЖЕНИЯ НА ФОНЕ)"
+
+#: /16x9/Variables.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31108"
+msgid "Disc art"
+msgstr "Показать диск(CD/DVD)"
+
+#: /16x9/DialogVideoInfo.xml /16x9/DialogMusicInfo.xml
+msgctxt "#31109"
+msgid "Get art"
+msgstr "Выбор изображения"
+
+#: /16x9/DialogVideoInfo.xml
+msgctxt "#31110"
+msgid "Similar"
+msgstr "Похожие исполнители"
+
+#: /16x9/DialogVideoInfo.xml
+msgctxt "#31111"
+msgid "Budget"
+msgstr "Бюджет"
+
+#: /16x9/DialogVideoInfo.xml
+msgctxt "#31112"
+msgid "Revenue"
+msgstr "Сборы"
+
+#: /16x9/DialogVideoInfo.xml
+msgctxt "#31113"
+msgid "Awards"
+msgstr "Награды"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31114"
+msgid "Carbon"
+msgstr "Графит"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31115"
+msgid "Pixels"
+msgstr "Пикселы"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31116"
+msgid "Steel plate"
+msgstr "Стальной лист"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31117"
+msgid "Wallpaper"
+msgstr "Обои"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31118"
+msgid "Wood"
+msgstr "Дерево"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31119"
+msgid "Wrinkles"
+msgstr "Складки"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31120"
+msgid "Center"
+msgstr "Центр"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31121"
+msgid "Icons wide"
+msgstr "Широкие значки"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31122"
+msgid "Big icons wide"
+msgstr "Увеличенные широкие значки"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31123"
+msgid "Logo"
+msgstr "Логотип"
+
+#: /16x9/Custom_1114_Addons.xml
+msgctxt "#31124"
+msgid "Required"
+msgstr "Необходимые"
+
+#: /16x9/Custom_1114_Addons.xml
+msgctxt "#31125"
+msgid "Recommended"
+msgstr "Рекомендованные"
+
+#: /16x9/Custom_1114_Addons.xml
+msgctxt "#31126"
+msgid "Optional"
+msgstr "Необязательные"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31127"
+msgid "RSS"
+msgstr "Новостная лента"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31128"
+msgid "Dialog"
+msgstr "Диалог"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31129"
+msgid "style"
+msgstr "стиль"
+
+#: /16x9/Variables.xml /16x9/SkinSettings.xml
+msgctxt "#31130"
+msgid "Square"
+msgstr "Сглаженные углы панелей"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31131"
+msgid "Emboss"
+msgstr "Рельеф"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31132"
+msgid "texture"
+msgstr "текстура"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31133"
+msgid "Pattern"
+msgstr "Шаблон"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31134"
+msgid "Gradient"
+msgstr "Градиент"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31135"
+msgid "Brushed"
+msgstr "Следы от щетки"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31136"
+msgid "Text"
+msgstr "Текст заголовка"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31137"
+msgid "Subtext"
+msgstr "Текст в меню"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31138"
+msgid "Focus text"
+msgstr "Текст в фокусе"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31139"
+msgid "List separator"
+msgstr "Сепаратор списка"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31140"
+msgid "White media flags"
+msgstr "Ч/Б значки"
+
+#: 31140 /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31141"
+msgid "System bar"
+msgstr "Главное меню"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31142"
+msgid "Submenu bar"
+msgstr "Подменю"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31143"
+msgid "RSS bar"
+msgstr "Лента новостей"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31144"
+msgid "layout"
+msgstr "макет"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31145"
+msgid "Effects"
+msgstr "Эффекты"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31146"
+msgid "Leaves"
+msgstr "Листопад"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31147"
+msgid "Confetti"
+msgstr "Конфетти"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31148"
+msgid "Valentine"
+msgstr "Валентинки"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31149"
+msgid "Easter"
+msgstr "Пасха"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables_Themes.xml
+msgctxt "#31150"
+msgid "Concrete"
+msgstr "Бетон"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31151"
+msgid "Media menu"
+msgstr "Медиаменю"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31152"
+msgid "Focus icon"
+msgstr "Значек в фокусе"
+
+#: /16x9/Variables.xml
+msgctxt "#31153"
+msgid "PVR channels"
+msgstr "Всего каналов"
+
+#: /16x9/Variables.xml /shortcuts/overrides.xml
+msgctxt "#31154"
+msgid "Movies and TV shows"
+msgstr "Фильмы и Сериалы"
+
+#: /16x9/Variables.xml /shortcuts/overrides.xml
+msgctxt "#31155"
+msgid "Video and music add-ons"
+msgstr "Музыкальные и Видео дополнения"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31156"
+msgid "Weather icon"
+msgstr "Иконки погоды"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31157"
+msgid "Nofocus text"
+msgstr "Текст не в фокусе"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31158"
+msgid "Nofocus icon"
+msgstr "Иконка не в фокусе"
+
+#: /16x9/SkinSettings.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31159"
+msgid "Now playing progress"
+msgstr "Индикатор воспроизведения на панели"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31160"
+msgid "Top bar / Main menu bars"
+msgstr "Верхняя панель / Панель главного меню"
+
+#: 31160 /16x9/Includes_CustomSelect.xml
+msgctxt "#31161"
+msgid "Extended info"
+msgstr "Расширенная информация"
+
+#: /16x9/Variables.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31162"
+msgid "Character art"
+msgstr "Персонаж"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31163"
+msgid "Prefer info"
+msgstr "Предпочтительная информация"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31164"
+msgid "Blur background"
+msgstr "Размытый фон"
+
+#: /16x9/Variables.xml /16x9/Includes_CustomSelect.xml
+msgctxt "#31165"
+msgid "Clear art"
+msgstr "Прозрачное изображение"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31166"
+msgid "Replace play with cinema mode"
+msgstr "Заменить режимом кино"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31167"
+msgid "Library backgrounds"
+msgstr "Имеющиеся фоны"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31168"
+msgid "Tool tips"
+msgstr "Инструментарий"
+
+#: /16x9/Includes_MediaMenu.xml /16x9/Custom_1110_CustomSelectContainer.xml
+msgctxt "#31169"
+msgid "Music info"
+msgstr "Инфо."МУЗЫКА"
+
+#: /16x9/Includes_MediaMenu.xml /16x9/Custom_1110_CustomSelectContainer.xml
+msgctxt "#31170"
+msgid "Audio info"
+msgstr "Аудио инфо."
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31171"
+msgid "Glass"
+msgstr "Стекло"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31172"
+msgid "CD clear"
+msgstr "Обычный CD"
+
+#: /16x9/Variables.xml /shortcuts/mainmenu.DATA.xml /shortcuts/overrides.xml
+msgctxt "#31173"
+msgid "Live TV"
+msgstr "ТВ трансляция"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31174"
+msgid "Disabled text"
+msgstr "Недоступный текст"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31175"
+msgid "Default texture"
+msgstr "Текстура по умолчанию"
+
+#: 31175 /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31176"
+msgid "case"
+msgstr "обложка"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31177"
+msgid "Visualisation music info"
+msgstr "Визуализация музыкальной инфо."
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31178"
+msgid "Visualisation audio info"
+msgstr "Визуализация аудио инфо."
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31179"
+msgid "fanart"
+msgstr "фанарт"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31180"
+msgid "Audio background"
+msgstr "Фон музыки"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31181"
+msgid "Video background"
+msgstr "Фон видео"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31182"
+msgid "Vinyl"
+msgstr "Виниловая пластинка"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31183"
+msgid "Blu-ray"
+msgstr "Диск Blu-ray"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31184"
+msgid "White"
+msgstr "Белый"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31185"
+msgid "Blue"
+msgstr "Голубой"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31186"
+msgid "Golden"
+msgstr "Золотистый"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31187"
+msgid "Green"
+msgstr "Зелёный"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31188"
+msgid "Grey"
+msgstr "Серый"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31189"
+msgid "Orange"
+msgstr "Оранжевый"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31190"
+msgid "Purple"
+msgstr "Пурпурный"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31191"
+msgid "Red"
+msgstr "Красный"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31192"
+msgid "Skin helper extended art"
+msgstr "Дополнительные изображения"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31193"
+msgid "On info"
+msgstr "В строке "Информация""
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Variables.xml
+msgctxt "#31194"
+msgid "Persistant"
+msgstr "Постоянно"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31195"
+msgid "Animated"
+msgstr "Анимация"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31196"
+msgid "Background now playing info"
+msgstr "Информация на фоне(сейчас проигрывается)"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31197"
+msgid ""
+msgstr ""
+
+: /16x9/Variables.xml
+msgctxt "#31198"
+msgid "Forward"
+msgstr "Перемотка вперед"
+
+#: /16x9/Variables.xml
+msgctxt "#31199"
+msgid "Rewind"
+msgstr "Перемотка назад"
+
+#: /16x9/Variables.xml
+msgctxt "#31200"
+msgid "Internet stream"
+msgstr "Интернет поток"
+
+#: /16x9/Variables.xml
+msgctxt "#31201"
+msgid "Landscape"
+msgstr "Эскиз"
+
+#: /16x9/Variables.xml
+msgctxt "#31202"
+msgid "Clear logo"
+msgstr "Логотип"
+
+#: /16x9/Variables.xml
+msgctxt "#31203"
+msgid "Portrait"
+msgstr "Портретный эскиз"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31204"
+msgid "Recently released"
+msgstr "Последний релиз"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31205"
+msgid "Recommended"
+msgstr "Рекомендации"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31206"
+msgid "Most played"
+msgstr "Популярные"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31207"
+msgid "Position"
+msgstr "Позиция"
+
+#: /16x9/Variables.xml /16x9/Custom_1110_CustomSelectContainer.xml
+msgctxt "#31208"
+msgid "Bottom"
+msgstr "Нижняя часть"
+
+#: /16x9/Variables.xml /shortcuts/overrides.xml
+msgctxt "#31209"
+msgid "Top"
+msgstr "Верх"
+
+#: /16x9/Variables.xml /16x9/Custom_1110_CustomSelectContainer.xml
+msgctxt "#31210"
+msgid "Big"
+msgstr "Увеличенный"
+
+#: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
+msgctxt "#31211"
+msgid "Movie/TV show info"
+msgstr "Информация ФИЛЬМЫ/СЕРИАЛЫ"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31212"
+msgid "Big list"
+msgstr "Увеличенный список"
+
+#: /16x9/View_050_PosterList.xml /16x9/Custom_1115_ViewSettings.xml /16x9/Includes_MediaFlags.xml
+msgctxt "#31213"
+msgid "Poster list"
+msgstr "Список постеров"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31214"
+msgid "Reflect"
+msgstr "Отражение"
+
+#: /16x9/View_051_SimpleList.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31215"
+msgid "Simple list"
+msgstr "Простой список"
+
+#: /16x9/View_501_BigSimpleList.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31216"
+msgid "Big simple list"
+msgstr "Увеличенный простой список"
+
+#: /16x9/View_052_TwinList.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31217"
+msgid "Twin list"
+msgstr "Двойной список"
+
+#: /16x9/View_502_BigTwinList.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31218"
+msgid "Big twin list"
+msgstr "Увеличенный двойной список"
+
+#: /16x9/View_053_InfoList1.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31219"
+msgid "Info list 1"
+msgstr "Информация-I"
+
+#: /16x9/View_503_BigInfoList1.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31220"
+msgid "Big info list 1"
+msgstr "Увеличенный "Информация-I""
+
+#: /16x9/View_054_InfoList1.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31221"
+msgid "Info list 2"
+msgstr "Информация-II"
+
+#: /16x9/View_504_BigInfoList1.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31222"
+msgid "Big info list 2"
+msgstr "Увеличенный "Информация-II""
+
+#: /16x9/View_55_LowList.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31223"
+msgid "Low list"
+msgstr "Нижний список"
+
+#: /16x9/View_505_LowList.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31224"
+msgid "Big low list"
+msgstr "Увеличенный нижний список"
+
+#: /16x9/View_56_3Panel.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31225"
+msgid "3 panel"
+msgstr "Три панели"
+
+#: /16x9/View_506_Big3Panel.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31226"
+msgid "Big 3 panel"
+msgstr "Увеличенные три панели"
+
+#: /16x9/Variables.xml
+msgctxt "#31227"
+msgid "Premiered"
+msgstr "Премьера"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31228"
+msgid "Video preview window"
+msgstr "Превью видео"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31229"
+msgid "Icon size"
+msgstr "Размер значков"
+
+#: /16x9/View_553_ShowCase.xml
+msgctxt "#31230"
+msgid "Showcase"
+msgstr "Витрина"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31231"
+msgid "2 thumbs"
+msgstr "2 эскиза"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31232"
+msgid "4 thumbs"
+msgstr "4 эскиза"
+
+#: /16x9/View_57_3PanelSquare.xml /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31233"
+msgid "3 panel square"
+msgstr "3 панели (квадрат)"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31234"
+msgid "Media flags"
+msgstr "Инфо. значки"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31235"
+msgid "Small icons"
+msgstr "Маленькие значки"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31236"
+msgid "Album case"
+msgstr "Обложка CD"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31237"
+msgid "Video case"
+msgstr "Обложка DVD/Blu-ray"
+
+#: /16x9/View_051_SimpleList.xml
+msgctxt "#31238"
+msgid "Cover list"
+msgstr "Список обложек"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31239"
+msgid "Cover flow portrait"
+msgstr "Лента изображений"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31240"
+msgid "Press up for info"
+msgstr "стрелка "вверх" для информации "
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31241"
+msgid "Cover flow square"
+msgstr "Цветные обложки"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31242"
+msgid "Cover flow banner"
+msgstr "Лента баннеров"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31243"
+msgid "Cover flow landscape"
+msgstr "Цветные эскизы"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31244"
+msgid "Open case"
+msgstr "Открыть упаковку"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31245"
+msgid "Focus"
+msgstr "Фокус"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31246"
+msgid "Cascade"
+msgstr "Каскад"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31247"
+msgid "Kodiflix"
+msgstr ""
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31248"
+msgid "Portrait icon"
+msgstr "Портретные значки"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31249"
+msgid "Banner icon"
+msgstr "Значки баннеров"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31250"
+msgid "Landscape icon"
+msgstr "Значки эскизов"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31251"
+msgid "Portrait icon info"
+msgstr "Портретные значки банеров"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31252"
+msgid "Banner icon info"
+msgstr "Инфо. значки баннеров"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31253"
+msgid "Landscape icon info"
+msgstr "Инфо. значки эскизов"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31254"
+msgid "Portrait wall"
+msgstr "Стена портретов"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31255"
+msgid "Square wall"
+msgstr "Квадратная стена"
+
+#: /16x9/View_542_BannerWall.xml
+msgctxt "#31256"
+msgid "Banner wall"
+msgstr "Стена баннеров"
+
+#: /16x9/View_543_LandscapeWall.xml
+msgctxt "#31257"
+msgid "Landscape wall"
+msgstr "Стена эскизов"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31258"
+msgid "Focus square"
+msgstr "Эскиз в фокусе"
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31259"
+msgid "Cover"
+msgstr "Список"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31260"
+msgid "Square icon"
+msgstr "Квадратный значок"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31261"
+msgid "Square icon info"
+msgstr "Квадратный инфо. значок"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31262"
+msgid "Kodiflix square"
+msgstr "Kodiflix квадрат"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31263"
+msgid "Cascade square"
+msgstr "Каскад обложек"
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31264"
+msgid "Showcase square"
+msgstr "Постер"
+
+#: /16x9/Custom_1115_ViewSettings.xml
+msgctxt "#31265"
+msgid "Kodiflix landscape"
+msgstr "Kodiflix эскизы "
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31266"
+msgid "Simple"
+msgstr "Простой список"
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31267"
+msgid "Info 1"
+msgstr "Информация-I"
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31268"
+msgid "Info 2"
+msgstr "Информация-II"
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31269"
+msgid "Cover flow"
+msgstr "Лента обложек"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31270"
+msgid "Enable/Disable views"
+msgstr "Вкл./Выкл. опции просмотра"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31271"
+msgid "Icon info"
+msgstr "Инфо. значки"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31272"
+msgid "Wall"
+msgstr "Стена"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31273"
+msgid "Info delay"
+msgstr "Задержка показа инфо."
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31274"
+msgid "Install genre icons"
+msgstr "Установить значки жанра"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31275"
+msgid "B/W genre icons"
+msgstr "Ч/Б иконки жанра"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31276"
+msgid "Install colour genre icons"
+msgstr "Установить цветные значки жанра"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31277"
+msgid "Install B/W genre icons"
+msgstr "Ч/Б значки жанра"
+
+#: /16x9/View_058_BannerList.xml
+msgctxt "#31278"
+msgid "Banner list"
+msgstr "Список баннеров"
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31279"
+msgid "Right"
+msgstr "Правый список"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31280"
+msgid "Next aired"
+msgstr "Следующий эфир"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31281"
+msgid "Panels"
+msgstr "Панели"
+
+#: /16x9/Variables_Themes.xml
+msgctxt "#31282"
+msgid "Mud"
+msgstr "Размытие"
+
+#: /16x9/Variables_Themes.xml
+msgctxt "#31283"
+msgid "Plain"
+msgstr "Простой"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31284"
+msgid "Shadow texture"
+msgstr "Текстура тени"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31285"
+msgid "Themes & Colours"
+msgstr "Темы и Цвета"
+
+#: /16x9/Home.xml
+msgctxt "#31286"
+msgid "Menus"
+msgstr "Меню"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31287"
+msgid "Shortcut menu"
+msgstr "Контекстное меню"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31288"
+msgid "Hide"
+msgstr "Скрыть"
+
+#: /16x9/script-skinshortcuts.xml
+msgctxt "#31289"
+msgid "Widget"
+msgstr "Виджет"
+
+#: /16x9/script-skinshortcuts.xml
+msgctxt "#31290"
+msgid "Aspect"
+msgstr "Соотношение сторон"
+
+#: /16x9/script-skinshortcuts.xml
+msgctxt "#31291"
+msgid "Music case"
+msgstr "Обложка альбома"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31292"
+msgid "Custom favourites"
+msgstr "Индивидуальные настройки "ИЗБРАННОГО""
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31293"
+msgid "Favourite"
+msgstr "Избранные"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31294"
+msgid "Custom favourite addons"
+msgstr "Индивидуальные настройки "ДОПОЛНЕНИЯ""
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31295"
+msgid "Cinema mode"
+msgstr "Стиль "Кино""
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31296"
+msgid "Trailer count"
+msgstr "Количество трейлеров"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31297"
+msgid "Intro path"
+msgstr "Путь к медиазаставке"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31298"
+msgid "Select theme"
+msgstr "Выбор темы"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31299"
+msgid "Video discart fallback"
+msgstr "Тип диска "ВИДЕО""
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31300"
+msgid "Customise"
+msgstr "Настройки"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31301"
+msgid "Channel number"
+msgstr "Номер канала"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31302"
+msgid "Channel name"
+msgstr "Имя канала"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31303"
+msgid "Repository"
+msgstr "Хранилище"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31304"
+msgid "Progress bar"
+msgstr "Индикатор воспроизведения"
+
+#: /16x9/DialogPVRChannelManager.xml
+msgctxt "#31305"
+msgid "Apply"
+msgstr "Применить"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31306"
+msgid "TV Show season cover background"
+msgstr "Обложки сериалов на фоне"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31307"
+msgid "Genre cover background"
+msgstr "Обложки жанров на фоне"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31308"
+msgid "Artist album cover background"
+msgstr "Обложка CD на фоне"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31309"
+msgid "Cover background"
+msgstr "CD на фоне"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31310"
+msgid "Fanart rotation speed"
+msgstr "Время смены фанарта"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31311"
+msgid "seconds"
+msgstr "секунды"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31312"
+msgid "Fullscreen audio"
+msgstr "Музыка во весь экран"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31313"
+msgid "Jump to letter"
+msgstr "Выбор по букве"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31314"
+msgid "Disable library fanart"
+msgstr "Отключить фанарт исполнителя"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31315"
+msgid "Music background"
+msgstr "Фон музыки"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31316"
+msgid "Stream/Radio background"
+msgstr "Поток/Радио в фоне"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31317"
+msgid "PVR status"
+msgstr "Информация PVR"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31318"
+msgid "TV status"
+msgstr "Информация TV"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31319"
+msgid "Radio status"
+msgstr "Информация Радио"
+
+#: /16x9/script-skinshortcuts.xml
+msgctxt "#31320"
+msgid "TV widget"
+msgstr "Виджет TV"
+
+#: /16x9/script-skinshortcuts.xml
+msgctxt "#31321"
+msgid "Radio widget"
+msgstr "Виджет Радио"
+
+#: /16x9/script-skinshortcuts.xml
+msgctxt "#31322"
+msgid "PVR widget"
+msgstr "Виджет PVR"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31323"
+msgid "Video info"
+msgstr "Инфо."ВИДЕО"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31324"
+msgid "Movie/Episode case"
+msgstr "Обложка для ФИЛЬМ/СЕРИЯ"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31325"
+msgid "Movie/TV show case"
+msgstr "Обложка Фильм/Сериал"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31326"
+msgid "Music video case"
+msgstr "Обложка для МУЗЫКАЛЬНОЕ ВИДЕО"
+
+#: /16x9/Includes_NowPlaying.xml
+msgctxt "#31327"
+msgid "Special"
+msgstr "Специальный"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31328"
+msgid "Show media flags"
+msgstr "Показать медиазначки"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31329"
+msgid "Show cover"
+msgstr "Показать обложку"
+
+#: /16x9/Custom_1111_CustomSelectGrouplist.xml
+msgctxt "#31330"
+msgid "Video info settings"
+msgstr "Настройки информации видео"
+
+#: /16x9/VideoOSDBookmarks.xml
+msgctxt "#31331"
+msgid "Create"
+msgstr "Создать"
+
+#: /16x9/VideoOSDBookmarks.xml
+msgctxt "#31332"
+msgid "Set episode"
+msgstr "Выбрать эпизод"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31333"
+msgid "Seek icon"
+msgstr "Значок поиска"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31334"
+msgid "Visualisation presets"
+msgstr "Предустановки визуализации"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31335"
+msgid "Visualisation options"
+msgstr "Параметры визуализации"
+
+#: /16x9/Custom_1111_CustomSelectGrouplist.xml
+msgctxt "#31336"
+msgid "Music settings"
+msgstr "Настройки музыки"
+
+#: /16x9/Custom_1111_CustomSelectGrouplist.xml
+msgctxt "#31337"
+msgid "Audio view settings"
+msgstr "Настройки отображения музыки "
+
+#: /16x9/Custom_1111_CustomSelectGrouplist.xml
+msgctxt "#31338"
+msgid "Video view settings"
+msgstr "Настройка отображения информации "ВИДЕО""
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31339"
+msgid "Contributors"
+msgstr "Создатели"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31340"
+msgid "Rate"
+msgstr "Рейтинг"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31341"
+msgid "Next episode"
+msgstr "Следующий эпизод"
+
+#: /16x9/Includes_Temp.xml
+msgctxt "#31342"
+msgid "Movies and TV Shows starring"
+msgstr "Фильмы и Сериалы с участием"
+
+#: /16x9/Includes_Temp.xml
+msgctxt "#31343"
+msgid "Directed by"
+msgstr "Режиссер"
+
+#: /16x9/Includes_Temp.xml
+msgctxt "#31344"
+msgid "More movies directed by"
+msgstr "Еще фильмы режиссера"
+
+#: /16x9/Includes_Temp.xml
+msgctxt "#31345"
+msgid "Written by"
+msgstr "Сценарист"
+
+#: /16x9/Includes_Temp.xml
+msgctxt "#31346"
+msgid "More movies written by"
+msgstr "Еще фильмы сценариста"
+
+#: /16x9/Includes_Temp.xml
+msgctxt "#31347"
+msgid "More like this"
+msgstr "Похожие"
+
+#: /16x9/Includes_Temp.xml
+msgctxt "#31348"
+msgid "No information available."
+msgstr "Нет доступной информации."
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31349"
+msgid "Info dialog"
+msgstr "Информационный диалог"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31350"
+msgid "Music info settings"
+msgstr "Настройка отображения информации "МУЗЫКА""
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31351"
+msgid "TMDb info"
+msgstr "Информация TMDb"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31352"
+msgid "TMDb actor info"
+msgstr "Информация о актерах TMDb"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31353"
+msgid "Artist slideshow"
+msgstr "Слайдшоу исполнителя"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31354"
+msgid "Artist slideshow settings"
+msgstr "Настройки слайдшоу исполнителя"
+
+#: /16x9/Custom_1110_CustomSelectContainer.xml
+msgctxt "#31355"
+msgid "Stream/Radio now playing background"
+msgstr "Поток/Радио сечас проигрывается в фоне"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31356"
+msgid "Global now playing"
+msgstr "Сейчас проигрывается (глобально)"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31357"
+msgid "Panel texture"
+msgstr "Текстура панели"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31358"
+msgid "Background texture"
+msgstr "Текстура фона"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31359"
+msgid "Main menu texture"
+msgstr "Текстура главного меню"
+
+#: /16x9/Includes_Topbar.xml
+msgctxt "#31360"
+msgid "Filtered"
+msgstr "Отфильтровано"
+
+#: /16x9/Custom_1110_CustomSelectContainer.xml
+msgctxt "#31361"
+msgid "Now playing music discart fallback"
+msgstr "Дополнительный CD"
+
+#: /16x9/Custom_1110_CustomSelectContainer.xml
+msgctxt "#31362"
+msgid "Now playing video discart fallback"
+msgstr "Дополнительный DVD/Blu-ray"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31363"
+msgid "Watched status"
+msgstr "Статус просмотра"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31364"
+msgid "Unwatched episode count"
+msgstr "Кол-во непросмотренных серий"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31365"
+msgid "Widget watched status"
+msgstr "Статус просмотра в виджетах"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31366"
+msgid "Movies starring"
+msgstr "Фильмы с участием"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31367"
+msgid "TV Shows starring"
+msgstr "Сериалы с участием"
+
+#: /16x9/script-embuary-video.xml
+msgctxt "#31368"
+msgid "Crew"
+msgstr "Группа"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31369"
+msgid "Crew"
+msgstr "Группа"
+
+#: /16x9/Custom_1112_Search.xml
+msgctxt "#31370"
+msgid "Search results for"
+msgstr "Поиск  по"
+
+#: /16x9/Custom_1112_Search.xml
+msgctxt "#31371"
+msgid "Music video artists"
+msgstr "Исполнители"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31372"
+msgid "Time remaining"
+msgstr "Времени осталось"
+
+#: /16x9/Includes_ViewsVariables.xml
+msgctxt "#31373"
+msgid "Labels"
+msgstr "Ярлыки"
+
+#: /16x9/script-skinshortcuts.xml
+msgctxt "#31374"
+msgid "Cover background settings"
+msgstr "Настройки фоновой обложкм"
+
+#: /16x9/Settings.xml
+msgctxt "#31375"
+msgid "Management"
+msgstr "Управление"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31376"
+msgid "Next button"
+msgstr "Следующий виджет"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31377"
+msgid "HDR/SDR"
+msgstr "HDR/SDR"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31378"
+msgid "Bit depth"
+msgstr "Глубина (Bit)"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31379"
+msgid "Dim background"
+msgstr "Затемнение фона"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31380"
+msgid "Now playing dim background"
+msgstr "Затемнение (%) "Сейчас проигрывается""
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31381"
+msgid "Appeared in"
+msgstr "Учавствовал в"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31382"
+msgid "Press up for actor info"
+msgstr "Стрелка вверх - информация об актере"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31383"
+msgid "Press up for library items by actor"
+msgstr "Стрелка вверх - фильмография актера"
+
+#: /16x9/Includes_CustomSelect.xml
+msgctxt "#31384"
+msgid "Source flags"
+msgstr "Значки ресурсов"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31385"
+msgid "Limit"
+msgstr "Ограничить"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31386"
+msgid "Coloured media flags"
+msgstr "Цветные значки"
+
+#: /shortcuts/overrides.xml
+msgctxt "#31387"
+msgid "Recently released (include watched)"
+msgstr "Недавно выпущенные (включая просмотренные)"
+
+#: SKIN SETTINGS DESCRIPTIONS /16x9/Includes_Settings.xml
+msgctxt "#31901"
+msgid "Customisation of the home screen, widgets and shortcuts menu."
+msgstr "Настройка главного экрана, виджетов и контекстного меню."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31902"
+msgid "Helper script to provide extra skin features and functions, including additional widgets, cinema mode and blurred backgrounds."
+msgstr "Сценарий для предоставления дополнительных функций и возможностей скина, включая дополнительные виджеты, режим кино и размытый фон."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31903"
+msgid "Provides colour selection."
+msgstr "Обеспечивает выбор цвета."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31904"
+msgid "Install and select image addons."
+msgstr "Установить и выберать аддоны изображений."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31905"
+msgid "Automatically adds extra artwork for media in your media libraries."
+msgstr "Автоматически добавляет дополнительные изображения для медиафайлов в ваши медиабиблиотеки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31906"
+msgid "Next aired library information and widgets."
+msgstr "Далее в эфире (информация и виджеты)."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31907"
+msgid "Lyrics for music. Required to enable animated lyrics."
+msgstr "Тексты. Требуется для включения анимированных текстов песен."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31908"
+msgid "Sync your collection and watched status with trakt.tv."
+msgstr "Синхронизируйте свою коллекцию и статус просмотра с trakt.tv."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31909"
+msgid "TMDb information dialogs and widgets."
+msgstr "Информационные диалоговые окна и виджеты TMDb."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31910"
+msgid "Create a custom favourite from selected kodi favourites."
+msgstr "Создайте собственный список избранного из избранного фаворитов KODI."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31911"
+msgid "Edit the home screen menu, widgets, backgrounds and infolines."
+msgstr "Редактируйте меню главного экрана, виджеты, фон и информационные строки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31912"
+msgid "Reset the home screen menu, widgets, backgrounds and infolines to default."
+msgstr "Сброс меню главного экрана, виджетов, фона и информационные сообщения до значений по умолчанию."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31913"
+msgid "Create a custom favourite from selected kodi favourites. For use in main menu widgets. Requires script favourites to be installed."
+msgstr "Создайте собственный список избранного из избранных фаворитов KODI. Для использования в виджетах главного меню. Требуется установка скрипта."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31914"
+msgid "Create a custom addon favourite from installed addons. For use in main menu widgets."
+msgstr "Создайте свой любимый аддон из установленных аддонов. Для использования в виджетах главного меню."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31915"
+msgid "Reset the skin theme and colours to default."
+msgstr "Сброс темы оформления и цвета по умолчанию."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31916"
+msgid "Select from a list of pre-defined themes."
+msgstr "Выбор из списка предопределенных тем."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31917"
+msgid "Lock preferences to disable view mode, view options, info dialog and fullscreen settings."
+msgstr "Заблокируйте настройки, чтобы отключить режим просмотра, параметры просмотра, информационный диалог и полноэкранные настройки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31918"
+msgid "Customise the home screen, favourites, predefined themes and kiosk mode."
+msgstr "Настройте домашний экран, избранное, предопределенные темы и режим киоска."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31919"
+msgid "Change skin theme textures."
+msgstr "Измените текстуры темы скина."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31920"
+msgid "Customise the skin texture colours."
+msgstr "Настройте цвета текстуры скина."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31921"
+msgid "Customise the background and fallbacks for specific skin areas."
+msgstr "Настройте фон и альтернативные варианты для определенных участков скина."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31922"
+msgid "Enable or disable various skin features."
+msgstr "Включение или отключение различных функций скина."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31923"
+msgid "Customise artwork and install supported artwork packs."
+msgstr "Настраивайте изображения и устанавливайте поддерживаемые пакеты изображений."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31924"
+msgid "Install and configure supported addons."
+msgstr "Установите и настройте поддерживаемые дополнения."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31925"
+msgid "Enable and disable library views. Disabling library views on low spec systems may improve performance."
+msgstr "Включение и отключение обложек из библиотеки. Отключение обложек библиотеки в системах с низкими характеристиками может улучшить производительность."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31926"
+msgid "Shows scroll letter when scrolling in library views."
+msgstr "Показывает букву алфавита при прокрутке библиотеки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31927"
+msgid "Shows the alphabet to jump to a position of the container. Will only work for default sorting methods."
+msgstr "Отображает алфавит для перехода к позиции выбора. Будет работать только для методов сортировки по умолчанию."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31928"
+msgid "Shows plot outline for tv shows and movies if available, otherwise will display the default plot."
+msgstr "Отображает сюжет для телешоу и фильмов, если таковой имеется, в противном случае - сюжет по умолчанию."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31929"
+msgid "Auto scroll the plot if it does not fit the control dimensions."
+msgstr "Автоматическая прокрутка, если есть несоответствие контрольным размерам."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31930"
+msgid "Enable the shortcut menu for instant access to specific skin areas. In the media menu click left to open or click on the shortcut icon."
+msgstr "Включите контекстное меню для мгновенного доступа к определенным настройкам обложки. В меню мультимедиа щелкните влево, чтобы открыть, или щелкните на значок ярлыка."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31931"
+msgid "Edit the shortcut menu."
+msgstr "Отредактируйте контекстное меню."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31932"
+msgid "Enable and disable the topbar elements."
+msgstr "Включение и отключение элементов верхней панели."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31933"
+msgid "Change video info settings."
+msgstr "Измените настройки информации о видео."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31934"
+msgid "Change music info settings."
+msgstr "Измените настройки информации о музыке."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31935"
+msgid "Change fullscreen video settings."
+msgstr "Измените настройки полноэкранного видео."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31936"
+msgid "Change fullscreen audio settings."
+msgstr "Измените настройки полноэкранного вида музыки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31937"
+msgid "Reduce the size of pop up notifications."
+msgstr "Уменьшите размер всплывающих уведомлений."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31938"
+msgid "Darkens the screen behind dialog popups. Not applicable for fullscreen video or audio."
+msgstr "Затемняет экран за всплывающими диалоговыми окнами. Неприменимо для полноэкранного видео или аудио."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31940"
+msgid "Enable coloured icons for the topbar, media information and library views."
+msgstr "Включите цветные значки для верхней панели, информации о мультимедиа и представлений библиотеки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31941"
+msgid "Enable coloured, HDR, bit depth and language media flags."
+msgstr "Включите цветные флажки, HDR, битовую глубину и языковые флаги мультимедиа."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31943"
+msgid "Audio cd art fallback skin wide."
+msgstr "Резервный CDart "Музыка""
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31944"
+msgid "Video cd art fallback skin wide."
+msgstr "Резервный CDart "Видео""
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31945"
+msgid "Select and install a weather icon pack for the topbar, widgets and weather."
+msgstr "Выберите и установите пакет значков погоды для верхней панели, виджетов и погоды."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31946"
+msgid "Select and install a weather fanart pack for the backgrounds, widgets and weather."
+msgstr "Выберите и установите набор фан-артов о погоде для фона, виджетов и погоды."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31947"
+msgid "Install white studio icons for use throughout the skin."
+msgstr "Установите ч/б значки студий для использования по всему скину."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31948"
+msgid "Install coloured studio icons for use throughout the skin."
+msgstr "Установите светные значки студий для использования по всему скину."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31949"
+msgid "Install record label icons for use throughout the skin."
+msgstr "Установите значки студий звукозаписи для использования на всей поверхности."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31950"
+msgid "Install language flags for library views and subtitle selection."
+msgstr "Установите языковые флаги для просмотра библиотеки и выбора субтитров."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31951"
+msgid "Install music genre icons for music and music videos."
+msgstr "Установите значки музыкальных жанров для музыки и музыкальных клипов."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31952"
+msgid "Install coloured movie genre icons for movies and tv shows."
+msgstr "Установите цветные значки музыкальных жанров для музыки и музыкальных клипов."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31953"
+msgid "Install black and white movie genre icons for movies and tv shows."
+msgstr "Установите ч/б значки музыкальных жанров для музыки и музыкальных клипов."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31954"
+msgid "Install country icons for movies country node."
+msgstr "Установите значки стран для показа флага государства."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31955"
+msgid "Set the delay between fanart transitions skin wide."
+msgstr "Установите значки стран для фильмов."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31956"
+msgid "Falling background effects. Snow, Leaves etc."
+msgstr "Фоновые эффекты. Снег, Листья и т. Д."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31957"
+msgid "Show music fanart of currently playing item skin wide. Overrides library fanart."
+msgstr "Показать обложку музыкального фан-арта текущего воспроизводимого произведения."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31958"
+msgid "Enables music visualisation in background while playing music. Requires visualisation to be enabled in settings - Player settings/Music."
+msgstr "Показать сейчас воспроизводимое видео в фоновом режиме при просмотре библиотеки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31959"
+msgid "Show now playing video in background while browsing library. Overrides library fanart."
+msgstr "Показать сейчас воспроизводимое видео в фоновом режиме при просмотре библиотеки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31960"
+msgid "Download images and additional information from fanart.tv and theaudiodb.com of the currently playing artist. For fullscreen music, internet streams and radio."
+msgstr "Загрузите изображения и дополнительную информацию с fanart.tv и theaudiodb.com исполнителя, который играет в данный момент."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31961"
+msgid "Show stream/radio fanart of currently playing item skin wide. Overrides library fanart."
+msgstr "Показать стрим / радио фанарт сейчас проигрываемого . Переопределяет фан-арт библиотеки."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31962"
+msgid "Artist slideshow script settings."
+msgstr "Настройки скрипта слайд-шоу."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31963"
+msgid "A shortcut to the video playlist if not empty."
+msgstr "Ярлык для списка воспроизведения видео, если он не пустой."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31964"
+msgid "A shortcut to the music playlist if not empty."
+msgstr "Ярлык для музыкального плейлиста, если он не пустой."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31965"
+msgid "Shortcut to fullscreen when media is playing."
+msgstr "Ярлык для полноэкранного режима при воспроизведении."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31966"
+msgid "Click to open shortcut menu."
+msgstr "Щелкните, чтобы открыть контекстное меню."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31967"
+msgid "Player controls when media is playing."
+msgstr "Кнопки управление плеером при воспроизведении."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31968"
+msgid "Play the next tvshow episode automatically."
+msgstr "Автоматически воспроизвести следующий."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31969"
+msgid "Play themes while navigating TV Shows, Movies and Music Videos."
+msgstr "Воспроизведение музыкальных тем при просмотре телешоу, фильмов и музыкальных видеоклипов."
+
+#: /16x9/Includes_NowPlaying.xml
+msgctxt "#31970"
+msgid "Information about performers"
+msgstr "Сведения о исполнителях"
+
+#: /16x9/Includes_NowPlaying.xml
+msgctxt "#31971"
+msgid "Genre"
+msgstr "Жанр"
+
+#: /16x9/Custom_1116_ViewMode.xml
+msgctxt "#31972"
+msgid "Bottom list"
+msgstr "Нижний список"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31973"
+msgid "Temporarily enable skin debugging"
+msgstr "Временно включить отладку"
+
+#: /16x9/Includes_NowPlaying.xml
+msgctxt "#31974"
+msgid "Next track"
+msgstr "Следующий трек"
+
+#: /16x9/Includes_MediaMenu.xml
+msgctxt "#31975"
+msgid "ClearArt / Logo"
+msgstr "ClearArt / Логотип"
+
+#: /16x9/DialogContextMenu.xml
+msgctxt "#31976"
+msgid "Search YouTube"
+msgstr "Искать на YouTube"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31977"
+msgid "White studio icons"
+msgstr "Ч/Б значки студий"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31978"
+msgid "Coloured studio icons"
+msgstr "Цветные значки студий"
+
+#: /16x9/SkinSettings.xml
+msgctxt "#31979"
+msgid "White record label icons"
+msgstr "Ч/Б значки студий звукозаписи"
+
+#: /16x9/Includes_InfoDialogs.xml
+msgctxt "#31980"
+msgid "Albums featuring"
+msgstr "Альбомы с участием"
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31981"
+msgid "Name"
+msgstr "Название"

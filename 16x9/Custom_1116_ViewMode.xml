@@ -53,28 +53,28 @@
 				<control type="button" id="155">
 					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(musicvideos)</visible>
 					<visible>!Window.IsVisible(MyPlaylist.xml) + !Skin.HasSetting(DisableViewLow)</visible>
-					<label>$LOCALIZE[391]</label>
+					<label>$LOCALIZE[31972]</label>
 					<onclick>Container.SetViewMode(55)</onclick>
 					<include>MediaMenuButtonViewType</include>
 				</control>
 				<control type="button" id="156">
 					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 					<visible>!Window.IsVisible(MyPlaylist.xml) + !Skin.HasSetting(DisableView3Panel)</visible>
-					<label>$LOCALIZE[31225]</label>
+					<label>$LOCALIZE[31233]</label>
 					<onclick>Container.SetViewMode(56)</onclick>
 					<include>MediaMenuButtonViewType</include>
 				</control>
 				<control type="button" id="157">
 					<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(addons) | Container.Content(musicvideos)</visible>
 					<visible>!Window.IsVisible(MyPlaylist.xml) + !Skin.HasSetting(DisableView3PanelSquare)</visible>
-					<label>$LOCALIZE[31233]</label>
+					<label>$LOCALIZE[31225]</label>
 					<onclick>Container.SetViewMode(57)</onclick>
 					<include>MediaMenuButtonViewType</include>
 				</control>
 				<control type="button" id="158">
 					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)</visible>
 					<visible>!Window.IsVisible(MyPlaylist.xml) + !Skin.HasSetting(DisableViewRightList)</visible>
-					<label>$LOCALIZE[31279]</label>
+					<label>$LOCALIZE[31071]</label>
 					<onclick>Container.SetViewMode(58)</onclick>
 					<include>MediaMenuButtonViewType</include>
 				</control>

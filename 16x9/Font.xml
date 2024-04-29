@@ -3,8 +3,43 @@
 	<fontset id="Default" idloc="15109">
 		<!-- Regular Fonts (OpenSans-Regular.ttf) -->
 		<font>
+			<name>Digi</name>
+			<filename>Digi.ttf</filename><br/>
+            <size>38</size>
+		</font>
+		<font>
+			<name>DigiTV</name>
+			<filename>Digi.ttf</filename><br/>
+            <size>26</size>
+		</font>
+		<font>
+			<name>Font20_Reg_0.7</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<linespacing>0.7</linespacing>
+			<size>20</size>
+		</font>
+		<font>
+			<name>font10</name>
+			<filename>OpenSansCond.ttf</filename>
+			<style>uppercase</style>
+			<size>22</size>
+			<linespacing>0.90</linespacing>
+		</font>
+		<font>
+			<name>Font22_Reg_09</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>22</size>
+		</font>
+		<font>
 			<name>Font22_Reg</name>
 			<filename>OpenSans-Regular.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font22_Reg_110</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<linespacing>1.2</linespacing>
 			<size>22</size>
 		</font>
 		<font>
@@ -12,12 +47,6 @@
 			<filename>OpenSans-Regular.ttf</filename>
 			<linespacing>1.33</linespacing>
 			<size>22</size>
-		</font>
-		<font>
-			<name>Font20_Reg_0.7</name>
-			<filename>OpenSans-Regular.ttf</filename>
-			<linespacing>0.7</linespacing>
-			<size>20</size>
 		</font>
 		<font>
 			<name>Font23_Reg</name>
@@ -30,6 +59,12 @@
 			<size>25</size>
 		</font>
 		<font>
+			<name>Font26_Reg_08</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<linespacing>0.8</linespacing>
+			<size>24</size>
+		</font>
+		<font>
 			<name>Font26_Reg</name>
 			<filename>OpenSans-Regular.ttf</filename>
 			<size>26</size>
@@ -37,6 +72,18 @@
 		<font>
 			<name>Font28_Reg</name>
 			<filename>OpenSans-Regular.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Font28_Reg_096</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<linespacing>0.96</linespacing>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Font28_Reg_098</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<linespacing>0.98</linespacing>
 			<size>28</size>
 		</font>
 		<font>
@@ -86,6 +133,12 @@
 			<size>32</size>
 		</font>
 		<font>
+			<name>Font32_Reg_11</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<linespacing>1.1</linespacing>
+			<size>32</size>
+		</font>
+		<font>
 			<name>Font34_Reg</name>
 			<filename>OpenSans-Regular.ttf</filename>
 			<size>34</size>
@@ -106,6 +159,11 @@
 			<filename>OpenSans-Regular.ttf</filename>
 			<size>38</size>
 		</font>
+		<font>
+			<name>Font40_Reg</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>40</size>
+		</font>
 		<!-- Kodi required fonts (OpenSans-Regular.ttf) -->
 		<font>
 			<name>font13</name>
@@ -113,6 +171,17 @@
 			<size>30</size>
 		</font>
 		<!-- Caps Fonts (OpenSans-Regular.ttf) -->
+		<font>
+			<name>Font26_Caps</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<style>uppercase</style>
+			<size>26</size>
+		</font>
+		<font>
+			<name>Font28_Caps</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>30</size>
+		</font>
 		<font>
 			<name>Font30_Caps</name>
 			<filename>OpenSans-Regular.ttf</filename>
@@ -193,6 +262,11 @@
 			<size>26</size>
 		</font>
 		<font>
+			<name>Font26_Cond</name>
+			<filename>OpenSansCond.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
 			<name>Font29_Cond</name>
 			<filename>OpenSansCond.ttf</filename>
 			<size>29</size>
@@ -208,6 +282,22 @@
 			<filename>OpenSansCond.ttf</filename>
 			<linespacing>0.8</linespacing>
 			<size>29</size>
+		</font>
+		<font>
+			<name>Font32_Cond</name>
+			<filename>OpenSansCond.ttf</filename>
+			<size>32</size>
+		</font>
+		<font>
+			<name>Font38_Cond</name>
+			<filename>OpenSansCond.ttf</filename>
+			<size>38</size>
+		</font>
+		<font>
+			<name>Font31_Cond_08</name>
+			<filename>OpenSansCond.ttf</filename>
+			<linespacing>0.8</linespacing>
+			<size>32</size>
 		</font>
 		<!-- Bold Fonts (OpenSans-Bold.ttf) -->
 		<font>
@@ -340,14 +430,19 @@
 			<size>32</size>
 		</font>
 		<font>
+			<name>Font36_Icon</name>
+			<filename>MaterialDesignIcons.ttf</filename>
+			<size>36</size>
+		</font>
+		<font>
 			<name>Font40_Icon</name>
 			<filename>MaterialDesignIcons.ttf</filename>
 			<size>40</size>
 		</font>
 		<font>
-			<name>Font40_Icon1</name>
-			<filename>MaterialIcons-Regular.ttf</filename>
-			<size>42</size>
+			<name>Font43_Icon</name>
+			<filename>MaterialDesignIcons.ttf</filename>
+			<size>43</size>
 		</font>
 		<font>
 			<name>Font45_Icon</name>
@@ -358,6 +453,33 @@
 			<name>Font120_Icon</name>
 			<filename>MaterialDesignIcons.ttf</filename>
 			<size>180</size>
+		</font>
+		<font>
+			<name>Font120_Genre</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<style>uppercase</style>
+			<size>70</size>
+		</font>
+		<!-- Default Fonts - Required Fallbacks (OpenSans-Regular.ttf) -->
+		<font>
+			<name>font10</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>23</size>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>25</size>
+		</font>
+		<font>
+			<name>font14</name>
+			<filename>OpenSans-Regular.ttf</filename>
+			<size>33</size>
+		</font>
+		<font>
+			<name>font45_title</name>
+			<filename>OpenSans-Bold.ttf</filename>
+			<size>45</size>
 		</font>
 		<!-- Lyrics fonts -->
 		<font>

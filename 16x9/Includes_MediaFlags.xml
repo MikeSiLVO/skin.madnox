@@ -595,7 +595,7 @@
 						<label>$LOCALIZE[182]</label>
 					</control>
 					<control type="label">
-						<visible>!String.IsEqual(ListItem.TotalDiscs,Container(7002).NumItems)</visible>
+				    	<visible>!String.IsEqual(ListItem.TotalDiscs,Container(7002).NumItems)</visible>
 						<left>-135.5</left>
 						<include>MediaFlagBigLabel</include>
 						<label>$INFO[Container(7002).NumItems]</label>
@@ -1532,7 +1532,7 @@
 		<shadowcolor>black</shadowcolor>
 		<textcolor>aaffffff</textcolor>
 	</include>
-
+	
 	<!-- Variables -->
 	<variable name="TVShowAirDateLabelVar">
 		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season)]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),x, ]$LOCALIZE[31063][B][CR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)][/B]</value>

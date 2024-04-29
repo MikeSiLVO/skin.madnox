@@ -72,7 +72,7 @@
 					<bottom>29</bottom>
 					<font>Font34_Reg</font>
 					<textcolor>$VAR[PanelTextColorVar]</textcolor>
-					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title,, ]$INFO[VideoPlayer.Year,(,)]</label>
+					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title,, ]$INFO[MusicPlayer.Year,(,)]</label>
 				</control>
 			</control>
 			<control type="image">
@@ -189,8 +189,28 @@
 					<bottom>29</bottom>
 					<font>Font34_Reg</font>
 					<textcolor>$VAR[PanelTextColorVar]</textcolor>
-					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title,, ]$INFO[VideoPlayer.Year,(,)]</label>
+					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title,, ]$INFO[MusicPlayer.Year,(,)]</label>
 				</control>
+				<control type="image"><!-- Кодек  -->	
+					<left>450</left>
+					<top>150</top>
+					<width>105</width>
+					<height>60</height>
+					<fadetime>TextureFadeTime</fadetime>
+					<aspectratio align="right" aligny="center">scale</aspectratio>
+					<texture>$VAR[MediaFlagsPathVar]audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
+					<visible>![VideoPlayer.HasEpg | Pvr.IsPlayingTv | Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+				</control>
+			<control type="image"><!-- Рекорд лейбл Альбома -->		
+					<left>340</left>
+					<top>150</top>
+					<animation effect="rotatey" center="399" start="0" end="360" time="8000" loop="true" reversible="false" delay="6000" condition="Player.Playing">Conditional</animation>
+					<width>110</width>
+					<height>71</height>
+					<colordiffuse>white</colordiffuse>
+					<texture fallback="flags/music/[no label].png">$INFO[MusicPlayer.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</texture>
+					<visible>![VideoPlayer.HasEpg | Pvr.IsPlayingTv | Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+				</control>	
 			</control>
 			<control type="group">
 				<top>41</top>
@@ -252,31 +272,116 @@
 		</definition>
 	</include>
 	<include name="HomeNowPlayingVideoInfo">
-		<include>AnimationSlideRightVisible</include>
-		<top>50</top>
-		<right>10</right>
-		<width>500</width>
-		<height>303</height>
-		<align>right</align>
-		<usecontrolcoords>true</usecontrolcoords>
+	<include>AnimationSlideRightVisible</include>
+		<control type="group">		
+				<control type="image">
+					<visible>VideoPlayer.HasEpg</visible>
+					<left>1478</left>
+					<top>290</top>
+					<width>392</width>
+					<height>136</height>
+					<texture colordiffuse="$VAR[PanelListSeparatorColorVar]" border="15">panels/windows/panel.png</texture>
+				</control>
+				<control type="image">
+					<visible>!VideoPlayer.HasEpg</visible>
+					<left>1478</left>
+					<top>290</top>
+					<width>392</width>
+					<height>136</height>
+					<texture colordiffuse="$VAR[PanelListSeparatorColorVar]" border="15">panels/windows/panel.png</texture>
+				</control>
+				<control type="label">
+					<visible>VideoPlayer.HasEpg</visible>
+					<left>1546</left>
+                    <top>379</top>
+                    <width>370</width>
+                    <height>36</height>
+					<align>left</align>
+                    <font>font10</font>
+                    <label>$INFO[Player.Process(audiosamplerate),,[COLOR white] Hz |[/COLOR] ]$INFO[Player.Process(audiobitspersample),,[COLOR white] bit  | [/COLOR] ]$INFO[MusicPlayer.Channels,,[COLOR white] каналы [/COLOR]]</label>
+                    <textcolor>green</textcolor>
+                    <shadowcolor>black</shadowcolor>
+			    </control>
+				<control type="label">
+					<visible>!VideoPlayer.HasEpg</visible>
+					<left>1546</left>
+                    <top>3379</top>
+                    <width>370</width>
+                    <height>36</height>
+					<align>left</align>
+                    <font>font10</font>
+                    <label>$INFO[Player.Process(audiosamplerate),,[COLOR white] Hz |[/COLOR] ]$INFO[Player.Process(audiobitspersample),,[COLOR white] bit  | [/COLOR] ]$INFO[MusicPlayer.Channels,,[COLOR white] каналы [/COLOR]]</label>
+                    <textcolor>green</textcolor>
+                    <shadowcolor>black</shadowcolor>
+			    </control>					
+			<control type="image">
+				<visible>VideoPlayer.HasEpg</visible>
+                <top>107</top>
+				<left>1370</left>
+				<width>500</width>
+				<height>5</height>
+				<align>right</align>
+				<aspectratio align="right" aligny="center">scale</aspectratio>
+				<texture flipx="true" colordiffuse="$VAR[PanelListSeparatorColorVar]">panels/separator.png</texture>
+			</control>
+			<control type="image">
+				<visible>!VideoPlayer.HasEpg</visible>
+                <top>107</top>
+				<left>1370</left>
+				<width>500</width>
+				<height>5</height>
+				<align>right</align>
+				<aspectratio align="right" aligny="center">scale</aspectratio>
+				<texture flipx="true" colordiffuse="$VAR[PanelListSeparatorColorVar]">panels/separator.png</texture>
+				</control>	
 		<control type="label">
 			<visible>VideoPlayer.HasEpg</visible>
+			<font>DigiTV</font>
+            <textcolor>green</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<top>315</top>
+			<left>1486</left>
 			<height>40</height>
-			<align>right</align>
-			<font>Font34_Reg</font>
-			<textcolor>$VAR[PanelTextColorVar]</textcolor>
-			<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration, / ]</label>
+			<align>center</align>
+			<label>$INFO[PVR.EpgEventRemainingTime(hh:mm:ss)]$INFO[PVR.EpgEventDuration(hh:mm:ss), ]</label>
+		</control>
+        <control type="label">
+			<visible>!VideoPlayer.HasEpg</visible>
+			<font>DigiTV</font>
+            <textcolor>green</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<top>315</top>
+			<left>1486</left>
+			<height>40</height>
+			<align>center</align>
+			<label>$INFO[Player.TimeRemaining(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss),/]</label>
+		</control>
+		<control type="progress">
+				<left>1505</left>
+			    <top>360</top>
+			    <width>340</width>
+			    <height>14</height>
+			    <animation effect="fade" end="80" condition="true">Conditional</animation>
+				<midtexture colordiffuse="red" border="8">panels/progress-control/progress-mid.png</midtexture>
+			    <visible>VideoPlayer.HasEpg</visible>
+			    <include>AnimationVisibleFade</include>
+			    <info>PVR.EpgEventProgress</info>
+		</control>
+		<control type="progress">
+				<left>1505</left>
+			    <top>360</top>
+			    <width>340</width>
+			    <height>14</height>
+			    <animation effect="fade" end="80" condition="true">Conditional</animation>
+				<midtexture colordiffuse="red" border="8">panels/progress-control/progress-mid.png</midtexture>
+			    <visible>!VideoPlayer.HasEpg</visible>
+			    <include>AnimationVisibleFade</include>
+			    <info>Player.Progress</info>
 		</control>
 		<control type="label">
 			<visible>!VideoPlayer.HasEpg</visible>
-			<height>40</height>
-			<align>right</align>
-			<font>Font34_Reg</font>
-			<textcolor>$VAR[PanelTextColorVar]</textcolor>
-			<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
-		</control>
-		<control type="label">
-			<visible>!VideoPlayer.HasEpg</visible>
+			<top>115</top>
+			<top>55</top>
 			<height>42</height>
 			<align>right</align>
 			<font>Font28_Reg</font>
@@ -285,20 +390,15 @@
 		</control>
 		<control type="label">
 			<visible>VideoPlayer.HasEpg</visible>
+			<top>115</top>
+			<top>55</top>
 			<height>42</height>
 			<align>right</align>
 			<font>Font28_Reg</font>
 			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 			<label>$INFO[PVR.EpgEventFinishTime,$LOCALIZE[19127] ]</label>
 		</control>
-		<control type="progress">
-			<visible>VideoPlayer.HasEpg</visible>
-			<info>PVR.EpgEventProgress</info>
-		</control>
-		<control type="progress">
-			<visible>!VideoPlayer.HasEpg</visible>
-			<info>Player.Progress</info>
-		</control>
+	</control>	
 	</include>
 	<include name="HomeNowPlayingVideoCast">
 		<include>AnimationSlideRightVisible</include>
@@ -325,25 +425,25 @@
 			<right>0</right>
 			<width>600</width>
 			<height>269</height>
-			<align>right</align>
-			<font>Font28_Reg</font>
+			<align>left</align>
+			<font>Font23_Reg</font>
 			<include>AutoScrollPlot</include>
 			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 			<label>$INFO[VideoPlayer.CastAndRole]</label>
 		</control>
 	</include>
-	<include name="HomeNowPlayingPortraitPlot">
+	<include name="HomeNowPlayingPortraitPlot"><!-- Фильмы на домашнем экране -->
 		<include>AnimationSlideRightVisible</include>
 		<right>10</right>
 		<width>1200</width>
 		<control type="group">
-			<visible>!String.IsEmpty(MusicPlayer.Property(Album_Description)) | !String.IsEmpty(MusicPlayer.Property(Artist_Description)) | !String.IsEmpty(VideoPlayer.Plot)</visible>
+			<visible>!String.IsEmpty(MusicPlayer.Property(Album_Description)) | !String.IsEmpty(MusicPlayer.Property(Artist_Description)) | !String.IsEmpty(VideoPlayer.Plot) | !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)</visible>
 			<control type="label">
 				<top>26</top>
 				<height>40</height>
 				<align>right</align>
 				<font>Font34_Reg</font>
-				<label>$VAR[NowPlayingPlotLabelVar]</label>
+				<label>$LOCALIZE[31971]: $VAR[NowPlayingPlotLabelVar]</label>
 				<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 			</control>
 			<control type="image">
@@ -359,8 +459,8 @@
 				<right>0</right>
 				<width>600</width>
 				<height>269</height>
-				<align>right</align>
-				<font>Font28_Reg</font>
+				<align>left</align>
+				<font>Font23_Reg</font>
 				<include>AutoScrollPlot</include>
 				<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 				<label>$VAR[NowPlayingPlotVar]</label>
@@ -373,14 +473,22 @@
 		<right>10</right>
 		<width>1200</width>
 		<control type="group">
-			<visible>!String.IsEmpty(MusicPlayer.Property(Album_Description)) | !String.IsEmpty(MusicPlayer.Property(Artist_Description)) | !String.IsEmpty(VideoPlayer.Plot)</visible>
+			<visible>!String.IsEmpty(MusicPlayer.Property(Album_Description)) | !String.IsEmpty(MusicPlayer.Property(Artist_Description)) | !String.IsEmpty(VideoPlayer.Plot) | !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)</visible>
 			<control type="label">
 				<top>26</top>
 				<height>40</height>
 				<align>right</align>
 				<font>Font34_Reg</font>
-				<label>$VAR[NowPlayingPlotLabelVar]</label>
-				<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
+			<label>[COLOR $VAR[PanelHighlightColorVar] ]$LOCALIZE[31971] [/COLOR]: [COLOR white] $VAR[NowPlayingPlotLabelVar] [/COLOR]</label>
+				<visible>[!Pvr.IsPlayingTv | Pvr.IsPlayingRadio | Player.IsInternetStream]</visible>
+			</control>
+			<control type="label">
+				<top>26</top>
+				<height>40</height>
+				<align>right</align>
+				<font>Font34_Reg</font>
+				<label>[COLOR $VAR[PanelHighlightColorVar] ]$LOCALIZE[31971] [/COLOR]: [COLOR white] $VAR[NowPlayingPlotLabelVar] [/COLOR]</label>
+				<visible>[Pvr.IsPlayingTv | !Pvr.IsPlayingRadio | !Player.IsInternetStream]</visible>
 			</control>
 			<control type="image">
 				<top>72</top>
@@ -395,8 +503,8 @@
 				<right>0</right>
 				<width>600</width>
 				<height>228</height>
-				<align>right</align>
-				<font>Font28_Reg</font>
+				<align>left</align>
+				<font>Font23_Reg</font>
 				<include>AutoScrollPlot</include>
 				<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 				<label>$VAR[NowPlayingPlotVar]</label>
@@ -404,6 +512,7 @@
 		</control>
 	</include>
 	<include name="HomeNowPlayingVideoPreview">
+			<include>AnimationSlideRightVisible</include>
 		<control type="group">
 			<top>97</top>
 			<width>500</width>
@@ -426,40 +535,51 @@
 	</include>
 	<include name="NowPlayingHomeAudioInfo">
 		<include>AnimationSlideRightVisible</include>
-		<top>50</top>
-		<right>10</right>
-		<width>500</width>
-		<height>303</height>
-		<align>right</align>
-		<usecontrolcoords>true</usecontrolcoords>
+		<control type="group">
+				<left>405</left>		
 		<animation effect="slide" end="0,9" time="200" condition="String.IsEmpty(MusicPlayer.Duration)">Conditional</animation>
-		<control type="image">
-			<right>0</right>
-			<width>125</width>
-			<height>80</height>
-			<fadetime>TextureFadeTime</fadetime>
-			<aspectratio align="right" aligny="center">scale</aspectratio>
-			<texture>$VAR[MediaFlagsPathVar]audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
-		</control>
-		<control type="label">
-			<height>40</height>
-			<align>right</align>
-			<font>Font34_Reg</font>
-			<textcolor>$VAR[PanelTextColorVar]</textcolor>
-			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
-		</control>
-		<control type="label">
-			<height>42</height>
-			<align>right</align>
-			<font>Font28_Reg</font>
-			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
-			<label>$INFO[MusicPlayer.BitRate,,kbps]$INFO[MusicPlayer.BitsPerSample,  ,bit]$INFO[MusicPlayer.SampleRate,  ,KHz]</label>
-		</control>
+		 <control type="image">
+					<left>1470</left>
+					<top>290</top>
+					<width>396</width>
+					<height>130</height>
+					<texture colordiffuse="$VAR[PanelListSeparatorColorVar]" border="15">panels/windows/panel.png</texture>
+				</control>
+					<control type="label">
+						<left>1486</left>
+						 <top>335</top>
+						<width>360</width>
+						<align>center</align>
+						<label>$INFO[MusicPlayer.TimeRemaining ,, ]$INFO[MusicPlayer.Duration]</label>
+						<font>Digi</font>
+                        <textcolor>green</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
 		<control type="progress">
-			<visible>!String.IsEmpty(MusicPlayer.Duration)</visible>
-			<info>Player.Progress</info>
-			<midtexture colordiffuse="$VAR[PanelHighlightColorVar]" border="8">panels/progress-control/progress-mid.png</midtexture>
+			<width min="10" max="340">auto</width>
+			<align>center</align>
+				<left>1500</left>
+			    <top>360</top>
+			    <width>340</width>
+			    <height>14</height>
+			    <animation effect="fade" end="80" condition="true">Conditional</animation>
+				<midtexture colordiffuse="red" border="8">panels/progress-control/progress-mid.png</midtexture>
+			    <visible>!String.IsEmpty(MusicPlayer.Duration)</visible>
+			    <include>AnimationVisibleFade</include>
+			    <info>Player.Progress</info>
 		</control>
+		<control type="label">
+					<left>1488</left>
+                    <top>374</top>
+                    <width>370</width>
+                    <height>36</height>
+					<align>center</align>
+                    <font>font10</font>
+                    <label>$INFO[MusicPlayer.BitRate,,[COLOR white] kbps | [/COLOR]]$INFO[MusicPlayer.SampleRate,,[COLOR white] kHz |[/COLOR] ]$INFO[MusicPlayer.bitspersample,,[COLOR white] bit  | [/COLOR] ]$INFO[MusicPlayer.Channels,,[COLOR white] каналы [/COLOR]]</label>
+                    <textcolor>green</textcolor>
+                    <shadowcolor>black</shadowcolor>
+			    </control>	
+			</control>
 	</include>
 	<include name="NowPlayingHomeAudioNext">
 		<include>AnimationSlideRightVisible</include>
@@ -471,7 +591,7 @@
 			<top>26</top>
 			<height>40</height>
 			<align>right</align>
-			<label>$LOCALIZE[209]</label>
+			<label>$LOCALIZE[31974]</label>
 			<font>Font34_Reg</font>
 			<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 		</control>
@@ -502,7 +622,7 @@
 		<control type="label">
 			<bottom>42</bottom>
 			<height>40</height>
-			<align>right</align>
+			<align>left</align>
 			<font>Font30_Reg</font>
 			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 			<label>$INFO[MusicPlayer.offset(1).Artist]</label>
@@ -510,7 +630,7 @@
 		<control type="label">
 			<height>40</height>
 			<bottom>6</bottom>
-			<align>right</align>
+			<align>left</align>
 			<font>Font28_Reg</font>
 			<textcolor>$VAR[PanelTextColorVar]</textcolor>
 			<label>[COLOR $VAR[PanelHighlightColorVar]]$INFO[MusicPlayer.offset(1).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset(1).Title]</label>
@@ -526,7 +646,7 @@
 			<height>40</height>
 			<align>right</align>
 			<font>Font34_Reg</font>
-			<label>$LOCALIZE[209]</label>
+			<label>$LOCALIZE[31974]</label>
 			<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 		</control>
 		<control type="image">
@@ -552,19 +672,21 @@
 		</control>
 	</include>
 	<include name="NowPlayingHomeAudioTracksContent">
+	<include>AnimationSlideRightVisible</include>
 		<control type="label">
 			<height>38</height>
-			<align>right</align>
+			<align>left</align>
 			<font>Font26_Reg</font>
 			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 			<label>$INFO[MusicPlayer.offset($PARAM[offset]).Artist]</label>
 		</control>
 		<control type="label">
 			<height>30</height>
-			<align>right</align>
+			<align>left</align>
 			<font>Font28_Reg</font>
+			<scroll>true</scroll>
 			<textcolor>$VAR[PanelTextColorVar]</textcolor>
-			<label>[COLOR $VAR[PanelHighlightColorVar]]$INFO[MusicPlayer.offset($PARAM[offset]).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset($PARAM[offset]).Title]</label>
+			<label>[COLOR $VAR[PanelHighlightColorVar]]$INFO[MusicPlayer.offset($PARAM[offset]).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset($PARAM[offset]).Title]$INFO[MusicPlayer.offset($PARAM[offset]).Year, (,)]</label>
 		</control>
 		<control type="label">
 			<height>18</height>
@@ -593,6 +715,57 @@
 					<font>Font34_Reg</font>
 					<label>$VAR[NowPlayingInfo1Var]</label>
 					<textcolor>$VAR[PanelTextColorVar]</textcolor>
+			</control>
+				<control type="image" id="8669"><!-- Рекорд лейбл Альбома -->		
+					<left>770</left>
+					<top>293</top>
+					<animation effect="rotatey" center="829" start="0" end="360" time="8000" loop="true" reversible="false" delay="6000" condition="Player.Playing">Conditional</animation>
+					<width>110</width>
+					<height>74</height>
+					<colordiffuse>white</colordiffuse>
+					<texture fallback="flags/music/[no label].png">$INFO[MusicPlayer.Property(Album_Label),resource://resource.images.recordlabels.white/,.png]</texture>
+				</control>
+				<control type="image"><!-- Кодек  -->	
+					<left>460</left>
+					<top>290</top>
+					<width>125</width>
+					<height>80</height>
+					<fadetime>TextureFadeTime</fadetime>
+					<aspectratio align="right" aligny="center">scale</aspectratio>
+					<texture>$VAR[MediaFlagsPathVar]audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
+				</control>
+				<control type="image"><!-- Рейтинг  -->	
+							<left>580</left>
+							<top>290</top>
+							<width>150</width>
+							<height>89</height>
+							<aspectratio>keep</aspectratio>
+							<texture fallback="flags/music/rating/rating0.png">$VAR[value_music_starrating]</texture>
+							<colordiffuse>yellow</colordiffuse>
+						</control>
+				<control type="image">
+                            <left>724</left>
+                            <top>306</top>
+                            <width>30</width>
+                            <height>30</height>
+                       <texture flipy="true">buttons/spin-down-focus.png</texture>
+                            <colordiffuse>white</colordiffuse>
+	                    </control>	
+				<control type="image">
+                            <left>724</left>
+                            <top>335</top>
+                            <width>30</width>
+                            <height>30</height>
+                            <texture>buttons/spin-down-focus.png</texture>
+                            <colordiffuse>white</colordiffuse>
+						</control>
+				<control type="label"><!-- Жанр  -->	
+							<left>475</left>
+							<top>236</top>
+							<height>40</height>
+							<align>left</align>
+							<font>Font34_Reg</font>
+							<label>[COLOR $VAR[PanelHighlightColorVar] ]$LOCALIZE[31971] [/COLOR]: [COLOR white] $VAR[NowPlayingPlotLabelVar] [/COLOR]</label>
 				</control>
 				<control type="image">
 					<visible>!String.IsEmpty(Control.GetLabel(9052)) | !String.IsEmpty(Control.GetLabel(9053))</visible>
@@ -604,9 +777,9 @@
 				</control>
 				<control type="fadelabel" id="9053">
 					<top>74</top>
-					<left>50</left>
+					<left>44</left>
 					<height>40</height>
-					<font>Font28_Reg</font>
+					<font>Font34_Reg</font>
 					<label>$VAR[NowPlayingInfo2Var]</label>
 					<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 				</control>
@@ -621,26 +794,28 @@
 					<aspectratio align="left">keep</aspectratio>
 				</control>
 				<control type="label">
-					<left>50</left>
-					<bottom>76</bottom>
+					<left>48</left>
+					<bottom>40</bottom>
 					<height>40</height>
 					<font>Font28_Reg</font>
 					<label>$VAR[NowPlayingStatusVar]</label>
 					<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 				</control>
 				<control type="image">
+				    <left>14</left>
 					<width>18</width>
 					<height>36</height>
-					<bottom>30</bottom>
+					<bottom>2</bottom>
 					<texture colordiffuse="$VAR[PanelListSeparatorColorVar]">panels/nowplaying.png</texture>
 				</control>
 				<control type="fadelabel">
 					<left>50</left>
+					<width>920</width>
 					<height>40</height>
-					<bottom>29</bottom>
-					<font>Font34_Reg</font>
+					<bottom>0</bottom>
+					<font>Font28_Reg</font>
 					<textcolor>$VAR[PanelTextColorVar]</textcolor>
-					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title,, ]$INFO[VideoPlayer.Year,(,)]</label>
+					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title,, ]$INFO[MusicPlayer.Year,(,)]</label>
 				</control>
 			</control>
 			<control type="group">
@@ -703,40 +878,90 @@
 			</control>
 		</definition>
 	</include>
-	<include name="NowPlayingMusicOSDInfo">
+	<include name="NowPlayingMusicOSDTrackListInfo">
 		<include>AnimationSlideRightVisible</include>
-		<bottom>50</bottom>
-		<right>25</right>
-		<width>500</width>
+		<bottom>15</bottom>
+		<width>1200</width>
 		<height>400</height>
-		<align>right</align>
-		<usecontrolcoords>true</usecontrolcoords>
-		<control type="image">
-			<right>0</right>
-			<width>125</width>
-			<height>80</height>
-			<fadetime>TextureFadeTime</fadetime>
-			<aspectratio align="right" aligny="center">scale</aspectratio>
-			<texture>$VAR[MediaFlagsPathVar]audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
-		</control>
 		<control type="label">
+			<top>690</top>
+			<left>1622</left>
 			<height>40</height>
 			<align>right</align>
 			<font>Font34_Reg</font>
-			<textcolor>$VAR[PanelTextColorVar]</textcolor>
-			<label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
+			<label>$LOCALIZE[31974]</label>
+			<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
+		</control>
+		<control type="image">
+			<top>737</top>
+			<left>1365</left>
+			<width>540</width>
+			<height>6</height>
+			<aspectratio align="right" aligny="center">scale</aspectratio>
+			<texture flipx="true" colordiffuse="$VAR[PanelListSeparatorColorVar]">panels/separator.png</texture>
+		</control>
+		<control type="grouplist">
+	    		<top>740</top>
+				<left>1490</left>
+				<width>420</width>
+				<height>381</height>
+				<align>left</align>
+			<include content="NowPlayingMusicOSDTracksContent">
+				<param name="offset">1</param>
+			</include>
+			<include content="NowPlayingMusicOSDTracksContent">
+				<param name="offset">2</param>
+			</include>
+			<include content="NowPlayingMusicOSDTracksContent">
+				<param name="offset">3</param>
+			</include>
+		</control>
+	</include>
+	<include name="NowPlayingMusicOSDInfo">
+	<include>AnimationSlideRightVisible</include>
+		<control type="group">	
+        <include>NowPlayingMusicOSDTrackListInfo</include>		
+		 <control type="image">
+					<left>1520</left>
+					<top>950</top>
+					<width>396</width>
+					<height>130</height>
+					<texture colordiffuse="$VAR[PanelListSeparatorColorVar]" border="15">panels/windows/panel.png</texture>
+				</control>
+					<control type="label">
+						<left>1538</left>
+						 <top>995</top>
+						<width>360</width>
+						<align>center</align>
+						<label>$INFO[MusicPlayer.TimeRemaining ,, ]$INFO[MusicPlayer.Duration]</label>
+						<font>Digi</font>
+                        <textcolor>green</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+		<control type="progress">
+			<width min="10" max="340">auto</width>
+			<align>center</align>
+				<left>1550</left>
+			    <top>1020</top>
+			    <width>340</width>
+			    <height>14</height>
+			    <animation effect="fade" end="80" condition="true">Conditional</animation>
+				<midtexture colordiffuse="red" border="8">panels/progress-control/progress-mid.png</midtexture>
+			    <visible>!String.IsEmpty(MusicPlayer.Duration)</visible>
+			    <include>AnimationVisibleFade</include>
+			    <info>Player.Progress</info>
 		</control>
 		<control type="label">
-			<height>42</height>
-			<align>right</align>
-			<font>Font28_Reg</font>
-			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
-			<label>$INFO[MusicPlayer.BitRate,,kbps]$INFO[MusicPlayer.BitsPerSample,  ,bit]$INFO[MusicPlayer.SampleRate,  ,KHz]</label>
-		</control>
-		<control type="progress">
-			<visible>!String.IsEmpty(MusicPlayer.Duration)</visible>
-			<include>AnimationVisibleFade</include>
-			<info>Player.Progress</info>
+					<left>1535</left>
+                    <top>1034</top>
+                    <width>370</width>
+                    <height>36</height>
+					<align>center</align>
+                    <font>font10</font>
+                    <label>$INFO[MusicPlayer.BitRate,,[COLOR white] kbps | [/COLOR]]$INFO[MusicPlayer.SampleRate,,[COLOR white] kHz |[/COLOR] ]$INFO[MusicPlayer.bitspersample,,[COLOR white] bit  | [/COLOR] ]$INFO[MusicPlayer.Channels,,[COLOR white] каналы [/COLOR]]</label>
+                    <textcolor>green</textcolor>
+                    <shadowcolor>black</shadowcolor>
+			    </control>	
 		</control>
 	</include>
 	<include name="HomeNowPlayingMusicOSDPlot">
@@ -746,13 +971,13 @@
 		<width>1200</width>
 		<height>400</height>
 		<control type="group">
-			<visible>!String.IsEmpty(MusicPlayer.Property(Album_Description)) | !String.IsEmpty(MusicPlayer.Property(Artist_Description)) | !String.IsEmpty(VideoPlayer.Plot)</visible>
+			<visible>!String.IsEmpty(MusicPlayer.Property(Album_Description)) | !String.IsEmpty(MusicPlayer.Property(Artist_Description)) | !String.IsEmpty(VideoPlayer.Plot) | !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)</visible>
 			<control type="label">
 				<top>26</top>
 				<height>40</height>
 				<align>right</align>
 				<font>Font34_Reg</font>
-				<label>$VAR[NowPlayingPlotLabelVar]</label>
+				<label>$LOCALIZE[31970]</label>
 				<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 			</control>
 			<control type="image">
@@ -765,11 +990,11 @@
 			</control>
 			<control type="textbox">
 				<top>84</top>
-				<right>0</right>
-				<width>600</width>
+				<right>-20</right>
+				<width>480</width>
 				<height>281</height>
-				<align>right</align>
-				<font>Font28_Reg_105</font>
+				<align>left</align>
+				<font>Font23_Reg</font>
 				<include>AutoScrollPlot</include>
 				<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 				<label>$VAR[NowPlayingPlotVar]</label>
@@ -786,7 +1011,7 @@
 			<top>26</top>
 			<height>40</height>
 			<align>right</align>
-			<label>$LOCALIZE[209]</label>
+			<label>$LOCALIZE[31974]</label>
 			<font>Font34_Reg</font>
 			<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 		</control>
@@ -816,18 +1041,21 @@
 		</control>
 		<control type="label">
 			<bottom>42</bottom>
+			<left>100</left>
 			<height>40</height>
-			<align>right</align>
+			<align>left</align>
 			<font>Font30_Reg</font>
 			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 			<label>$INFO[MusicPlayer.offset(1).Artist]</label>
 		</control>
-		<control type="label">
+		<control type="fadelabel">
+			<left>100</left>
 			<height>40</height>
 			<bottom>6</bottom>
-			<align>right</align>
+			<align>left</align>
 			<font>Font28_Reg</font>
 			<textcolor>$VAR[PanelTextColorVar]</textcolor>
+			<scroll>true</scroll>
 			<label>[COLOR $VAR[PanelHighlightColorVar]]$INFO[MusicPlayer.offset(1).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset(1).Title]</label>
 		</control>
 	</include>
@@ -835,14 +1063,14 @@
 		<include>AnimationSlideRightVisible</include>
 		<right>25</right>
 		<bottom>15</bottom>
-		<width>500</width>
+		<width>1200</width>
 		<height>400</height>
 		<control type="label">
 			<top>26</top>
 			<height>40</height>
 			<align>right</align>
 			<font>Font34_Reg</font>
-			<label>$LOCALIZE[209]</label>
+			<label>$LOCALIZE[31974]</label>
 			<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 		</control>
 		<control type="image">
@@ -855,7 +1083,10 @@
 		</control>
 		<control type="grouplist">
 			<top>76</top>
-			<height>400</height>
+				<right>-10</right>
+				<width>420</width>
+				<height>381</height>
+				<align>left</align>
 			<include content="NowPlayingMusicOSDTracksContent">
 				<param name="offset">1</param>
 			</include>
@@ -871,32 +1102,34 @@
 		</control>
 	</include>
 	<include name="NowPlayingMusicOSDTracksContent">
+	<include>AnimationSlideRightVisible</include>
 		<control type="label">
-			<height>32</height>
-			<align>right</align>
+			<height>30</height>
+			<align>left</align>
 			<font>Font26_Reg</font>
 			<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
 			<label>$INFO[MusicPlayer.offset($PARAM[offset]).Artist]</label>
 		</control>
 		<control type="label">
 			<height>30</height>
-			<align>right</align>
-			<font>Font28_Reg</font>
+			<scroll>true</scroll>
+			<align>left</align>
+			<font>Font22_Reg</font>
 			<textcolor>$VAR[PanelTextColorVar]</textcolor>
-			<label>[COLOR $VAR[PanelHighlightColorVar]]$INFO[MusicPlayer.offset($PARAM[offset]).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset($PARAM[offset]).Title]</label>
+		<label>[COLOR $VAR[PanelHighlightColorVar]]$INFO[MusicPlayer.offset($PARAM[offset]).TrackNumber,,. ][/COLOR]$INFO[MusicPlayer.offset($PARAM[offset]).Title]$INFO[MusicPlayer.offset($PARAM[offset]).Year, (,)]</label>
 		</control>
 		<control type="label">
-			<height>15</height>
+			<height>18</height>
 		</control>
 	</include>
-	<include name="NowPlayingMusicOSDFanart">
+	<include name="NowPlayingMusicOSDFanart"> <!-- Фанарт без искажений  -->	
 		<animation type="Conditional" pulse="true" condition="Skin.HasSetting(MusicOSDAnimatedBackground)">
 			<effect type="zoom" start="110" end="120" center="auto" time="12000" tween="sine" easing="inout"/>
 			<effect type="slide" start="-20,-20" end="20,20" time="6000" tween="sine" easing="inout"/>
 		</animation>
 		<include>FullScreenDimensions</include>
 		<randomize>true</randomize>
-		<aspectratio>scale</aspectratio>
+		<aspectratio>keep</aspectratio>
 		<fadetime>TextureFadeTime</fadetime>
 	</include>
 	<include name="VideoOSDProcessInfo">
@@ -911,6 +1144,18 @@
 		<value condition="String.Contains(Player.Filename,4K)">thumbs/case/portrait/4Kp.png</value>
 		<value>thumbs/case/portrait/$INFO[VideoPlayer.VideoResolution]p.png</value>
 	</variable>
+	<variable name="value_music_starrating">
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,0)+Integer.IsLess(MusicPlayer.UserRating,1)">flags/music/rating/rating1.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,1)+Integer.IsLess(MusicPlayer.UserRating,2)">flags/music/rating/rating2.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,2)+Integer.IsLess(MusicPlayer.UserRating,3)">flags/music/rating/rating3.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,3)+Integer.IsLess(MusicPlayer.UserRating,4)">flags/music/rating/rating4.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,4)+Integer.IsLess(MusicPlayer.UserRating,5)">flags/music/rating/rating5.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,5)+Integer.IsLess(MusicPlayer.UserRating,6)">flags/music/rating/rating6.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,6)+Integer.IsLess(MusicPlayer.UserRating,7)">flags/music/rating/rating7.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,7)+Integer.IsLess(MusicPlayer.UserRating,8)">flags/music/rating/rating8.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,8)+Integer.IsLess(MusicPlayer.UserRating,9)">flags/music/rating/rating9.png</value>
+		<value condition="Integer.IsGreaterOrEqual(MusicPlayer.UserRating,9)">flags/music/rating/rating10.png</value>
+	</variable>
 	<variable name="NowPlayingInfo1Var">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TVShowTitle]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
@@ -922,7 +1167,7 @@
 	<variable name="NowPlayingInfo2Var">
 		<value condition="VideoPlayer.Content(episodes) + String.StartsWith(VideoPlayer.Episode,s)">$INFO[VideoPlayer.Episode,$LOCALIZE[31327] ]</value>
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,$LOCALIZE[20373] , ]$INFO[VideoPlayer.Episode,$LOCALIZE[36906] ]</value>
-		<value condition="!String.IsEmpty(MusicPlayer.Album)">$INFO[MusicPlayer.Album]</value>
+		<value condition="!String.IsEmpty(MusicPlayer.Album)">$INFO[MusicPlayer.Year, (,) ]$INFO[MusicPlayer.Album] </value>
 		<value condition="!String.IsEmpty(VideoPlayer.Album)">$INFO[VideoPlayer.Album]</value>
 		<value condition="Player.IsInternetStream + Player.HasAudio + !String.IsEmpty(MusicPlayer.BitRate)">$INFO[MusicPlayer.BitRate,,[LOWERCASE]kbps[/LOWERCASE]]</value>
 		<value condition="Player.IsInternetStream + Player.HasVideo + !String.IsEmpty(Player.Process(VideoHeight))">$INFO[Player.Process(VideoHeight),,[LOWERCASE]p[/LOWERCASE]]</value>
@@ -948,6 +1193,7 @@
 		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
+		<value condition="Player.IsInternetStream + Player.HasAudio">$INFO[Player.Art(clearlogo)]</value>
 	</variable>
 	<variable name="NowPlayingClearArtVar">
 		<value condition="!String.IsEmpty(Player.Art(clearart))">$INFO[Player.Art(clearart)]</value>
@@ -967,14 +1213,16 @@
 	</variable>
 	<variable name="NowPlayingPlotLabelVar">
 		<value condition="Pvr.IsPlayingTv">$INFO[VideoPlayer.StartTime,, - ]$INFO[VideoPlayer.EndTime]</value>
+		<value condition="Player.IsInternetStream">$INFO[MusicPlayer.Genre]</value>
 		<value condition="!String.IsEmpty(VideoPlayer.Tagline)">$INFO[VideoPlayer.Tagline]</value>
 		<value condition="!String.IsEmpty(VideoPlayer.Genre)">$INFO[VideoPlayer.Genre]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.Genre)">$INFO[MusicPlayer.Genre]</value>
 		<value>$INFO[Player.FinishTime,$LOCALIZE[19127] ]</value>
 	</variable>
-	<variable name="NowPlayingPlotVar">
+		<variable name="NowPlayingPlotVar">
+		<value condition="!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography))">$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography),$LOCALIZE[21887]: [COLOR white],[/COLOR]]</value>
+		<value condition="!String.IsEmpty(MusicPlayer.Property(Artist_Description))">$INFO[MusicPlayer.Property(Artist_Description),$LOCALIZE[21887]: [COLOR white],[/COLOR]]]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.Property(Album_Description))">$INFO[MusicPlayer.Property(Album_Description)]</value>
-		<value condition="!String.IsEmpty(MusicPlayer.Property(Artist_Description))">$INFO[MusicPlayer.Property(Artist_Description)]</value>
 		<value condition="!Skin.HasSetting(DisablePlotOutline) + !String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
 		<value condition="!String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
 	</variable>
@@ -1037,7 +1285,7 @@
 		<value condition="Skin.String(NowPlayingMusicDiscArtFallback,red)">$LOCALIZE[31191]</value>
 		<value>CD</value>
 	</variable>
-	<variable name="NowPlayingDimBackgroundLabelVar">
+		<variable name="NowPlayingDimBackgroundLabelVar">
 		<value condition="Skin.String(MusicOSD.dim,80FFFFFF)">50%</value>
 		<value condition="Skin.String(MusicOSD.dim,8CFFFFFF)">55%</value>
 		<value condition="Skin.String(MusicOSD.dim,99FFFFFF)">60%</value>
@@ -1055,14 +1303,14 @@
 		<value>$LOCALIZE[31193]</value>
 	</variable>
 	<variable name="MusicOSDAudioInfoLabelVar">
-		<value condition="Skin.String(MusicOSDAudioInfo,next)">$LOCALIZE[209]</value>
+		<value condition="Skin.String(MusicOSDAudioInfo,next)">$LOCALIZE[31974]</value>
 		<value condition="Skin.String(MusicOSDAudioInfo,tracks)">$LOCALIZE[182]</value>
 		<value condition="Skin.String(MusicOSDAudioInfo,plot)">$LOCALIZE[21821]</value>
 		<value condition="Skin.String(MusicOSDAudioInfo,none)">$LOCALIZE[231]</value>
 		<value>$LOCALIZE[29915]</value>
 	</variable>
 	<variable name="MusicOSDMusicInfoLabelVar">
-		<value condition="Skin.String(MusicOSDMusicInfo,next)">$LOCALIZE[209]</value>
+		<value condition="Skin.String(MusicOSDMusicInfo,next)">$LOCALIZE[31974]</value>
 		<value condition="Skin.String(MusicOSDMusicInfo,tracks)">$LOCALIZE[182]</value>
 		<value condition="Skin.String(MusicOSDMusicInfo,plot)">$LOCALIZE[21821]</value>
 		<value condition="Skin.String(MusicOSDMusicInfo,none)">$LOCALIZE[231]</value>
@@ -1110,14 +1358,14 @@
 	</variable>
 	<variable name="NowPlayingHomeMusicInfoLabelVar">
 		<value condition="Skin.String(NowPlayingHomeMusicInfo,tracks)">$LOCALIZE[182]</value>
-		<value condition="Skin.String(NowPlayingHomeMusicInfo,next)">$LOCALIZE[209]</value>
+		<value condition="Skin.String(NowPlayingHomeMusicInfo,next)">$LOCALIZE[31974]</value>
 		<value condition="Skin.String(NowPlayingHomeMusicInfo,plot)">$LOCALIZE[21821]</value>
 		<value condition="Skin.String(NowPlayingHomeMusicInfo,none)">$LOCALIZE[231]</value>
 		<value>$LOCALIZE[29915]</value>
 	</variable>
 	<variable name="NowPlayingHomeAudioInfoLabelVar">
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,tracks)">$LOCALIZE[182]</value>
-		<value condition="Skin.String(NowPlayingHomeAudioInfo,next)">$LOCALIZE[209]</value>
+		<value condition="Skin.String(NowPlayingHomeAudioInfo,next)">$LOCALIZE[31974]</value>
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,plot)">$LOCALIZE[21821]</value>
 		<value condition="Skin.String(NowPlayingHomeAudioInfo,none)">$LOCALIZE[231]</value>
 		<value>$LOCALIZE[29915]</value>
@@ -1176,7 +1424,7 @@
 		<value condition="Player.Forwarding16x | Player.Rewinding16x">16x</value>
 		<value condition="Player.Forwarding32x | Player.Rewinding32x">32x</value>
 	</variable>
-	<!--  OSD Buttons -->
+		<!--  OSD Buttons -->
 	<variable name="OSDPlayButtonVar">
 		<value condition="Player.Paused | Player.Forwarding | Player.Rewinding">buttons/player/play.png</value>
 		<value>buttons/player/pause.png</value>

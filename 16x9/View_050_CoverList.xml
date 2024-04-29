@@ -251,6 +251,16 @@
 					<height>268</height>
 					<fadetime>TextureFadeTime</fadetime>
 					<aspectratio>keep</aspectratio>
+					<texture background="true">$VAR[ClearArtVar]</texture>
+				</control>
+				<control type="image">
+					<visible>Container.Content(artists) + Skin.HasSetting(View50HideLogo)</visible>
+					<top>-258</top>
+					<left>10</left>
+					<width>532</width>
+					<height>268</height>
+					<fadetime>TextureFadeTime</fadetime>
+					<aspectratio>keep</aspectratio>
 					<texture background="true">$VAR[ClearLogoVar]</texture>
 				</control>
 				<control type="group">
@@ -264,6 +274,7 @@
 				</control>
 				<include content="ViewArtwork">
 					<param name="art">$VAR[PosterVar]</param>
+					<param name="aspect">aspect</param>
 					<param name="fallback">DefaultFile.png</param>
 					<param name="diffuse">diffuse/rounded5-532x532.png</param>
 				</include>
@@ -271,6 +282,45 @@
 		</control>
 		<!-- Media flags -->
 		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include content="AnimationSlideBottomWindow">
+				<param name="slide">220</param>
+			</include>
+	<control type="group">
+				<visible>Control.IsVisible(50) + String.Contains(ListItem.DBType, "movie")</visible>
+				<include condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(videoplaylist)" content="MediaFlagsVideos4">
+					<param name="right">100</param>
+					<param name="bottom">30</param>
+				</include>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(50) + !String.Contains(ListItem.DBType, "season") &amp; String.Contains(ListItem.DBType, "episode")</visible>
+				<include condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(videoplaylist)" content="MediaFlagsVideos4">
+					<param name="right">100</param>
+					<param name="bottom">30</param>
+				</include>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(50) + String.Contains(ListItem.DBType, "season")</visible>
+				<include condition="Window.IsVisible(MyVideoNav.xml)" content="MediaFlagsTVShows">
+					<param name="right">100</param>
+					<param name="bottom">30</param>
+				</include>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(50) + String.Contains(ListItem.DBType, "tvshow") | Container.Content(tvshows) </visible>
+				<include condition="Window.IsVisible(MyVideoNav.xml)" content="MediaFlagsTVShows">
+					<param name="right">100</param>
+					<param name="bottom">30</param>
+				</include>
+			</control>								
+			<include condition="Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(musicplaylist)" content="MediaFlagsAudio">
+				<param name="right">100</param>
+				<param name="bottom">30</param>
+			</include>
+		</control>
+
+<!-- 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<include content="AnimationSlideBottomWindow">
 				<param name="slide">220</param>
@@ -287,6 +337,6 @@
 				<param name="right">100</param>
 				<param name="bottom">30</param>
 			</include>
-		</control>
+		</control> -->
 	</include>
-</includes>
+</includes>		

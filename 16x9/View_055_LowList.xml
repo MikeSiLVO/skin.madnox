@@ -177,8 +177,19 @@
 				<height>214</height>
 				<aspectratio>keep</aspectratio>
 				<fadetime>TextureFadeTime</fadetime>
+				<texture background="true">$VAR[ClearArtVar]</texture>
+			</control>
+			<control type="image">
+				<visible>[Skin.HasSetting(View55HideLogo) + Skin.HasSetting(View55VideoPreviewWindow)] | [Skin.HasSetting(View55HideLogo) + Skin.HasSetting(View55VideoPreviewWindow) + !Player.HasVideo]</visible>
+				<bottom>520</bottom>
+				<right>10</right>
+				<width>552</width>
+				<height>214</height>
+				<aspectratio>keep</aspectratio>
+				<fadetime>TextureFadeTime</fadetime>
 				<texture background="true">$VAR[ClearLogoVar]</texture>
 			</control>
+			
 			<!-- Info -->
 			<control type="grouplist">
 				<top>585</top>

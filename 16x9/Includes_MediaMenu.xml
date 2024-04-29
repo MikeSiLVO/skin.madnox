@@ -436,7 +436,7 @@
 			<label>$LOCALIZE[31017]</label>
 			<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 			<onunfocus condition="!String.IsEmpty(Window(Home).Property(skinshortcuts-build))">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|shortcuts)</onunfocus>
-			<onunfocus condition="!String.IsEmpty(Window(Home).Property(skinshortcuts-build))">ClearProperty(skinshortcuts-build,Home)</onunfocus>
+			<onunfocus condition="!String.IsEmpty(Window(Home).Property(skinshortcuts-build))">ClearProperty(skinshortcuts-build,Home)</onunfocus>			
 		</control>
 		<control type="radiobutton" id="9052">
 			<include content="MediaMenuIconButton">
@@ -577,7 +577,7 @@
 			<include>MediaMenuLabel</include>
 		</control>
 		<control type="radiobutton" id="202">
-			<label>$LOCALIZE[393]</label>
+			<label>$LOCALIZE[31042]</label>
 			<onclick>Skin.ToggleSetting(InfoBarTop)</onclick>
 			<selected>Skin.HasSetting(InfoBarTop)</selected>
 			<include>MediaMenuRadioButton</include>
@@ -621,13 +621,13 @@
 			<selected>Skin.HasSetting(WidgetHide)</selected>
 			<include>MediaMenuRadioButton</include>
 		</control>
-		<control type="radiobutton" id="210">
+			<control type="radiobutton" id="210">
 			<label>$LOCALIZE[207]</label>
 			<onclick>Skin.ToggleSetting(WidgetPlot)</onclick>
 			<selected>Skin.HasSetting(WidgetPlot)</selected>
 			<include>MediaMenuRadioButton</include>
 		</control>
-		<control type="radiobutton" id="211">
+			<control type="radiobutton" id="211">
 			<label>$LOCALIZE[20445]</label>
 			<onclick>Skin.ToggleSetting(DisableWidgetFanart)</onclick>
 			<selected>!Skin.HasSetting(DisableWidgetFanart)</selected>
@@ -672,7 +672,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="205">
-			<visible>!Skin.HasSetting(NowplayingHomeDisable) + [[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)] | [Player.HasAudio + !Pvr.IsPlayingTv + !Pvr.IsPlayingRadio + !Player.IsInternetStream]]</visible>
+			<visible>!Skin.HasSetting(NowplayingHomeDisable) + [[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)] | [Player.HasAudio + !Pvr.IsPlayingTv + !Pvr.IsPlayingRadio + Player.IsInternetStream]]</visible>
 			<label>$LOCALIZE[31123]</label>
 			<onclick>Skin.ToggleSetting(NowPlayingHomeDisableLogo)</onclick>
 			<selected>!Skin.HasSetting(NowPlayingHomeDisableLogo)</selected>
@@ -713,7 +713,7 @@
 			<include>MediaMenuButton</include>
 		</control>
 		<control type="button" id="210">
-			<visible>!Skin.HasSetting(NowplayingHomeDisable) + ![VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)]</visible>
+			<visible>!Skin.HasSetting(NowplayingHomeDisable) + !Player.HasAudio + ![VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)]</visible>
 			<label>$LOCALIZE[31323]</label>
 			<label2>$VAR[NowPlayingHomeVideoInfoLabelVar]</label2>
 			<onclick condition="String.IsEmpty(NowPlayingHomeVideoInfo)">Skin.SetString(NowPlayingHomeVideoInfo,plot)</onclick>
@@ -812,6 +812,8 @@
 			<include>MediaMenuButton</include>
 		</control>
 		<control type="button" id="203">
+			<label>$LOCALIZE[31051]</label>
+			<label2>$VAR[MainMenuTextureLabelVar]</label2>
 			<label>$LOCALIZE[31051]</label>
 			<label2>$VAR[MainMenuTextureLabelVar]</label2>
 			<onclick>SetProperty(CustomSelect,$LOCALIZE[31359],home)</onclick>
@@ -1023,7 +1025,7 @@
 			<onclick>ActivateWindow(1111)</onclick>
 			<include>MediaMenuButton</include>
 		</control>
-		<control type="button" id="222">
+		<control type="radiobutton" id="222">
 			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 			<label>$LOCALIZE[31234]</label>
 			<onclick>SetProperty(CustomSelectGroup,$LOCALIZE[31234],home)</onclick>
@@ -1752,23 +1754,6 @@
 		</control>
 	</include>
 	<include name="View50SettingsPVRCoverList">
-		<control type="label" id="101">
-			<label>$LOCALIZE[21483]</label>
-			<include>MediaMenuLabel</include>
-		</control>
-		<control type="radiobutton" id="102">
-			<label>$LOCALIZE[31212]</label>
-			<onclick>Skin.ToggleSetting(View50PVRBigList)</onclick>
-			<selected>Skin.HasSetting(View50PVRBigList)</selected>
-			<include>MediaMenuRadioButton</include>
-		</control>
-		<control type="radiobutton" id="103">
-			<visible>Window.IsVisible(MyPVRChannels.xml)</visible>
-			<label>$LOCALIZE[31301]</label>
-			<onclick>Skin.ToggleSetting(View50PVRChannelNumber)</onclick>
-			<selected>Skin.HasSetting(View50PVRChannelNumber)</selected>
-			<include>MediaMenuRadioButton</include>
-		</control>
 		<control type="radiobutton" id="104">
 			<visible>!Skin.HasSetting(View50PVRBigList) + !Window.IsVisible(MyPVRRecordings.xml)</visible>
 			<label>$LOCALIZE[31302]</label>
@@ -1897,12 +1882,12 @@
 		</control>
 		<control type="radiobutton" id="105">
 			<visible>Container.Content(artists)</visible>
-			<label>$LOCALIZE[31123]</label>
+			<label>$LOCALIZE[31975]</label>
 			<onclick>Skin.ToggleSetting(View50HideLogo)</onclick>
 			<selected>!Skin.HasSetting(View50HideLogo)</selected>
 			<include>MediaMenuRadioButton</include>
 		</control>
-		<control type="radiobutton" id="106">
+			<control type="radiobutton" id="106">
 			<visible>Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | String.IsEqual(ListItem.DBTYPE,song) | String.IsEqual(ListItem.DBTYPE,musicvideo)</visible>
 			<label>$LOCALIZE[31108]</label>
 			<onclick>Skin.ToggleSetting(View50HideDiscArt)</onclick>
@@ -1977,6 +1962,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="106">
+		<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View53VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View53VideoPreviewWindow)</selected>
@@ -2028,6 +2014,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="108">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View54VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View54VideoPreviewWindow)</selected>
@@ -2061,7 +2048,7 @@
 		</control>
 		<control type="radiobutton" id="105">
 			<visible>!Container.Content(addons)</visible>
-			<label>$LOCALIZE[31123]</label>
+			<label>$LOCALIZE[31975]</label>
 			<onclick>Skin.ToggleSetting(View55HideLogo)</onclick>
 			<selected>!Skin.HasSetting(View55HideLogo)</selected>
 			<include>MediaMenuRadioButton</include>
@@ -2074,6 +2061,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="107">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View55VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View55VideoPreviewWindow)</selected>
@@ -2145,7 +2133,7 @@
 		</control>
 		<control type="radiobutton" id="104">
 			<visible>!Container.Content(addons)</visible>
-			<label>$LOCALIZE[31123]</label>
+			<label>$LOCALIZE[31975]</label>
 			<onclick>Skin.ToggleSetting(View57HideLogo)</onclick>
 			<selected>!Skin.HasSetting(View57HideLogo)</selected>
 			<include>MediaMenuRadioButton</include>
@@ -2293,6 +2281,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="111">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View500VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View500VideoPreviewWindow)</selected>
@@ -2369,6 +2358,7 @@
 			<include>ReloadWindowOnClick</include>
 		</control>
 		<control type="radiobutton" id="110">
+		    <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View501VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View501VideoPreviewWindow)</selected>
@@ -2435,6 +2425,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="109">
+		    <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View502VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View502VideoPreviewWindow)</selected>
@@ -2520,6 +2511,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="111">
+		    <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View503VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View503VideoPreviewWindow)</selected>
@@ -2579,6 +2571,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="109">
+		    <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View504VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View504VideoPreviewWindow)</selected>
@@ -2631,6 +2624,7 @@
 			<include>ReloadWindowOnClick</include>
 		</control>
 		<control type="radiobutton" id="108">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View505VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View505VideoPreviewWindow)</selected>
@@ -2676,6 +2670,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="107">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View506VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View506VideoPreviewWindow)</selected>
@@ -2714,6 +2709,7 @@
 			<include>ReloadWindowOnClick</include>
 		</control>
 		<control type="radiobutton" id="106">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View507VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View507VideoPreviewWindow)</selected>
@@ -2804,6 +2800,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="112">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View508VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View508VideoPreviewWindow)</selected>
@@ -2887,6 +2884,7 @@
 			<include>ReloadWindowOnClick</include>
 		</control>
 		<control type="radiobutton" id="111">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View509VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View509VideoPreviewWindow)</selected>
@@ -2936,6 +2934,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="108">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View510VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View510VideoPreviewWindow)</selected>
@@ -2981,6 +2980,7 @@
 			<include>ReloadWindowOnClick</include>
 		</control>
 		<control type="radiobutton" id="107">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View511VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View511VideoPreviewWindow)</selected>
@@ -3025,6 +3025,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="107">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View512VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View512VideoPreviewWindow)</selected>
@@ -3249,6 +3250,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="108">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View530VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View530VideoPreviewWindow)</selected>
@@ -3294,6 +3296,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="107">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View531VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View531VideoPreviewWindow)</selected>
@@ -3331,6 +3334,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="106">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View532VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View532VideoPreviewWindow)</selected>
@@ -3390,6 +3394,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="109">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(View533VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(View533VideoPreviewWindow)</selected>
@@ -3606,6 +3611,7 @@
 			<include>MediaMenuRadioButton</include>
 		</control>
 		<control type="radiobutton" id="106">
+			<visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
 			<label>$LOCALIZE[31228]</label>
 			<onclick>Skin.ToggleSetting(ViewCustom1102VideoPreviewWindow)</onclick>
 			<selected>Skin.HasSetting(ViewCustom1102VideoPreviewWindow)</selected>

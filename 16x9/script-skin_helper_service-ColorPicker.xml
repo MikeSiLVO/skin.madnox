@@ -20,6 +20,7 @@
 				<onright>60</onright>
 				<!-- Edit manual -->
 				<control type="button" id="3010">
+					<font>Font25_Reg</font>
 					<width>350</width>
 					<include>DialogButton</include>
 					<label>$ADDON[script.skin.helper.colorpicker 32050]</label>
@@ -35,18 +36,21 @@
 				</control>
 				<!-- Choose color palette -->
 				<control type="button" id="3030">
+					<font>Font25_Reg</font>
 					<width>350</width>
 					<include>DialogButton</include>
 					<label>$ADDON[script.skin.helper.colorpicker 32141]</label>
 				</control>
 				<!-- Save button -->
 				<control type="button" id="3012">
+					<font>Font25_Reg</font>
 					<width>350</width>
 					<include>DialogButton</include>
 					<label>$LOCALIZE[732]</label>
 				</control>
 				<!-- None (reset) -->
 				<control type="button" id="3011">
+					<font>Font25_Reg</font>
 					<width>350</width>
 					<include>DialogButton</include>
 					<label>$LOCALIZE[13007]</label>
@@ -84,6 +88,7 @@
 				</control>
 				<control type="label">
 					<visible>Control.HasFocus(3015)</visible>
+					<font>Font25_Reg</font>
 					<width>350</width>
 					<height>70</height>
 					<textoffsetx>40</textoffsetx>
@@ -92,6 +97,7 @@
 				</control>
 				<control type="label">
 					<visible>!Control.HasFocus(3015)</visible>
+					<font>Font25_Reg</font>
 					<width>350</width>
 					<height>70</height>
 					<textoffsetx>40</textoffsetx>

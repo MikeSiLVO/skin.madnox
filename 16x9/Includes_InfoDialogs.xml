@@ -850,7 +850,7 @@
 						</item>
 						<item>
 							<label>$INFO[ListItem.Property(Artist_Died)]</label>
-							<label2>$LOCALIZE[21893]</label2>
+							<label2>$LOCALIZE[21897]</label2>
 							<visible>!String.IsEmpty(ListItem.Property(Artist_Died)) + String.IsEqual(ListItem.DBTYPE,artist)</visible>
 						</item>
 						<item>
@@ -2076,7 +2076,7 @@
 	</variable>
 	<variable name="MusicVideoInfoPlotVar">
 		<value condition="Control.HasFocus(1090) + !String.IsEmpty(Container.ListItem.Plot)">$INFO[Container.ListItem.Plot]</value>
-		<value condition="![Control.HasFocus(1090) | Control.HasFocus(1060)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+		<value condition="![Control.HasFocus(1090) | Control.HasFocus(1060) | Control.HasFocus(1020)] + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 		<value condition="!String.IsEmpty(Container(7004).ListItem.Property(Album_Description))">$INFO[Container(7004).ListItem.Property(Album_Description)]</value>
 		<value condition="!String.IsEmpty(Container(7005).ListItem.Property(Artist_Description))">$INFO[Container(7005).ListItem.Property(Artist_Description)]</value>
 	</variable>
