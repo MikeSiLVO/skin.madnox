@@ -73,6 +73,33 @@
 	<background label="20343" icon="special://skin/extras/backgrounds/tvshows.jpg">special://skin/extras/backgrounds/tvshows.jpg</background>
 	<background label="3" icon="special://skin/extras/backgrounds/videos.jpg">special://skin/extras/backgrounds/videos.jpg</background>
 	<background label="8" icon="special://skin/extras/backgrounds/weather.jpg">special://skin/extras/backgrounds/weather.jpg</background>
+	<!-- Menu groupings -->
+	<groupings>
+		<!-- Common -->
+		<node label="$ADDON[script.skinshortcuts 32029]">
+			<shortcut label="1036" icon="DefaultFavourites.png">ActivateWindow(favouritesbrowser)</shortcut>
+			<shortcut label="3" icon="DefaultVideo.png">ActivateWindow(Videos,library://video/,return)</shortcut>
+			<shortcut label="342" icon="DefaultMovies.png">ActivateWindow(Videos,videodb://movies/titles/,return)</shortcut>
+			<shortcut label="20343" icon="DefaultTVShows.png">ActivateWindow(Videos,videodb://tvshows/titles/,return)</shortcut>
+			<shortcut label="2" icon="DefaultAddonMusic.png">ActivateWindow(Music,musicdb://,return)</shortcut>
+			<shortcut label="133" icon="DefaultMusicArtists.png">ActivateWindow(Music,musicdb://artists/,return)</shortcut>
+			<shortcut label="132" icon="DefaultMusicAlbums.png">ActivateWindow(Music,musicdb://albums/,return)</shortcut>
+			<shortcut label="20389" icon="DefaultMusicVideos.png">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</shortcut>
+			<shortcut label="20244" icon="DefaultAddonProgram.png" condition="System.Platform.Android">ActivateWindow(Programs,androidapp://sources/apps,return)</shortcut>
+			<shortcut label="10001" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
+			<shortcut label="1037" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+			<shortcut label="1038" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
+			<shortcut label="1039" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,Addons,return)</shortcut>
+			<shortcut label="10821" icon="DefaultAddonGame.png">ActivateWindow(Games)</shortcut>
+			<shortcut label="10111" icon="DefaultAddonNone.png">ActivateWindow(shutdownmenu)</shortcut>
+			<shortcut label="589" icon="DefaultPartyMode.png">PlayerControl(PartyMode)</shortcut>
+			<shortcut label="4" icon="DefaultAddonTvInfo.png">ActivateWindow(TVGuide)</shortcut>
+			<shortcut label="19023" icon="DefaultAddonTvInfo.png">ActivateWindow(TVChannels)</shortcut>
+			<shortcut label="1" icon="DefaultPictures.png">ActivateWindow(Pictures)</shortcut>
+			<shortcut label="12600" icon="DefaultAddonWeather.png">ActivateWindow(Weather)</shortcut>
+			<shortcut label="341" icon="DefaultVCD.png">PlayDisc</shortcut>
+		</node>
+	</groupings>
 	<!-- Widget groupings -->
 	<widget-groupings>
 		<!-- Movies -->
