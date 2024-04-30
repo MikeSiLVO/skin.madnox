@@ -1076,7 +1076,7 @@
 				<bottom>10</bottom>
 				<left>10</left>
 				<right>10</right>
-				<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+				<aspectratio align="center" aligny="center">scale</aspectratio>
 				<imagepath diffuse="$PARAM[diffuse]" colordiffuse="$VAR[MainMenuWidgetColorVar]">$INFO[ListItem.Property(fanart)]</imagepath>
 				<timeperimage>3600000</timeperimage>
 				<fadetime>1</fadetime>
@@ -1130,7 +1130,7 @@
 					<bottom>10</bottom>
 					<left>10</left>
 					<right>10</right>
-					<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
+					<aspectratio align="center" aligny="center">scale</aspectratio>
 					<imagepath diffuse="$PARAM[diffuse]">$INFO[ListItem.Property(fanart)]</imagepath>
 					<timeperimage>3600000</timeperimage>
 					<fadetime>1</fadetime>
