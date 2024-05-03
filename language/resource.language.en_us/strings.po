@@ -1468,7 +1468,7 @@ msgstr ""
 #: /16x9/SkinSettings.xml
 msgctxt "#31292"
 msgid "Custom favourites"
-msgstr ""
+msgstr "Custom favorites"
 
 #: /16x9/Includes_CustomSelect.xml
 msgctxt "#31293"
