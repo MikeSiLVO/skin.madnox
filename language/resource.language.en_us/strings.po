@@ -1,16 +1,27 @@
 # Kodi Media Center language file
-# Addon Name: Madnox
+# Addon Name: Madnox Redux
 # Addon id: skin.madnox
 # Addon Provider: Team Madnox
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: kittmaster"
+"Language-Team: \n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: /16x9/DialogAddonSettings.xml /16x9/Variables.xml /16x9/DialogTextViewer.xml /16x9/Custom_1100_TextViewer.xml /16x9/script-skin_helper_service-ColorPicker.xml
 msgctxt "#31000"
 msgid "Page"
 msgstr ""
 
-#: /16x9/DialogAddonSettings.xml /16x9/DialogMediaSource.xml /16x9/Includes_CommonObjects.xml /16x9/Variables.xml /16x9/DialogFavourites.xml /16x9/Includes_Dialogs.xml /16x9/Custom_1110_CustomSelectConatainer.xml /16x9/DialogSettings.xml /16x9/DialogSubtitles.xml
+#: /16x9/DialogAddonSettings.xml /16x9/DialogMediaSource.xml /16x9/Includes_CommonObjects.xml /16x9/Variables.xml /16x9/DialogFavorites.xml /16x9/Includes_Dialogs.xml /16x9/Custom_1110_CustomSelectConatainer.xml /16x9/DialogSettings.xml /16x9/DialogSubtitles.xml
 msgctxt "#31001"
 msgid "Items"
 msgstr ""
@@ -127,8 +138,8 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31024"
-msgid "Customise shortcut menu"
-msgstr ""
+msgid ""
+msgstr "Customize shortcut menu"
 
 #: /16x9/Includes_MediaMenu.xml
 msgctxt "#31025"
@@ -162,8 +173,8 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31031"
-msgid "Enable day and night colour themes"
-msgstr ""
+msgid ""
+msgstr "Enable day and night color themes"
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31032"
@@ -267,8 +278,8 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31052"
-msgid "Coloured"
-msgstr ""
+msgid ""
+msgstr "Colored"
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31053"
@@ -317,8 +328,8 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31062"
-msgid "Coloured icons"
-msgstr ""
+msgid ""
+msgstr "Colored icons"
 
 #: /16x9/Includes_MediaFlags.xml
 msgctxt "#31063"
@@ -332,8 +343,8 @@ msgstr ""
 
 #: /16x9/Custom_1117_MusicVisSettings.xml
 msgctxt "#31065"
-msgid "Visualisation settings"
-msgstr ""
+msgid ""
+msgstr "Visualization settings"
 
 #: /16x9/Custom_1117_MusicVisSettings.xml
 msgctxt "#31066"
@@ -422,7 +433,7 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31083"
-msgid "Favourites script"
+msgid "Favorites script"
 msgstr ""
 
 #: /16x9/Includes_MediaMenu.xml
@@ -532,8 +543,8 @@ msgstr ""
 
 #: /16x9/Custom_1110_CustomSelectContainer.xml /16x9/Includes_MediaMenu.xml
 msgctxt "#31105"
-msgid "colour"
-msgstr ""
+msgid ""
+msgstr "color"
 
 #: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
 msgctxt "#31106"
@@ -622,7 +633,7 @@ msgstr ""
 
 #: /16x9/Includes_MediaMenu.xml
 msgctxt "#31123"
-msgid "Logo"
+msgid "Clearlogo or Title/Tagline"
 msgstr ""
 
 #: /16x9/Custom_1114_Addons.xml
@@ -892,13 +903,13 @@ msgstr ""
 
 #: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
 msgctxt "#31177"
-msgid "Visualisation music info"
-msgstr ""
+msgid ""
+msgstr "Visualization music info"
 
 #: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
 msgctxt "#31178"
-msgid "Visualisation audio info"
-msgstr ""
+msgid ""
+msgstr "Visualization audio info"
 
 #: /16x9/Includes_CustomSelect.xml /16x9/Includes_MediaMenu.xml
 msgctxt "#31179"
@@ -990,9 +1001,9 @@ msgctxt "#31196"
 msgid "Background now playing info"
 msgstr ""
 
-#:
+#: /16x9/Includes_CustomSelect.xml
 msgctxt "#31197"
-msgid ""
+msgid "Automatically open fullscreen music on play"
 msgstr ""
 
 #: /16x9/Variables.xml
@@ -1387,8 +1398,8 @@ msgstr ""
 
 #: /16x9/Includes_MediaMenu.xml
 msgctxt "#31276"
-msgid "Install colour genre icons"
-msgstr ""
+msgid ""
+msgstr "Install color genre icons"
 
 #: /16x9/Includes_MediaMenu.xml
 msgctxt "#31277"
@@ -1432,8 +1443,8 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31285"
-msgid "Themes & Colours"
-msgstr ""
+msgid ""
+msgstr "Themes & Colors"
 
 #: /16x9/Home.xml
 msgctxt "#31286"
@@ -1467,18 +1478,18 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31292"
-msgid "Custom favourites"
+msgid ""
 msgstr "Custom favorites"
 
 #: /16x9/Includes_CustomSelect.xml
 msgctxt "#31293"
-msgid "Favourite"
+msgid "Favorite"
 msgstr ""
 
 #: /shortcuts/overrides.xml
 msgctxt "#31294"
-msgid "Custom favourite addons"
-msgstr ""
+msgid ""
+msgstr "Custom favorite addons"
 
 #: /16x9/Includes_CustomSelect.xml
 msgctxt "#31295"
@@ -1507,8 +1518,8 @@ msgstr ""
 
 #: /16x9/SkinSettings.xml
 msgctxt "#31300"
-msgid "Customise"
-msgstr ""
+msgid ""
+msgstr "Customize"
 
 #: /16x9/Includes_MediaMenu.xml
 msgctxt "#31301"
@@ -1677,13 +1688,13 @@ msgstr ""
 
 #: /16x9/Includes_CustomSelect.xml
 msgctxt "#31334"
-msgid "Visualisation presets"
-msgstr ""
+msgid ""
+msgstr "Visualization presets"
 
 #: /16x9/Includes_CustomSelect.xml
 msgctxt "#31335"
-msgid "Visualisation options"
-msgstr ""
+msgid ""
+msgstr "Visualization options"
 
 #: /16x9/Custom_1111_CustomSelectGrouplist.xml
 msgctxt "#31336"
@@ -1945,10 +1956,10 @@ msgctxt "#31387"
 msgid "Recently released (include watched)"
 msgstr ""
 
-#: SKIN SETTINGS DESCRIPTIONS /16x9/Includes_Settings.xml
+#: /16x9/Includes_Settings.xml
 msgctxt "#31901"
-msgid "Customisation of the home screen, widgets and shortcuts menu."
-msgstr ""
+msgid ""
+msgstr "Customization of the home screen, widgets and shortcuts menu."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31902"
@@ -1957,8 +1968,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31903"
-msgid "Provides colour selection."
-msgstr ""
+msgid ""
+msgstr "Provides color selection."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31904"
@@ -1982,8 +1993,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31908"
-msgid "Sync your collection and watched status with trakt.tv."
-msgstr ""
+msgid ""
+msgstr "Sync your collection and watched status with Trakt.TV."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31909"
@@ -1992,8 +2003,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31910"
-msgid "Create a custom favourite from selected kodi favourites."
-msgstr ""
+msgid ""
+msgstr "Create a custom favorite from selected Kodi favorites."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31911"
@@ -2007,18 +2018,18 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31913"
-msgid "Create a custom favourite from selected kodi favourites. For use in main menu widgets. Requires script favourites to be installed."
-msgstr ""
+msgid ""
+msgstr "Create a custom favorite from selected Kodi favorites. For use in main menu widgets. Requires script favorites to be installed."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31914"
-msgid "Create a custom addon favourite from installed addons. For use in main menu widgets."
-msgstr ""
+msgid ""
+msgstr "Create a custom addon favorite from installed addons. For use in main menu widgets."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31915"
-msgid "Reset the skin theme and colours to default."
-msgstr ""
+msgid ""
+msgstr "Reset the skin theme and colors to default."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31916"
@@ -2032,8 +2043,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31918"
-msgid "Customise the home screen, favourites, predefined themes and kiosk mode."
-msgstr ""
+msgid ""
+msgstr "Customize the home screen, favorites, predefined themes and kiosk mode."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31919"
@@ -2042,13 +2053,13 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31920"
-msgid "Customise the skin texture colours."
-msgstr ""
+msgid ""
+msgstr "Customize the skin texture colors."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31921"
-msgid "Customise the background and fallbacks for specific skin areas."
-msgstr ""
+msgid ""
+msgstr "Customize the background and fallbacks for specific skin areas."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31922"
@@ -2057,8 +2068,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31923"
-msgid "Customise artwork and install supported artwork packs."
-msgstr ""
+msgid ""
+msgstr "Customize artwork and install supported artwork packs."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31924"
@@ -2136,14 +2147,19 @@ msgid "Darkens the screen behind dialog popups. Not applicable for fullscreen vi
 msgstr ""
 
 #: /16x9/Includes_Settings.xml
-msgctxt "#31940"
-msgid "Enable coloured icons for the topbar, media information and library views."
+msgctxt "#31939"
+msgid "Automatically switches to fullscreen when you press play on an album or audio file. If audio is already playing no action will be taken."
 msgstr ""
 
 #: /16x9/Includes_Settings.xml
+msgctxt "#31940"
+msgid ""
+msgstr "Enable colored icons for the topbar, media information and library views."
+
+#: /16x9/Includes_Settings.xml
 msgctxt "#31941"
-msgid "Enable coloured, HDR, bit depth and language media flags."
-msgstr ""
+msgid ""
+msgstr "Enable colored, HDR, bit depth and language media flags."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31943"
@@ -2172,8 +2188,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31948"
-msgid "Install coloured studio icons for use throughout the skin."
-msgstr ""
+msgid ""
+msgstr "Install colored studio icons for use throughout the skin."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31949"
@@ -2192,8 +2208,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31952"
-msgid "Install coloured movie genre icons for movies and tv shows."
-msgstr ""
+msgid ""
+msgstr "Install colored movie genre icons for movies and tv shows."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31953"
@@ -2222,8 +2238,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31958"
-msgid "Enables music visualisation in background while playing music. Requires visualisation to be enabled in settings - Player settings/Music."
-msgstr ""
+msgid ""
+msgstr "Enables music visualization in background while playing music. Requires visualization to be enabled in Settings >> Player settings >> Music."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31959"
@@ -2232,8 +2248,8 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31960"
-msgid "Download images and additional information from fanart.tv and theaudiodb.com of the currently playing artist. For fullscreen music, internet streams and radio."
-msgstr ""
+msgid ""
+msgstr "Download images and additional information from Fanart.TV and theaudiodb.com of the currently playing artist. For fullscreen music, internet streams and radio."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31961"
@@ -2272,10 +2288,25 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31968"
-msgid "Play the next tvshow episode automatically."
-msgstr ""
+msgid ""
+msgstr "Play the next TV show episode automatically."
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31969"
-msgid "Play themes while navigating TV Shows, Movies and Music Videos."
-msgstr ""
+msgid ""
+msgstr "Play themes while navigating Movies, TV Shows and Music Videos."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31970"
+msgid ""
+msgstr "The Library Node Editor allows you to create and customize custom video nodes and music nodes within Kodi."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#31971"
+msgid ""
+msgstr "Show overlay marker information for watched, unwatched, and in progress media items."
+
+#: /16x9/Includes_Settings.xml
+msgctxt "#38112"
+msgid ""
+msgstr "Automatically go to the visualization window when audio playback starts"

@@ -5,6 +5,10 @@
 	<menucontrol>9050</menucontrol>
 	<controls>
 		<control type="group">
+			<include content="BackgroundDefault">
+			<param name="imagepath">$VAR[FavoritesBackgroundVar]</param>
+			<param name="animatedfanart">Skin.HasSetting(AddonAnimatedFanart)</param>
+			</include>
 			<include>AnimationVisibleFade</include>
 			<!-- List -->
 			<include>View50CoverList</include>
