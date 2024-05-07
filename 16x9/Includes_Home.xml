@@ -7,7 +7,7 @@
 			<control type="group">
 				<top>$PARAM[top]</top>
 				<control type="label">
-					<visible>![Player.HasMedia + Skin.HasSetting(NowplayingSystemBar) + String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia))] + !String.IsEmpty(Container(9000).ListItem.Property(InfoLine)) + !Skin.HasSetting(HideInfoLine)</visible>
+					<visible>![Player.HasMedia + Skin.HasSetting(NowplayingSystemBar) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + !String.IsEmpty(Container(9000).ListItem.Property(InfoLine)) + !Skin.HasSetting(HideInfoLine)</visible>
 					<left>5</left>
 					<width>$PARAM[width]</width>
 					<height>38</height>
@@ -17,7 +17,7 @@
 					<textcolor>$VAR[PanelTextColorVar]</textcolor>
 				</control>
 				<control type="grouplist">
-					<visible>Player.HasMedia + Skin.HasSetting(NowplayingSystemBar) + String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia))</visible>
+					<visible>Player.HasMedia + Skin.HasSetting(NowplayingSystemBar) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					<include>AnimationVisibleFade</include>
 					<left>5</left>
 					<width>$PARAM[width]</width>
