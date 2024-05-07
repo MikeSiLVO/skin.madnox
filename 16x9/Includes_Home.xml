@@ -1193,7 +1193,7 @@
 			<animation effect="slide" end="0,42" condition="Skin.HasSetting(InfoBarTop)">Conditional</animation>
 			<control type="grouplist">
 				<visible>ControlGroup(90010).HasFocus + !Control.HasFocus(1607)</visible>
-				<bottom>350</bottom>
+				<bottom>280</bottom>
 				<width>910</width>
 				<height>400</height>
 				<itemgap>10</itemgap>
