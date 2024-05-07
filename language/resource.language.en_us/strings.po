@@ -1963,7 +1963,7 @@ msgstr ""
 
 #: /16x9/Includes_Settings.xml
 msgctxt "#31903"
-msgid "Provides color selection."
+msgid "Provides colour selection."
 msgstr "Provides color selection."
 
 #: /16x9/Includes_Settings.xml
