@@ -566,6 +566,13 @@
 							<onclick>ActivateWindow(1111)</onclick>
 							<include>SettingsButton</include>
 						</control>
+						<control type="button" id="429">
+							<description>Favourites</description>
+							<label>$LOCALIZE[1036]</label>
+							<onclick>SetProperty(CustomSelectGroup,$LOCALIZE[1036] $LOCALIZE[31107],home)</onclick>
+							<onclick>ActivateWindow(1111)</onclick>
+							<include>SettingsButton</include>
+						</control>
 						<control type="button" id="427">
 							<description>Weather</description>
 							<label>$LOCALIZE[400]</label>

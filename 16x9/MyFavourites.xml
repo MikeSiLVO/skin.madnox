@@ -4,6 +4,11 @@
 	<views>50,51,521,541</views>
 	<menucontrol>9050</menucontrol>
 	<controls>
+		<!-- Background -->
+		<include content="BackgroundDefault">
+			<param name="imagepath">$VAR[FavouritesBackgroundVar]</param>
+			<param name="animatedfanart">Skin.HasSetting(FavouritesAnimatedFanart)</param>
+		</include>
 		<control type="group">
 			<include>AnimationVisibleFade</include>
 			<!-- List -->
