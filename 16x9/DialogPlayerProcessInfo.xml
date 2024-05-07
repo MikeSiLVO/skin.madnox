@@ -43,12 +43,12 @@
 					<include>VideoOSDProcessInfo</include>
 				</control>
 				<control type="label">
-					<visible>Player.Proces(videohwdecoder)</visible>
+					<visible>Player.Process(videohwdecoder)</visible>
 					<label>[COLOR $VAR[PanelTextColorVar]]$LOCALIZE[31075]  [/COLOR]$LOCALIZE[13281]</label>
 					<include>VideoOSDProcessInfo</include>
 				</control>
 				<control type="label">
-					<visible>!Player.Proces(videohwdecoder)</visible>
+					<visible>!Player.Process(videohwdecoder)</visible>
 					<label>[COLOR $VAR[PanelTextColorVar]]$LOCALIZE[31075]  [/COLOR]$LOCALIZE[13419]</label>
 					<include>VideoOSDProcessInfo</include>
 				</control>
