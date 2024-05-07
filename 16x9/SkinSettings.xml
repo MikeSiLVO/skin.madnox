@@ -936,7 +936,7 @@
 							<include>SettingsRadioButton</include>
 						</control>
 						<control type="button" id="713">
-							<label>CU LRC lycics</label>
+							<label>CU LRC lyrics</label>
 							<label2>$VAR[AddonLyricsVar]</label2>
 							<onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
 							<onclick condition="!System.AddonIsEnabled(script.cu.lrclyrics)">EnableAddon(script.cu.lrclyrics)</onclick>
