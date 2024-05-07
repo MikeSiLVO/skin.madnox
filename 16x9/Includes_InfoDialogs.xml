@@ -1900,12 +1900,12 @@
 		<value condition="!Skin.HasSetting(VideoInfoDisableClearLogo) + !String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEqual(ListItem.DBType,musicvideo)">$INFO[ListItem.Art(clearlogo)]</value>
 		<value condition="!Skin.HasSetting(VideoInfoDisableDiscArt) + !String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
 	</variable>
-	<variable name="VideoInfoCastVar">
+	<!-- <variable name="VideoInfoCastVar">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">plugin://script.embuary.helper?info=getcast&amp;type=movie&amp;dbid=$INFO[ListItem.DBID]</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">plugin://script.embuary.helper?info=getcast&amp;type=tvshow&amp;dbid=$INFO[ListItem.DBID]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode)">plugin://script.embuary.helper?info=getcast&amp;type=episode&amp;dbid=$INFO[ListItem.DBID]</value>
 		<value condition="String.IsEqual(ListItem.DBType,season)">plugin://script.embuary.helper?info=getcast&amp;type=tvshow&amp;dbid=$INFO[ListItem.DBID]&amp;idtype=season</value>
-	</variable>
+	</variable> -->
 	<variable name="VideoInfoTMDbVar">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.embuary.info,call=movie,dbid=$INFO[ListItem.DBID])</value>
 		<value condition="String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.embuary.info,call=tv,dbid=$INFO[ListItem.DBID])</value>
@@ -2100,8 +2100,8 @@
 		<value condition="String.Contains(Control.GetLabel(13),*)"></value>
 		<value></value>
 	</variable>
-	<variable name="MusicInfoFolderPathVar">
+	<!-- <variable name="MusicInfoFolderPathVar">
 		<value condition="Container.Content(albums) + String.IsEmpty(ListItem.DiscNumber)">musicdb://albums/$INFO[ListItem.DBID]/-1/?albumid=$INFO[ListItem.DBID]</value>
 		<value condition="!ListItem.IsParentFolder + Container.Content(albums) + !String.IsEmpty(ListItem.DiscNumber)">$INFO[ListItem.FolderPath]</value>
-	</variable>
+	</variable> -->
 </includes>

@@ -357,9 +357,9 @@
 		<value condition="!String.IsEmpty(Window.Property(colorstring))">$LOCALIZE[737] [COLOR $INFO[Window.Property(colorstring)]]$INFO[Window.Property(colorstring)][/COLOR]</value>
 		<value>$LOCALIZE[737] [COLOR $VAR[PanelTextColorVar]]$LOCALIZE[571][/COLOR]</value>
 	</variable>
-	<variable name="ColorPickerLabelVar2">
+	<!-- <variable name="ColorPickerLabelVar2">
 		<value>[COLOR $VAR[PanelHighlightColorVar]][CAPITALIZE]$LOCALIZE[33051][/CAPITALIZE] $LOCALIZE[737]:  [/COLOR]$INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</value>
-	</variable>
+	</variable> -->
 	<!-- PARAM -->
 	<include name="CustomColorRadioButton">
 		<param name="ColorStringVar" />
