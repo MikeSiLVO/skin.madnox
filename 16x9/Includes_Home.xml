@@ -1187,7 +1187,7 @@
 		</control>
 		<control type="group">
 			<visible>$PARAM[infovisible]</visible>
-			<bottom>$PARAM[infoposition]</bottom>
+			<bottom>390</bottom>
 			<left>40</left>
 			<right>40</right>
 			<animation effect="slide" end="0,42" condition="Skin.HasSetting(InfoBarTop)">Conditional</animation>
