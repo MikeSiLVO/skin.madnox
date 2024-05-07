@@ -4,7 +4,7 @@
 	<visible>!Window.IsVisible(startup)</visible>
 	<controls>
 		<control type="image">
-			<include>FullscreenDimensions</include>
+			<include>FullScreenDimensions</include>
 			<texture>colors/black50.png</texture>
 			<visible>Skin.HasSetting(DebugInfo) + !Skin.HasSetting(DebugGrid)</visible>
 		</control>
