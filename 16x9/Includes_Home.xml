@@ -1187,13 +1187,12 @@
 		</control>
 		<control type="group">
 			<visible>$PARAM[infovisible]</visible>
-			<bottom>390</bottom>
+			<bottom>280</bottom>
 			<left>40</left>
 			<right>40</right>
-			<animation effect="slide" end="0,42" condition="Skin.HasSetting(InfoBarTop)">Conditional</animation>
 			<control type="grouplist">
 				<visible>ControlGroup(90010).HasFocus + !Control.HasFocus(1607)</visible>
-				<bottom>280</bottom>
+				<bottom>350</bottom>
 				<width>910</width>
 				<height>400</height>
 				<itemgap>10</itemgap>
@@ -1307,7 +1306,7 @@
 				</control>
 			</control>
 			<control type="label">
-				<bottom>312</bottom>
+				<bottom>$PARAM[infoposition]</bottom>
 				<height>30</height>
 				<font>Font30_Reg</font>
 				<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
