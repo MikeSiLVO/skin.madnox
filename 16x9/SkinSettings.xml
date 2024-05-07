@@ -320,7 +320,7 @@
 						<control type="radiobutton" id="302">
 							<label>$LOCALIZE[736]</label>
 							<label2>$VAR[PanelStyleColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelStyle.color,header=$LOCALIZE[736])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelStyle.color,header=$LOCALIZE[736])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelStyleColorVar]</param>
 							</include>
@@ -330,7 +330,7 @@
 						<control type="radiobutton" id="303">
 							<label>$LOCALIZE[31051]</label>
 							<label2>$VAR[PanelTextureColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelTexture.color,header=$LOCALIZE[31051])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelTexture.color,header=$LOCALIZE[31051])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelTextureColorVar]</param>
 							</include>
@@ -340,7 +340,7 @@
 						<control type="radiobutton" id="304">
 							<label>$LOCALIZE[31131]</label>
 							<label2>$VAR[PanelEmbossColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelEmboss.color,header=$LOCALIZE[31131])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelEmboss.color,header=$LOCALIZE[31131])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelEmbossColorVar]</param>
 							</include>
@@ -350,7 +350,7 @@
 						<control type="radiobutton" id="305">
 							<label>$LOCALIZE[31048]</label>
 							<label2>$VAR[PanelShadowColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelShadow.color,header=$LOCALIZE[31048])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelShadow.color,header=$LOCALIZE[31048])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelShadowColorVar]</param>
 							</include>
@@ -360,7 +360,7 @@
 						<control type="radiobutton" id="306">
 							<label>$LOCALIZE[31049]</label>
 							<label2>$VAR[PanelHighlightColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelHighlight.color,header=$LOCALIZE[31049])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelHighlight.color,header=$LOCALIZE[31049])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelHighlightColorVar]</param>
 							</include>
@@ -370,7 +370,7 @@
 						<control type="radiobutton" id="307">
 							<label>$LOCALIZE[31136]</label>
 							<label2>$VAR[PanelTextColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelText.color,header=$LOCALIZE[31136])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelText.color,header=$LOCALIZE[31136])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelTextColorVar]</param>
 							</include>
@@ -380,7 +380,7 @@
 						<control type="radiobutton" id="308">
 							<label>$LOCALIZE[31137]</label>
 							<label2>$VAR[PanelSubTextColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelSubText.color,header=$LOCALIZE[31137])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelSubText.color,header=$LOCALIZE[31137])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelSubTextColorVar]</param>
 							</include>
@@ -390,7 +390,7 @@
 						<control type="radiobutton" id="309">
 							<label>$LOCALIZE[31138]</label>
 							<label2>$VAR[PanelFocusTextColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelFocusText.color,header=$LOCALIZE[31138])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelFocusText.color,header=$LOCALIZE[31138])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelFocusTextColorVar]</param>
 							</include>
@@ -400,7 +400,7 @@
 						<control type="radiobutton" id="310">
 							<label>$LOCALIZE[31174]</label>
 							<label2>$VAR[PanelDisabledTextColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelDisabledText.color,header=$LOCALIZE[31174])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelDisabledText.color,header=$LOCALIZE[31174])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelDisabledTextColorVar]</param>
 							</include>
@@ -410,7 +410,7 @@
 						<control type="radiobutton" id="311">
 							<label>$LOCALIZE[31139]</label>
 							<label2>$VAR[PanelListSeparatorColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PanelListSeparator.color,header=$LOCALIZE[31139])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=PanelListSeparator.color,header=$LOCALIZE[31139])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[PanelListSeparatorColorVar]</param>
 							</include>
@@ -425,7 +425,7 @@
 						<control type="radiobutton" id="322">
 							<label>$LOCALIZE[736]</label>
 							<label2>$VAR[MainMenuStyleColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=MainMenuStyle.color,header=$LOCALIZE[736])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=MainMenuStyle.color,header=$LOCALIZE[736])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[MainMenuStyleColorVar]</param>
 							</include>
@@ -435,7 +435,7 @@
 						<control type="radiobutton" id="323">
 							<label>$LOCALIZE[31051]</label>
 							<label2>$VAR[MainMenuTextureColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=MainMenuTexture.color,header=$LOCALIZE[31051])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=MainMenuTexture.color,header=$LOCALIZE[31051])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[MainMenuTextureColorVar]</param>
 							</include>
@@ -445,7 +445,7 @@
 						<control type="radiobutton" id="324">
 							<label>$LOCALIZE[31134]</label>
 							<label2>$VAR[MainMenuGradientColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=MainMenuGradient.color,header=$LOCALIZE[31134])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=MainMenuGradient.color,header=$LOCALIZE[31134])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[MainMenuGradientColorVar]</param>
 							</include>
@@ -455,7 +455,7 @@
 						<control type="radiobutton" id="326">
 							<label>$LOCALIZE[31039]</label>
 							<label2>$VAR[MainMenuWidgetColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=MainMenuWidget.color,header=$LOCALIZE[31039])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=MainMenuWidget.color,header=$LOCALIZE[31039])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[MainMenuWidgetColorVar]</param>
 							</include>
@@ -470,7 +470,7 @@
 						<control type="radiobutton" id="332">
 							<label>$LOCALIZE[31051]</label>
 							<label2>$VAR[BackgroundTextureColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=BackgroundTexture.color,header=$LOCALIZE[31051])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=BackgroundTexture.color,header=$LOCALIZE[31051])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[BackgroundTextureColorVar]</param>
 							</include>
@@ -480,7 +480,7 @@
 						<control type="radiobutton" id="333">
 							<label>$LOCALIZE[31048]</label>
 							<label2>$VAR[BackgroundShadowColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=BackgroundShadow.color,header=$LOCALIZE[31048])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=BackgroundShadow.color,header=$LOCALIZE[31048])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[BackgroundShadowColorVar]</param>
 							</include>
@@ -495,7 +495,7 @@
 						<control type="radiobutton" id="342">
 							<label>$LOCALIZE[31175]</label>
 							<label2>$VAR[TopbarTextureColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=TopbarTexture.color,header=$LOCALIZE[31051])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=TopbarTexture.color,header=$LOCALIZE[31051])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[TopbarTextureColorVar]</param>
 							</include>
@@ -505,7 +505,7 @@
 						<control type="radiobutton" id="343">
 							<label>$LOCALIZE[31284]</label>
 							<label2>$VAR[TopbarShadowTextureColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=TopbarShadowTexture.color,header=$LOCALIZE[31051])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=TopbarShadowTexture.color,header=$LOCALIZE[31051])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[TopbarShadowTextureColorVar]</param>
 							</include>
@@ -520,7 +520,7 @@
 						<control type="radiobutton" id="352">
 							<label>$LOCALIZE[736]</label>
 							<label2>$VAR[FloorStyleColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=FloorStyle.color,header=$LOCALIZE[736])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=FloorStyle.color,header=$LOCALIZE[736])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[FloorStyleColorVar]</param>
 							</include>
@@ -530,7 +530,7 @@
 						<control type="radiobutton" id="353">
 							<label>$LOCALIZE[31049]</label>
 							<label2>$VAR[FloorHighlightColorLabelVar]      </label2>
-							<onclick>RunScript(script.skin.helper.colorpicker,skinstring=FloorHighlight.color,header=$LOCALIZE[31049])</onclick>
+							<onclick condition="System.AddonIsEnabled(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=FloorHighlight.color,header=$LOCALIZE[31049])</onclick>
 							<include content="CustomColorRadioButton">
 								<param name="ColorStringVar">$VAR[FloorHighlightColorVar]</param>
 							</include>

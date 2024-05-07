@@ -371,6 +371,8 @@
 			<textureradioonnofocus colordiffuse="$PARAM[ColorStringVar]">colors/white.png</textureradioonnofocus>
 			<textureradioofffocus colordiffuse="$PARAM[ColorStringVar]">colors/white.png</textureradioofffocus>
 			<textureradiooffnofocus colordiffuse="$PARAM[ColorStringVar]">colors/white.png</textureradiooffnofocus>
+			<onclick condition="!System.AddonIsEnabled(script.skin.helper.colorpicker)">EnableAddon(script.skin.helper.colorpicker)</onclick>
+			<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
 		</definition>
 	</include>
 </includes>
