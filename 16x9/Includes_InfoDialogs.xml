@@ -191,11 +191,12 @@
 					</item>
 					<item id="101">
 						<description>TMDb info</description>
-						<visible>Skin.HasSetting(VideoInfoTMDb)</visible>
+						<!-- <visible>Skin.HasSetting(VideoInfoTMDb)</visible> -->
 						<label></label>
 						<label2>$LOCALIZE[31351]</label2>
-						<onclick>Dialog.Close(all)</onclick>
-						<onclick>$VAR[VideoInfoTMDbVar]</onclick>
+						<!-- <onclick>Dialog.Close(all)</onclick>
+						<onclick>$VAR[VideoInfoTMDbVar]</onclick> -->
+						<onclick>RunScript(plugin.video.themoviedb.helper,add_query=$INFO[ListItem.Label],type=movie,call_auto=1190)</onclick>
 					</item>
 					<item id="104">
 						<description>Next episode</description>
