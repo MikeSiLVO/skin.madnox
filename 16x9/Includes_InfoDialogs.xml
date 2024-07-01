@@ -194,9 +194,9 @@
 						<!-- <visible>Skin.HasSetting(VideoInfoTMDb)</visible> -->
 						<label></label>
 						<label2>$LOCALIZE[31351]</label2>
-						<!-- <onclick>Dialog.Close(all)</onclick>
-						<onclick>$VAR[VideoInfoTMDbVar]</onclick> -->
-						<onclick>RunScript(plugin.video.themoviedb.helper,add_query=$INFO[ListItem.Label],type=movie,call_auto=1190)</onclick>
+						<!-- <onclick>Dialog.Close(all)</onclick> -->
+						<!-- <onclick>$VAR[VideoInfoTMDbVar]</onclick> -->
+						<onclick>Runscript(plugin.video.themoviedb.helper,recommendations=5000|info=cast|true|info,window_id=1191,$VAR[TMDbHelperTypeVar],$VAR[TMDbHelperIDVar])</onclick>
 					</item>
 					<item id="104">
 						<description>Next episode</description>
@@ -2105,4 +2105,12 @@
 		<value condition="Container.Content(albums) + String.IsEmpty(ListItem.DiscNumber)">musicdb://albums/$INFO[ListItem.DBID]/-1/?albumid=$INFO[ListItem.DBID]</value>
 		<value condition="!ListItem.IsParentFolder + Container.Content(albums) + !String.IsEmpty(ListItem.DiscNumber)">$INFO[ListItem.FolderPath]</value>
 	</variable> -->
+	<variable name="TMDbHelperTypeVar">
+		<value condition="String.IsEqual(ListItem.DBTYPE,movie)">tmdb_type=movie</value>
+		<value condition="String.IsEqual(ListItem.DBTYPE,tvshow)">tmdb_type=tv</value>
+	</variable>
+	<variable name="TMDbHelperIDVar">
+		<value condition="String.StartsWith(ListItem.IMDbNumber,tt)">imdb_id=$INFO[ListItem.IMDbNumber]</value>
+		<value>tmdb_id=$INFO[ListItem.IMDbNumber]</value>
+	</variable>
 </includes>
