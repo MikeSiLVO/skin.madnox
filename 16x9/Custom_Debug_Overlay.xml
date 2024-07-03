@@ -26,6 +26,22 @@
 			<!-- DEBUG LABELS -->
 			<!-- MY VARS -->
 		
+			<control type="label">
+				<height>60</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13_bold</font>
+				<label>$INFO[ListItem.DBType,[COLOR FF00FF00]ListItem.DBType - [/COLOR]]$INFO[ListItem.DBType, (ListItem.DBType=,)]</label>
+			</control>
+			
+			<control type="label">
+				<height>60</height>
+				<textcolor>FFFF0000</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13_bold</font>
+				<label>$INFO[ListItem.DBID,[COLOR FF00FF00]ListItem.DBID - [/COLOR]]$INFO[ListItem.DBID, (ListItem.DBID=,)]</label>
+			</control>
+		
 			<!-- Control label -->
 			<control type="label">
 				<height>60</height>
