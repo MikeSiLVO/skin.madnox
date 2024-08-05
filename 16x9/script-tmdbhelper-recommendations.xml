@@ -7,6 +7,19 @@
 			<texture>special://skin/media/colors/black.png</texture>
 		</control>
 		<control type="group">
+			<visible>!String.IsEmpty(Window.Property(poster))</visible>
+			<include>AnimationVisibleFade</include>
+			<top>15</top>
+			<left>15</left>
+			<width>706</width>
+			<height>1050</height>
+			<include content="ViewArtwork">
+				<param name="aspect">stretch</param>
+				<param name="art">$INFO[Window.Property(poster)]</param>
+				<param name="diffuse">diffuse/rounded5-686x1030.png</param>
+			</include>
+		</control>
+		<control type="group">
 			<top>16</top>
 			<left>736</left>
 			<right>25</right>
@@ -41,6 +54,12 @@
 						<label2>Crew</label2>
 					</item>
 				</content>
+			</control>
+			<control type="textbox">
+				<top>644</top>
+				<bottom>125</bottom>
+				<include>AutoScrollPlot</include>
+				<label>$VAR[VideoInfoPlotVar]</label>
 			</control>
 		</control>
 	</controls>

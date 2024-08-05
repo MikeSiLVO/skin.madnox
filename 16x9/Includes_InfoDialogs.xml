@@ -196,7 +196,7 @@
 						<label2>$LOCALIZE[31351]</label2>
 						<!-- <onclick>Dialog.Close(all)</onclick> -->
 						<!-- <onclick>$VAR[VideoInfoTMDbVar]</onclick> -->
-						<onclick>Runscript(plugin.video.themoviedb.helper,recommendations=5000|info=cast|true|info,window_id=1191,$VAR[TMDbHelperTypeVar],$VAR[TMDbHelperIDVar])</onclick>
+						<onclick>Runscript(plugin.video.themoviedb.helper,recommendations=5000|info=cast|true|info,window_id=1191,$VAR[TMDbHelperTypeVar],$VAR[TMDbHelperIDVar],winprop_plot=$VAR[VideoInfoPlotVar],winprop_poster=$VAR[VideoInfoPosterVar])</onclick>
 					</item>
 					<item id="104">
 						<description>Next episode</description>
@@ -1936,6 +1936,7 @@
 		<value condition="ControlGroup(9001).HasFocus + !Control.HasFocus(50)">$LOCALIZE[31348]</value>
 		<value condition="Skin.HasSetting(VideoInfoPlotOutline) + !String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
 		<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+		<value condition="!String.IsEmpty(Window.Property(plot))">$INFO[Window.Property(plot)]</value>
 		<value>$LOCALIZE[31348]</value>
 	</variable>
 	<variable name="VideoInfoContainerIcon">
