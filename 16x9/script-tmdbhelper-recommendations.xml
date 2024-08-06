@@ -24,18 +24,26 @@
 			<left>736</left>
 			<right>25</right>
 			<control type="grouplist" id="6000">
-				<top>211</top>
+				<top>20</top>
 				<ondown>9000</ondown>
 				<control type="panel" id="5000">
 					<include content="DialogExtraInfo">
 						<param name="art">$INFO[ListItem.Art(poster)]</param>
-						<param name="visible">true</param>
+						<param name="visible">String.IsEqual(Window.Property(List_5000_Visible),True)</param>
+						<param name="aspect">scale</param>
+						<param name="labelvisible">true</param>
+					</include>
+				</control>
+				<control type="panel" id="5001">
+					<include content="DialogExtraInfo">
+						<param name="art">$INFO[ListItem.Art(poster)]</param>
+						<param name="visible">String.IsEqual(Window.Property(List_5001_Visible),True)</param>
 						<param name="labelvisible">true</param>
 						<param name="overlayiconvisible">true</param>
 					</include>
 				</control>
 			</control>
-			<control type="list" id="9000">
+			<!-- <control type="list" id="9000">
 				<top>555</top>
 				<left>-10</left>
 				<right>25</right>
@@ -54,12 +62,12 @@
 						<label2>Crew</label2>
 					</item>
 				</content>
-			</control>
+			</control> -->
 			<control type="textbox">
-				<top>644</top>
-				<bottom>125</bottom>
+				<height>200</height>
+				<bottom>20</bottom>
 				<include>AutoScrollPlot</include>
-				<label>$VAR[VideoInfoPlotVar]</label>
+				<label fallback="$INFO[Window.Property(plot)]">$INFO[Container.ListItem.Plot]</label>
 			</control>
 		</control>
 	</controls>

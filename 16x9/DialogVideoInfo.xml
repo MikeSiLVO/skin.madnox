@@ -9,6 +9,9 @@
 	<onload condition="System.AddonIsEnabled(script.embuary.helper) + !String.IsEqual(ListItem.DBTYPE,musicvideo)">RunScript(script.embuary.helper,action=encode,string=$INFO[ListItem.Title],prop=TitleEncoded)</onload>
 	<onload condition="System.AddonIsEnabled(script.embuary.helper) + !String.IsEqual(ListItem.DBTYPE,musicvideo)">RunScript(script.embuary.helper,action=encode,string=$INFO[ListItem.TVShowTitle],prop=TVShowTitleEncoded)</onload>
 	<controls>
+		<control type="list" id="9143">
+			<include>HiddenList</include>
+		</control>
 		<include content="DialogInfoCommon">
 			<param name="blur">Skin.HasSetting(VideoBlurEnabled)</param>
 			<param name="art">$VAR[PosterVar]</param>

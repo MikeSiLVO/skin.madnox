@@ -132,6 +132,7 @@
 				<height>40</height>
 				<usecontrolcoords>true</usecontrolcoords>
 				<orientation>horizontal</orientation>
+				<visible>!String.IsEqual(ListItem.Property(item.type),person)</visible>
 				<control type="image">
 					<top>3</top>
 					<width>30</width>
@@ -160,6 +161,7 @@
 				<onup condition="Container(9000).Hasfocus(109)">SetFocus(1090)</onup>
 				<onup condition="Container(9000).Hasfocus(112)">SetFocus(9002,7)</onup>
 				<include>InfoDialogButtons</include>
+				<visible>!String.IsEqual(ListItem.Property(item.type),person)</visible>
 				<content>
 					<item id="101">
 						<description>Play</description>
@@ -196,7 +198,8 @@
 						<label2>$LOCALIZE[31351]</label2>
 						<!-- <onclick>Dialog.Close(all)</onclick> -->
 						<!-- <onclick>$VAR[VideoInfoTMDbVar]</onclick> -->
-						<onclick>Runscript(plugin.video.themoviedb.helper,recommendations=5000|info=cast|true|info,window_id=1191,$VAR[TMDbHelperTypeVar],$VAR[TMDbHelperIDVar],winprop_plot=$VAR[VideoInfoPlotVar],winprop_poster=$VAR[VideoInfoPosterVar])</onclick>
+						<onclick>Runscript(plugin.video.themoviedb.helper,recommendations=5000|info=recommendations|true||5001|info=similar|true|info,window_id=1191,$VAR[TMDbHelperTypeVar],$VAR[TMDbHelperIDVar],winprop_plot='"$VAR[VideoInfoPlotVar]"',winprop_poster=$VAR[VideoInfoPosterVar])</onclick>
+						<!-- <onclick>RunScript(plugin.video.themoviedb.helper,add_query=$INFO[ListItem.Label],$VAR[TMDbHelperTypeVar],call_auto=1190)</onclick> -->
 					</item>
 					<item id="104">
 						<description>Next episode</description>
@@ -276,8 +279,8 @@
 				<top>211</top>
 				<!-- Cast -->
 				<control type="panel" id="50">
-					<onup condition="!Skin.HasSetting(VideoInfoTMDbActor)">1020</onup>
-					<onup condition="Skin.HasSetting(VideoInfoTMDbActor)">RunScript(script.embuary.info,call=person,query='"$ESCINFO[Container(50).ListItem.Label]"')</onup>
+					<onup condition="!System.AddonIsEnabled(plugin.video.themoviedb.helper)">1020</onup>
+					<onup condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container.ListItem.Label],type=person,call_auto=1190)</onup>
 					<include content="DialogExtraInfo">
 						<param name="visible">!Control.HasFocus(1020) + Container(9000).HasFocus(101)</param>
 						<param name="aspect">scale</param>
@@ -370,11 +373,31 @@
 			<!-- Info -->
 			<control type="panel" id="9002">
 				<include content="InfoDialogDetails">
-					<param name="visible">Container(9000).HasFocus(112)</param>
+					<param name="visible">Container(9000).HasFocus(112) | String.IsEqual(ListItem.Property(item.type),person)</param>
 					<param name="label">$INFO[ListItem.Label]</param>
 					<param name="label2">$INFO[ListItem.Label2]</param>
 				</include>
 				<content>
+					<item>
+						<label>$INFO[ListItem.Property(Birthday)]</label>
+						<label2>$LOCALIZE[21893]:</label2>
+						<visible>!String.IsEmpty(ListItem.Property(Birthday))</visible>
+					</item>
+					<item>
+						<label>$INFO[ListItem.Property(Deathday)]</label>
+						<label2>$LOCALIZE[21897]:</label2>
+						<visible>!String.IsEmpty(ListItem.Property(Deathday))</visible>
+					</item>
+					<item>
+						<label>$INFO[ListItem.Property(Born)]</label>
+						<label2>Birthday:</label2>
+						<visible>!String.IsEmpty(ListItem.Property(Born))</visible>
+					</item>
+					<item>
+						<label>$INFO[ListItem.Property(Gender)]</label>
+						<label2>$LOCALIZE[39025]:</label2>
+						<visible>!String.IsEmpty(ListItem.Property(Gender))</visible>
+					</item>
 					<item>
 						<visible>!String.IsEmpty(ListItem.Genre) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
 						<label>$INFO[ListItem.Genre]</label>

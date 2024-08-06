@@ -66,6 +66,7 @@
 		<onunload condition="!Skin.HasSetting(BlurEnabled)">Skin.ToggleSetting(BlurEnabled)</onunload>
 		<onunload condition="System.AddonIsEnabled(script.artistslideshow)">RunScript(script.artistslideshow,daemon=True)</onunload>
 		<onunload condition="!Skin.HasSetting(TMDbHelper.Service)">Skin.SetBool(TMDbHelper.Service)</onunload>
+		<onunload condition="!Skin.HasSetting(TMDbHelper.Service)">Skin.SetString(TMDbHelper.MonitorContainer,9143)</onunload>
 		<onunload condition="!Skin.HasSetting(TMDbHelper.DisableArtwork)">Skin.SetBool(TMDbHelper.DisableArtwork)</onunload>
 		<onunload condition="!Skin.HasSetting(TMDbHelper.DisablePersonStats)">Skin.SetBool(TMDbHelper.DisablePersonStats)</onunload>
 	</include>
