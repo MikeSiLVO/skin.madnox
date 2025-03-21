@@ -1,0 +1,15 @@
+{
+    "bookmarks.experimental.enableNewStickyEngine": false,
+    "bookmarks.label.suggestion": "useWhenSelected",
+    "bookmarks.saveBookmarksInProject": true,
+    "bookmarks.sideBar.expanded": true,
+    "bookmarks.useWorkaroundForFormatters": true,
+    "kodilocalize.operation": "$LOCALIZE[]",
+    "kodilocalize.countryCode": "en_us",
+    "kodilocalize.decoratorColor": "#6cd190ff",
+    "kodi-skin-tools.password": "8082",
+    "kodi-skin-tools.reloadExtensions": ".xml, .po, .py",
+    "kodi-skin-tools.operation": "$LOCALIZE[ID]",
+    "kodi-skin-tools.decoratorColor": "FF6CD190",
+    "kodi-skin-tools.ipAddress": "192.168.0.82"
+}

@@ -308,7 +308,7 @@
 					<param name="heighttexture">100</param>
 					<param name="flipy">true</param>
 				</include>
-				<include>MediaFlagsVideoFullscreen</include>
+				<include>MediaFlagsVideoFullscreen</include> <!-- VideoOSD CMB -->
 			</control>
 		</control>
 		<!-- Studio Logo check if image exists -->

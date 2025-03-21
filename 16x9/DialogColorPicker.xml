@@ -6,8 +6,10 @@
 		<control type="group">
 			<include content="DialogBackground">
 				<description>Window Header Label</description>
-				<param name="width" value="953"/>
-				<param name="height" value="535"/>
+				<param name="width" value="1253"/>
+				<!-- 953 -->
+				<param name="height" value="855"/>
+				<!-- 535 -->				<!-- 585 -->
 				<param name="id">1</param>
 				<param name="diffusetexture">diffuse/rounded10-877x470.png</param>
 			</include>
@@ -16,34 +18,301 @@
 				<left>20</left>
 				<top>90</top>
 				<width>350</width>
-				<height>420</height>
+				<height>640</height>
 				<onright>60</onright>
 				<control type="button" id="7">
 					<description>Cancel Button</description>
 					<width>350</width>
 					<include>DialogButton</include>
 				</control>
+				<!-- Choose color palette -->
+				<control type="button" id="3030">
+					<width>350</width>
+					<include>DialogButton</include>
+					<label>$LOCALIZE[424] $LOCALIZE[31025]</label>
+					<onclick>Skin.SetFile(mycolorfile,*.xml,special://skin/extras/colors/)</onclick>
+					<onclick>Dialog.Close(dialogcolorpicker)</onclick>
+					<onclick>AlarmClock(activate_delay,ActivateWindow(SkinSettings),00:00:00.6,silent)</onclick>
+					<onclick>AlarmClock(focus_delay,Control.SetFocus(302),00:00:00.6,silent)</onclick>
+					<onclick>AlarmClock(select_delay,Action(Select),00:00:01,silent)</onclick>
+				</control>				
+				<!-- Custom Color - Edit manual -->
+				<control type="button" id="3010">
+					<width>350</width>
+					<include>DialogButton</include>
+					<label>$LOCALIZE[31015]</label>
+					<!-- <onclick>Dialog.Close(dialogcolorpicker)</onclick> -->
+					<onclick>Skin.SetString($INFO[Window(Home).Property(Reset.Color)])</onclick>
+					<visible>!String.IsEmpty(Window(Home).Property(Reset.Color))</visible>
+				</control>
+				<!-- None (reset) -->
+				<control type="button" id="3011">
+					<width>350</width>
+					<include>DialogButton</include>
+					<label>$LOCALIZE[13007] / $LOCALIZE[571] </label>					
+					<onclick>Skin.Reset($INFO[Window(Home).Property(Reset.Color)])</onclick>
+					<onclick>Skin.SetString(mycolorfile,special://skin/extras/colors/madnox-(24-colors).xml)</onclick>
+					<onclick>Dialog.Close(dialogcolorpicker)</onclick>
+					<onclick>AlarmClock(activate_delay,ActivateWindow(SkinSettings),00:00:00.6,silent)</onclick>
+					<onclick>AlarmClock(focus_delay,Control.SetFocus(302),00:00:00.6,silent)</onclick>
+					<onclick>AlarmClock(select_delay,Action(Select),00:00:01,silent)</onclick>
+				</control>
+				<!-- Group control to arrange slider and button horizontally, and position it down -->
+				<control type="group" id="3017">
+					<orientation>horizontal</orientation>
+					<position>20</position>
+					<top>460</top>
+					<!-- Opacity slider -->
+					<!-- <control type="slider" id="3015">
+						<left>10</left>
+						<width>152</width>
+						<include>DialogInlineButton45</include>
+						<pulseonselect>True</pulseonselect>
+						<default>100</default>
+						<onup>SetFocus(3011)</onup> Move focus to control 3011 when navigating up
+						<ondown>SetFocus(3200)</ondown> Move focus to control 3016 when navigating down
+					</control> -->
+					<!-- Red slider -->
+					<!-- <control type="slider" id="3200">
+						<top>45</top>
+						<left>10</left>
+						<width>152</width>
+						<include>DialogInlineButton45</include>
+						<default>100</default>
+						<onup>SetFocus(3015)</onup> Move focus to control 3011 when navigating up
+						<ondown>SetFocus(3201)</ondown> Move focus to control 3016 when navigating down
+					</control> -->
+					<!-- Green slider -->
+					<!-- <control type="slider" id="3201">
+						<top>90</top>
+						<left>10</left>
+						<width>152</width>
+						<include>DialogInlineButton45</include>
+						<default>100</default>
+						<onup>SetFocus(3200)</onup> Move focus to control 3011 when navigating up
+						<ondown>SetFocus(3202)</ondown> Move focus to control 3016 when navigating down
+					</control> -->
+					<!-- Blue slider -->
+					<!-- <control type="slider" id="3202">
+						<top>135</top>
+						<left>10</left>
+						<width>152</width>
+						<include>DialogInlineButton45</include>
+						<default>100</default>
+						<onup>SetFocus(3201)</onup> Move focus to control 3011 when navigating up
+						<ondown>SetFocus(3203)</ondown> Move focus to control 3016 when navigating down
+					</control> -->
+					<!-- Apply Button -->
+					<!-- <control type="button" id="3203">
+						<top>180</top>
+						<width>350</width>
+						<include>DialogInlineButton45</include>
+						<label>Apply</label>
+						<align>center</align>
+						<onup>SetFocus(3202)</onup> Move focus to control 3011 when navigating up
+						<ondown>SetFocus(9)</ondown> Move focus to control 3011 when navigating up
+						<onclick>Skin.SetString($INFO[Window(Home).Property(ActiveControlPanelName)],$VAR[Def_Percent_To_Hex_Color])</onclick>
+						<onclick>Dialog.Close(dialogcolorpicker)</onclick>
+						<onclick>AlarmClock(activate_delay,ActivateWindow(SkinSettings),00:00:00.6,silent)</onclick>
+						<onclick>AlarmClock(focus_delay,Control.SetFocus(302),00:00:00.6,silent)</onclick>
+						<onclick>AlarmClock(select_delay,Action(Select),00:00:01,silent)</onclick>
+					</control> -->
+				</control>
+				<!-- Opacity Slider Focus -->
+				<!-- <control type="group">
+					<height>45</height>
+					<control type="label">
+						<visible>Control.HasFocus(3015)</visible>
+						<width>152</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelFocusTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3015),,]</label>
+						<onunfocus>SetProperty(Def_Percent_To_Hex_Alpha, $INFO[Control.GetLabel(3015)])</onunfocus>
+						<label>$INFO($VAR[Def_Percent_To_Hex_Alpha])</label>
+					</control>
+					<control type="label">
+						<visible>!Control.HasFocus(3015)</visible>
+						<width>152</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3015),,]</label>
+					</control>
+					<control type="label">
+						<top>-5</top>
+						<left>250</left>
+						<width>100</width>
+						<textoffsetx>6</textoffsetx>
+						<label>Alpha</label>
+						<align>Left</align>
+					</control>
+				</control> -->
+				<!-- Red Slider Focus -->
+				<!-- <control type="group">
+					<top>45</top>
+					<height>45</height>
+					<control type="label">
+						<visible>Control.HasFocus(3200)</visible>
+						<width>152</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelFocusTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3200),,]</label>
+					</control>
+					<control type="label">
+						<visible>!Control.HasFocus(3200)</visible>
+						<width>152</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3200),,]</label>
+					</control>
+					<control type="label">
+						<top>-5</top>
+						<left>250</left>
+						<width>100</width>
+						<textoffsetx>6</textoffsetx>
+						<label>Red</label>
+						<align>Left</align>
+					</control>
+				</control> -->
+				<!-- Green Slider Focus -->
+				<!-- <control type="group">
+					<top>45</top>
+					<height>45</height>
+					<control type="label">
+						<visible>Control.HasFocus(3201)</visible>
+						<width>152</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelFocusTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3201),,]</label>
+					</control>
+					<control type="label">
+						<visible>!Control.HasFocus(3201)</visible>
+						<width>152</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3201),,]</label>
+					</control>
+					<control type="label">
+						<top>-5</top>
+						<left>250</left>
+						<width>110</width>
+						<textoffsetx>6</textoffsetx>
+						<label>Green</label>
+						<align>Left</align>
+					</control>
+				</control> -->
+				<!-- Blue Slider Focus -->
+				<!-- <control type="group">
+					<top>45</top>
+					<height>45</height>
+					<control type="label">
+						<visible>Control.HasFocus(3202)</visible>
+						<width>252</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelFocusTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3202),,]</label>
+					</control>
+					<control type="label">
+						<visible>!Control.HasFocus(3202)</visible>
+						<width>252</width>
+						<height>40</height>
+						<left>190</left>
+						<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
+						<label>$INFO[Control.Getlabel(3202),,]</label>
+					</control>
+					<control type="label">
+						<top>-5</top>
+						<left>250</left>
+						<width>110</width>
+						<textoffsetx>6</textoffsetx>
+						<label>Blue</label>
+						<align>Left</align>
+					</control>
+				</control> -->
+
+				<!-- Live Preview -->
+				<!-- <control type="group">
+					<width>134</width>
+					<control type="image">
+						<top>57</top>
+						<height>45</height>
+						<left>42</left>
+						<texture colordiffuse="$VAR[Def_Percent_To_Hex_Color]">colors/white.png</texture>
+					</control>
+					<control type="label">
+						<width>78</width>
+						<top>57</top>
+						<left>150</left>
+						<height>45</height>
+						<font>Font25_Cond</font>
+						<align>right</align>
+						<label>Preview:</label>
+					</control>
+					<control type="label">
+						<width>164</width>
+						<top>57</top>
+						<left>174</left>
+						<height>45</height>
+						<font>Font25_Cond</font>
+						<align>right</align>
+						<label>#$VAR[Def_Percent_To_Hex_Color]</label>
+					</control>
+				</control> -->
+				<!-- Applied Color Preview -->
+				<!-- <control type="group">
+					<width>134</width>
+					<control type="image">
+						<top>107</top>
+						<height>45</height>
+						<left>42</left>
+						<texture colordiffuse="$INFO[Window(Home).Property(ActiveControlPanelNameValue)]">colors/white.png</texture>
+					</control>
+					<control type="label">
+						<width>78</width>
+						<top>107</top>
+						<left>150</left>
+						<height>45</height>
+						<font>Font25_Cond</font>
+						<align>right</align>
+						<label>Applied:</label>
+					</control>
+					<control type="label">
+						<width>164</width>
+						<top>107</top>
+						<left>174</left>
+						<height>45</height>
+						<font>Font25_Cond</font>
+						<align>right</align>
+						<label>$VAR[AppliedColorString]</label>
+					</control>
+				</control> -->
 			</control>
 			<control type="image">
 				<top>90</top>
 				<left>370</left>
-				<bottom>71</bottom>
+				<bottom>121</bottom>				<!-- 71 -->
 				<width>4</width>
 				<texture colordiffuse="$VAR[PanelListSeparatorColorVar]">panels/line-vertical.png</texture>
 			</control>
 			<control type="image">
-				<bottom>70</bottom>
-				<left>20</left>
+				<bottom>120</bottom>				<!-- 70 -->
+				<left>0</left>
 				<right>20</right>
-				<height>70</height>
+				<height>170</height>
 				<texture border="30" colordiffuse="$VAR[PanelListSeparatorColorVar]">buttons/list-select-nofocus.png</texture>
 			</control>
 			<!-- Color picker panel -->
 			<control type="panel" id="6">
 				<left>391</left>
 				<top>110</top>
-				<width>504</width>
-				<height>336</height>
+				<width>804</width>				<!-- 504 -->
+				<height>588</height>				<!-- 336 -->
 				<pagecontrol>60</pagecontrol>
 				<onleft>60</onleft>
 				<include>ContainerScrollTime</include>
@@ -70,8 +339,8 @@
 				</focusedlayout>
 			</control>
 			<control type="label">
-				<description>Color pallette page counter</description>
-				<bottom>21</bottom>
+				<description>Color palette filename and page counter</description>
+				<bottom>66</bottom>				<!-- 21 -->
 				<right>60</right>
 				<width>460</width>
 				<height>50</height>
@@ -82,18 +351,55 @@
 			</control>
 			<control type="label">
 				<description>Selected color label</description>
-				<bottom>21</bottom>
+				<bottom>68</bottom>				<!-- 21 -->
 				<left>60</left>
-				<width>460</width>
+				<width>900</width>
 				<height>50</height>
 				<font>Font25_Cond</font>
 				<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
-				<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, #]</label>
+				<!-- <label>$LOCALIZE[31044]: $INFO[ListItem.Label]$INFO[ListItem.Label2, #]</label> -->
+				<label>$VAR[ColorSelectedPicker]</label>
 			</control>
+			<control type="image">
+				<bottom>68</bottom>				<!-- 70 -->
+				<left>20</left>
+				<right>20</right>
+				<height>170</height>
+				<texture border="30" colordiffuse="$VAR[PanelListSeparatorColorVar]">buttons/list-select-nofocus.png</texture>
+			</control>
+			<control type="image">
+				<top>90</top>
+				<left>1166</left>
+				<bottom>121</bottom>				<!-- 71 -->
+				<width>4</width>
+				<texture colordiffuse="$VAR[PanelListSeparatorColorVar]">panels/line-vertical.png</texture>
+			</control>
+			<control type="label">
+				<description>Palette selected filename and path label</description>
+				<bottom>20</bottom>
+				<left>60</left>
+				<width>900</width>
+				<height>50</height>
+				<font>Font25_Cond</font>
+				<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
+				<!-- <label>Selected palette: $INFO[Skin.String(mycolorfile)] :: $INFO[Window(Home).Property(ActiveControlPanelNameValue)]</label> -->
+				<!-- <label>Selected palette: $INFO[Skin.String(mycolorfile)] :: $VAR[AppliedColorString]</label> -->
+				<label>Selected palette: $INFO[Skin.String(mycolorfile)]</label>
+			</control>
+			<control type="label">
+				<description>User Note</description>
+				<bottom>20</bottom>
+				<left>824</left>
+				<width>900</width>
+				<height>50</height>
+				<font>Font25_Cond</font>
+				<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
+				<label>Note: Use custom color to adjust opacity</label>
+			</control>			
 			<control type="scrollbar" id="60">
 				<onleft>9</onleft>
 				<onright>6</onright>
-				<left>350</left>
+				<left>1148</left>				<!-- 352 -->
 				<include>DialogScrollBar</include>
 			</control>
 		</control>

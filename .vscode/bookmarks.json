@@ -1,0 +1,69 @@
+{
+	"files": [
+		{
+			"path": "16x9/Includes_InfoDialogs.xml",
+			"bookmarks": [
+				{
+					"line": 117,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 283,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 379,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 407,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 737,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 2350,
+					"column": 0,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "16x9/SkinSettings.xml",
+			"bookmarks": [
+				{
+					"line": 325,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 857,
+					"column": 0,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "16x9/Includes_MediaFlags.xml",
+			"bookmarks": [
+				{
+					"line": 1185,
+					"column": 0,
+					"label": ""
+				},
+				{
+					"line": 1561,
+					"column": 0,
+					"label": ""
+				}
+			]
+		}
+	]
+}

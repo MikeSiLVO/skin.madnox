@@ -403,5 +403,41 @@
 			<style>lowercase</style>
 			<size>55</size>
 		</font>
+
+        <!-- Additional Unicode Fonts -->
+        <font>
+            <name>ArialUnicodeMS</name>
+            <filename>Arial_Unicode_MS.TTF</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>DejaVuSans</name>
+            <filename>DejaVuSans.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>Arial_Unicode_MS</name>
+            <filename>Arial_Unicode_MS.TTF</filename>
+            <size>22</size>
+        </font>
+
+
+        <font>
+            <name>NotoMono</name>
+            <filename>NotoMono-Regular.ttf</filename>
+            <size>22</size>
+        </font>		
+        <font>
+            <name>NotoSans-Regular</name>
+            <filename>NotoSans-Regular.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>Roboto</name>
+            <filename>Roboto-Thin.ttf</filename>
+            <size>22</size>
+        </font>
+
+		
 	</fontset>
 </fonts>

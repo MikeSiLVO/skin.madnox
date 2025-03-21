@@ -16,7 +16,7 @@
 		<!-- Check if Studio Image exists -->
 		<control type="image" id="811115">
 			<include>HiddenObject</include>
-			<texture fallback="none">$VAR[EmbuaryStudioIconsVar]</texture>
+			<texture fallback="none">$VAR[TMDBHelperStudioIconsVar]</texture>
 		</control>
 		<!-- Background -->
 		<include content="DialogInfoCommon">
@@ -200,12 +200,12 @@
 					<left>-10</left>
 					<right>25</right>
 					<height>80</height>
-					<onup condition="Container(9000).Hasfocus(101)">SetFocus(10052)</onup>
-					<onup condition="Container(9000).Hasfocus(102)">SetFocus(10056)</onup>
-					<onup condition="Container(9000).Hasfocus(103)">SetFocus(10057)</onup>
-					<onup condition="Container(9000).Hasfocus(104)">SetFocus(10058)</onup>
-					<onup condition="Container(9000).Hasfocus(105)">SetFocus(10053)</onup>
-					<onup condition="Container(9000).Hasfocus(106)">SetFocus(10054)</onup>
+					<onup condition="Container(9000).HasFocus(101)">SetFocus(10052)</onup>
+					<onup condition="Container(9000).HasFocus(102)">SetFocus(10056)</onup>
+					<onup condition="Container(9000).HasFocus(103)">SetFocus(10057)</onup>
+					<onup condition="Container(9000).HasFocus(104)">SetFocus(10058)</onup>
+					<onup condition="Container(9000).HasFocus(105)">SetFocus(10053)</onup>
+					<onup condition="Container(9000).HasFocus(106)">SetFocus(10054)</onup>
 					<include>InfoDialogButtons</include>
 					<content>
 						<item id="101">
@@ -235,13 +235,13 @@
 							<visible>!String.IsEqual(Container(10051).ListItem.DBType,season) + [Integer.IsGreater(Container(10056).NumItems,0) | Container(10056).IsUpdating]</visible>
 							<description>Crew</description>
 							<label></label>
-							<label2>$ADDON[script.embuary.info 32018]</label2>
+							<label2>$ADDON[script.embuary.info 31415]</label2>
 						</item>
 						<item id="102">
 							<visible>String.IsEqual(Container(10051).ListItem.DBType,season) + [Integer.IsGreater(Container(10056).NumItems,0) | Container(10056).IsUpdating]</visible>
 							<description>Guest stars</description>
 							<label></label>
-							<label2>$ADDON[script.embuary.info 32039]</label2>
+							<label2>$ADDON[script.embuary.info 31419]</label2>
 						</item>
 						<item id="103">
 							<description>Set</description>
@@ -366,17 +366,17 @@
 						<item>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Budget))</visible>
 							<label>$INFO[Container(10051).ListItem.Property(Budget),$]</label>
-							<label2>$ADDON[script.embuary.info 32013]</label2>
+							<label2>$ADDON[script.embuary.info 31391]</label2>
 						</item>
 						<item>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Revenue))</visible>
 							<label>$INFO[Container(10051).ListItem.Property(Revenue),$]</label>
-							<label2>$ADDON[script.embuary.info 32014]</label2>
+							<label2>$ADDON[script.embuary.info 31393]</label2>
 						</item>
 						<item>
 							<visible>!String.IsEmpty(Container(10051).ListItem.Property(Awards))</visible>
 							<label>$INFO[Container(10051).ListItem.Property(Awards)]</label>
-							<label2>$ADDON[script.embuary.info 32015]</label2>
+							<label2>$ADDON[script.embuary.info 31408]</label2>
 						</item>
 					</content>
 				</control>
@@ -398,7 +398,7 @@
 					<control type="image">
 						<visible>!String.IsEqual(Control.GetLabel(811115),none)</visible>
 						<bordersize>0,5,0,5</bordersize>
-						<texture>$VAR[EmbuaryStudioIconsVar]</texture>
+						<texture>$VAR[TMDBHelperStudioIconsVar]</texture>
 						<include>MediaFlagImage</include>
 					</control>
 					<control type="image">

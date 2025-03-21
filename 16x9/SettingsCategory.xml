@@ -90,18 +90,6 @@
 		</control>
 		<control type="colorbutton" id="15">
 			<include>SettingsButton</include>
-			<texturefocus border="10" colordiffuse="$VAR[PanelHighlightColorVar]">buttons/list-select-focus.png</texturefocus>
-			<texturenofocus border="30" colordiffuse="$VAR[PanelListSeparatorColorVar]">buttons/list-select-nofocus.png</texturenofocus>
-			<font>Font30_Reg</font>
-			<aligny>center</aligny>
-			<focusedcolor>$VAR[PanelFocusTextColorVar]</focusedcolor>
-			<disabledcolor>$VAR[PanelDisabledTextColorVar]</disabledcolor>
-			<invalidcolor>invalid</invalidcolor>
-			<pulseonselect>false</pulseonselect>
-			<colorwidth>100</colorwidth>
-			<colorheight>40</colorheight>
-			<texturecolormask>colors/white.png</texturecolormask>
-			<texturecolordisabledmask colordiffuse="40FFFFFF">colors/white.png</texturecolordisabledmask>
 		</control>
 		<control type="radiobutton" id="8">
 			<include>SettingsRadioButton</include>

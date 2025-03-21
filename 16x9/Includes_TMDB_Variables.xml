@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+
+
+	<variable name="TMDbPersonAge">
+	    <value condition="!String.IsEmpty(ListItem.Property(Age))">$INFO[ListItem.Property(Age)]</value>
+        <value> $INFO[(Container(10051).ListItem.Property(Age)]</value>
+        <!-- <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Age)]</value> -->
+	</variable>
+
+</includes>
